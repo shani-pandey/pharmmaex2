@@ -93,36 +93,3 @@
   margin-top: -10px;
   padding:  5px 0;
 }
-
-.ticker {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 5;
-  overflow: hidden;
-}
-
-.tickerInner {
-  background: #00833D;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-}
-
-.marquee {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll-left 15s linear infinite;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-} 

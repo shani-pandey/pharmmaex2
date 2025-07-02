@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './bannerHome.module.css';
+import Ticker from './Ticker';
 
 const BannerHome = () => {
   return (
@@ -59,19 +60,7 @@ const BannerHome = () => {
         </div>
       </div>
       {/* Bottom Ticker */}
-      <div className={styles.ticker}>
-        <div className={styles.tickerInner}>
-          <div className={styles.marquee}>
-            <span>PharmmaEx Coming to Mumbai</span>
-            <span className="mx-3">•</span>
-            <span>PharmmaEx Coming to Mumbai</span>
-            <span className="mx-3">•</span>
-            <span>PharmmaEx Coming to Mumbai</span>
-            <span className="mx-3">•</span>
-            <span>PharmmaEx Coming to Mumbai</span>
-          </div>
-        </div>
-      </div>
+      <Ticker />
     </section>
   );
 };
