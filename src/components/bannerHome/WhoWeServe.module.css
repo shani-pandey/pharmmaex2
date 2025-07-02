@@ -1,0 +1,95 @@
+.serveSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin: 3.5rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.serveImageWrapper {
+  flex: 1 1 340px;
+  max-width: 420px;
+  min-width: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serveImage {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  object-fit: cover;
+  background: #f5f5f5;
+}
+
+.serveContent {
+  flex: 2 1 400px;
+  min-width: 49%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.serveTitle {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.serveDesc {
+  font-size: 1.08rem;
+  color: #333;
+  margin-bottom: 1.1rem;
+  line-height: 1.6;
+}
+
+.serveList {
+  margin: 0 0 1.1rem 0;
+  padding-left: 1.2rem;
+  color: #222;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.serveList li {
+  margin-bottom: 0.4rem;
+  list-style: disc inside;
+}
+
+.serveNote {
+  font-size: 1.02rem;
+  color: #444;
+  margin-top: 0.7rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .serveSection {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .serveImageWrapper, .serveContent {
+    max-width: 100%;
+  }
+  .serveContent {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .serveTitle {
+    font-size: 1.3rem;
+  }
+  .serveDesc, .serveList, .serveNote {
+    font-size: 0.98rem;
+  }
+  .serveImageWrapper {
+    min-width: 0;
+  }
+} 

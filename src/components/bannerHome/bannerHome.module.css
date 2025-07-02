@@ -1,0 +1,128 @@
+.bannerHomeSection {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.bannerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  z-index: 2;
+}
+
+.bannerContent {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+}
+
+.countdownBox {
+    background-color: rgba(255, 255, 255, 0.3); /* bg-white/30 */
+    backdrop-filter: blur(12px);               /* backdrop-blur-md */
+    color: white;                              /* text-white */
+    border-radius: 1rem;                       /* rounded-2xl */
+    padding: 1.5rem;                           /* p-6 */
+    min-width: 140px;                          /* min-w-[140px] */
+    text-align: center;                        /* text-center */
+    font-weight: 600;                          /* font-semibold */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;    
+}
+
+.bannerTitle {
+  font-size: 2.3rem;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #fff;
+}
+
+.bannerSubtitle {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.bannerBtnGroup {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.qrBox {
+   
+  border-radius: 1.5rem;
+  background: #00833D;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  width: 140px;
+  position: absolute;
+  bottom: 90px;
+  right: 30px;
+  z-index: 4;
+ 
+}
+
+.qrBox img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 10px;
+  background: #fff;
+    border-radius: 20px;
+}
+
+.textQR{
+  color: #fff;
+  font-size: 12px;
+  margin-top: -10px;
+  padding:  5px 0;
+}
+
+.ticker {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.tickerInner {
+  background: #00833D;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} 
