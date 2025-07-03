@@ -2,18 +2,24 @@ import React from 'react';
 import styles from './ExhibitionGallery.module.css';
 
 const images = [
-  '/assests/img/image1.webp',
-  '/assests/img/image2.webp',
-  '/assests/img/image3.webp',
-  '/assests/img/image5.webp',
-  '/assests/img/p1.webp',
-  '/assests/img/hyderabad.webp',
-  '/assests/img/about2.webp',
-  '/assests/img/about2 (1).webp',
-  '/assests/img/Tarmeet.webp',
-  '/assests/img/bg-registration.webp',
-  '/assests/img/image58.svg',
-
+  '/assests/img/high18.png',
+  '/assests/img/high17.png',
+  '/assests/img/high16.png',
+  '/assests/img/high15.png',
+  '/assests/img/high19.png',
+  '/assests/img/high13.png',
+  '/assests/img/high12.png',
+  '/assests/img/high11.png',
+  '/assests/img/high10.png',
+  '/assests/img/high9.png',
+  '/assests/img/high8.png',
+  '/assests/img/high7.png',
+  '/assests/img/high6.png',
+  '/assests/img/high5.png',
+  '/assests/img/high4.png',
+  '/assests/img/high3.png',
+  '/assests/img/high2.png',
+  '/assests/img/high1.png',
 ];
 
 const ExhibitionGallery = () => {

@@ -72,7 +72,7 @@ const Header = () => {
                             </li>
                         </ul>
                         <div className="d-flex gap-2">
-                            <a href="#" className="btn btn-success ">Pre-Registration</a>
+                            <a href="" className="btn btn-success ">Pre-Registration</a>
                             <a href="#" className="btn btn-outline-success ">Become Exhibitor</a>
                         </div>
                     </div>
