@@ -6,7 +6,7 @@ const WhatsInExhibition = () => {
       <div className="container whats-in-exhibition-container">
         <div className="row align-items-center">
           <div className="col-lg-4 mb-4 mb-lg-0">
-            <h2 className="whats-in-exhibition-heading">What's in the<br />Exhibition</h2>
+            <h2 className="whats-in-exhibition-heading">What&apos;s in the<br />Exhibition</h2>
           </div>
           <div className="col-lg-8 d-flex justify-content-lg-start justify-content-center gap-4 whats-in-exhibition-stats">
             <div className="whats-in-exhibition-box">

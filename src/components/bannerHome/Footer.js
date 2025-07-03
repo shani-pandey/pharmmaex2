@@ -69,7 +69,7 @@ const Footer = () => {
                 <div className="col-md-4 mb-4 mb-md-0">
                   <h5 className="footer-title">About Us</h5>
                   <div className="footer-about-text mb-2">
-                    PharmmaEx is India's leading pharmaceutical exhibition focused exclusively on Third-Party Manufacturing and PCD Franchise Business.
+                    PharmmaEx is India&apos;s leading pharmaceutical exhibition focused exclusively on Third-Party Manufacturing and PCD Franchise Business.
                   </div>
                   <div className="footer-social-icons d-flex gap-2 mt-4">
                     {/* <a href="#"><img src="/assests/img/facebook.svg" alt="Facebook" /></a>

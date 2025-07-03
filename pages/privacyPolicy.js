@@ -70,7 +70,7 @@ const PrivacyPolicy = () => {
           </section>
           <section className="mb-5">
             <h2 className="fw-bold mb-3" style={{fontSize: '1.5rem'}}>Third-Party Links</h2>
-            <p>Our site may link to external websites (e.g., payment processors, exhibitor partner sites). We are not responsible for their content or data practices. Please review each site's privacy policy before submitting personal information.</p>
+            <p>Our site may link to external websites (e.g., payment processors, exhibitor partner sites). We are not responsible for their content or data practices. Please review each site&apos;s privacy policy before submitting personal information.</p>
           </section>
           <section className="mb-5">
             <h2 className="fw-bold mb-3" style={{fontSize: '1.5rem'}}>Data Security & Retention</h2>
@@ -89,7 +89,7 @@ const PrivacyPolicy = () => {
           </section>
           <section className="mb-5">
             <h2 className="fw-bold mb-3" style={{fontSize: '1.5rem'}}>Policy Updates</h2>
-            <p>This Privacy Policy may be updated from time to time (e.g., changes in technology, legal requirements). We'll post updates here with the latest Effective Date. We recommend returning periodically to review any changes.</p>
+            <p>This Privacy Policy may be updated from time to time (e.g., changes in technology, legal requirements). We&apos;ll post updates here with the latest Effective Date. We recommend returning periodically to review any changes.</p>
           </section>
           <section className="mb-2">
             <h2 className="fw-bold mb-3" style={{fontSize: '1.5rem'}}>Contact Us</h2>

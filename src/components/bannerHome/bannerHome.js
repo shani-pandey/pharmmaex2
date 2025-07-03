@@ -40,7 +40,7 @@ const BannerHome = () => {
           <div className="col-lg-6 col-md-8 text-start text-white mx-auto">
             <div className="mb-2" style={{ letterSpacing: '0.2em', fontSize: '1.1rem' }}>PHARMMAEX PRESENTING</div>
             <h1 className={styles.bannerTitle + " fw-bold mb-3"}>
-              India's Largest Platform for Third Party Pharma Manufacturing and PCD Franchise Opportunities.
+              India&apos;s Largest Platform for Third Party Pharma Manufacturing and PCD Franchise Opportunities.
             </h1>
             <div className={styles.bannerSubtitle + " mb-3"}>
               03–04 October, 2025 | Bombay Exhibition Centre, Mumbai

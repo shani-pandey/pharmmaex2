@@ -9,7 +9,7 @@ const AboutHome = () => {
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h2 className="fw-bold mb-3 about-home-heading">About PharmmaEx</h2>
             <p className="about-home-desc mb-4">
-              PharmmaEx is India's leading pharmaceutical exhibition focused exclusively on Third-Party Manufacturing and PCD Franchise Business. We bring together manufacturers, distributors, wholesalers, and industry professionals from across the country under one roof to explore new partnerships, expand networks, and grow their pharma businesses.
+              PharmmaEx is India&apos;s leading pharmaceutical exhibition focused exclusively on Third-Party Manufacturing and PCD Franchise Business. We bring together manufacturers, distributors, wholesalers, and industry professionals from across the country under one roof to explore new partnerships, expand networks, and grow their pharma businesses.
             </p>
             <div className="d-flex align-items-start mb-3 about-home-feature">
               <span className="about-home-icon me-3">
