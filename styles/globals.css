@@ -1,5 +1,5 @@
- @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
- 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
   --primary-color: #00833D;
   --secondary-color: #ffff;
@@ -1232,4 +1232,8 @@ filter: invert(1);
     flex-direction: row-reverse;
     margin-bottom: 40px;
 
+}
+
+.no-scroll {
+  overflow: hidden !important;
 }

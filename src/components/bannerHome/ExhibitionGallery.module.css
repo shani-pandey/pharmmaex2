@@ -98,4 +98,11 @@
     gap: 6px;
     padding: 0 1vw;
   }
+}
+
+.activeTab {
+  background: #009688 !important;
+  color: #fff !important;
+  font-weight: bold;
+  border: 1.5px solid #009688 !important;
 } 
