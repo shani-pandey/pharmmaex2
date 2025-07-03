@@ -12,13 +12,13 @@ const Footer = () => {
           <h2 className="footer-registration-title">Registration for Mumbai</h2>
           <div className="footer-registration-details d-flex align-items-center mb-3">
             <div className="footer-registration-date-icon me-2">
-              <img src="/assests/img/calendar.svg" alt="Calendar" />
+              <img src="/assests/img/Calendar.svg" alt="Calendar" />
               <div className="footer-registration-date">03-04 October, 2025</div>
             </div>
            
               
               <div className="footer-registration-venue">
-                <img src="/assests/img/location.svg" alt="Location" className="me-1" />
+                <img src="/assests/img/Location.svg" alt="Location" className="me-1" />
                 Bombay Exhibition Centre, Mumbai
                 </div>
            

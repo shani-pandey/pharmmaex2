@@ -22,7 +22,7 @@ const PharmaConnections = () => {
               <div className="col-md-6">
                 <div className="pharma-connections-card">
                   <div className="d-flex align-items-center mb-2">
-                    <img src="/assests/img/briefcase.svg" alt="Visitor Icon" className="pharma-connections-icon me-2" />
+                    <img src="/assests/img/briefCase.svg" alt="Visitor Icon" className="pharma-connections-icon me-2" />
                     <span className="pharma-connections-card-title">Visitor Profile</span>
                   </div>
                   <ul className="pharma-connections-list">
@@ -39,7 +39,7 @@ const PharmaConnections = () => {
               <div className="col-md-6">
                 <div className="pharma-connections-card">
                   <div className="d-flex align-items-center mb-2">
-                    <img src="/assests/img/briefcase.svg" alt="Exhibitor Icon" className="pharma-connections-icon me-2" />
+                    <img src="/assests/img/briefCase.svg" alt="Exhibitor Icon" className="pharma-connections-icon me-2" />
                     <span className="pharma-connections-card-title">Exhibitor Profile</span>
                   </div>
                   <ul className="pharma-connections-list">
