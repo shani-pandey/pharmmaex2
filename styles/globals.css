@@ -284,6 +284,11 @@ ul {
 filter: invert(1);
 }
 
+.galery-btn:hover img {
+filter: none;
+}
+
+
 /* WhatsInExhibition section styles */
 .whats-in-exhibition-section {
   background: url('/assests/img/bg-what.svg') center center/cover no-repeat;

@@ -62,7 +62,7 @@ export default function Gallery({ city: initialCity }) {
           <button
             key={loc.id}
             onClick={(e) => handleTabClick(e, loc.id)}
-            className="btn btn-outline-light exhibition-series-card-btn mt-2"
+            className="btn btn-outline-light exhibition-series-card-btn mt-2 galery-btn"
             style={{
               background: city === loc.id ? '#00833d' : 'none',
               color: city === loc.id ? '#fff' : '#444444',
