@@ -14,6 +14,8 @@ import KeySponsors from "@/src/components/bannerHome/KeySponsors";
 import OurExhibitors from "@/src/components/bannerHome/OurExhibitors";
 import ClientReviews from "@/src/components/bannerHome/ClientReviews";
 import Footer from "@/src/components/bannerHome/Footer";
+import dynamic from "next/dynamic";
+const RegisterDialog = dynamic(() => import("@/src/components/RegisterDialog"), { ssr: false });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +37,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <RegisterDialog />
       <BannerHome />
       <JoinPharma />
       <AboutHome />
