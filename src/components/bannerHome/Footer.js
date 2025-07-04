@@ -24,8 +24,8 @@ const Footer = () => {
            
           </div>
           <div className="footer-registration-btns d-flex gap-3">
-            <a href="#" className="btn btn-outline-light">Pre-Registration</a>
-            <a href="#" className="btn btn-outline-light">Become Exhibitor</a>
+            <a href=" https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx  " className="btn btn-outline-light">Pre-Registration</a>
+            <a href="/exhibitor" className="btn btn-outline-light">Become Exhibitor</a>
           </div>
         </div>
       </div>
@@ -72,30 +72,29 @@ const Footer = () => {
                     PharmmaEx is India&apos;s leading pharmaceutical exhibition focused exclusively on Third-Party Manufacturing and PCD Franchise Business.
                   </div>
                   <div className="footer-social-icons d-flex gap-2 mt-4">
-                    {/* <a href="#"><img src="/assests/img/facebook.svg" alt="Facebook" /></a>
-                    <a href="#"><img src="/assests/img/instagram.svg" alt="Instagram" /></a>
-                    <a href="#"><img src="/assests/img/x.svg" alt="X" /></a>
-                    <a href="#"><img src="/assests/img/linkedin.svg" alt="LinkedIn" /></a> */}
-                    <img src="/assests/img/social.svg"/>
+                    <a href="https://www.facebook.com/PharmmaEx/"><img src="/assests/img/facebook.jpg" alt="Facebook" /></a>
+                    <a href="https://www.instagram.com/pharmmaex/#"><img src="/assests/img/instagram.jpg" alt="Instagram" /></a>
+                    <a href="https://www.youtube.com/@PharmmaEx"><img src="/assests/img/twitter.jpg" alt="X"/></a>
+                    <a href="https://www.linkedin.com/company/pharmmaex/"><img src="/assests/img/linkedin.jpg" alt="LinkedIn" /></a>
                   </div>
                 </div>
                 <div className="col-md-2 mb-4 mb-md-0">
                   <h5 className="footer-title">Quick Links</h5>
                   <ul className="footer-links">
-                    <li><a href="#">Exhibitor Form</a></li>
+                    <li><a href="/#">Exhibitor Form</a></li>
                     <li><a href="#">Visitor Registration</a></li>
-                    <li><a href="#">Photo Gallery</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Past Events</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="/gallery/hyderabad">Photo Gallery</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/events">Past Events</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                   </ul>
                 </div>
                 <div className="col-md-2 mb-4 mb-md-0">
                   <h5 className="footer-title">Helpful Links</h5>
                   <ul className="footer-links">
                     <li><a href="#">Sitemap</a></li>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="/term-condition">Terms & Condition</a></li>
+                    <li><a href="privacyPolicy">Privacy Policy</a></li>
                   </ul>
                 </div>
                 <div className="col-md-4">
@@ -113,8 +112,8 @@ const Footer = () => {
             <img src="/assests/img/dev-logo.svg" alt="Devasya" className="footer-devaysa" />
             <div className="footer-copyright">Copyright © 2025 PharmmaEx. All rights reserved.</div>
             <div className="footer-floating-icons d-flex gap-3">
-              <a href="#"><img src="/assests/img/watsapp.svg" alt="WhatsApp" /></a>
-              <a href="#"><img src="/assests/img/phoneblue.svg" alt="Call" /></a>
+              <a href="https://wa.me/"><img src="/assests/img/watsapp.svg" alt="WhatsApp" /></a>
+              <a href="tel:+919258002828"><img src="/assests/img/phoneblue.svg" alt="Call" /></a>
             </div>
           </div>
         </div>

@@ -42,6 +42,7 @@ const exhibitions = [
 
 const PastExhibitionCards = () => (
   <>
+  
     <div className="pec-container">
       {exhibitions.map((ex, idx) => (
         <div className="pec-card" key={idx}>

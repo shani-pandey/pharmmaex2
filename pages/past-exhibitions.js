@@ -23,7 +23,7 @@ export default function PastExhibitions
       </Head>
       <Header />
       
-      <InnerPageBanner pageName="Past Exhibitions" bgImage="/assests/img/aboutBanner.svg" />
+      <InnerPageBanner pageName="Past Exhibitions" bgImage="/assests/img/pastExhibitionbanner.svg" />
       <PastExhibitionsSimple />
    
       <Footer />

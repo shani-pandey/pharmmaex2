@@ -39,11 +39,14 @@
 }
 
 .carousel :global(.react-multi-carousel-item) {
-  margin-right: 1.2rem;
+  padding: 0 0.6rem; /* Use padding instead of margin */
 }
-.carousel :global(.react-multi-carousel-item:last-child) {
-  margin-right: 0;
+
+.carousel :global(.react-multi-carousel-track) {
+  margin-left: -0.6rem;
+  margin-right: -0.6rem;
 }
+
 
 .card {
   min-width: 240px;

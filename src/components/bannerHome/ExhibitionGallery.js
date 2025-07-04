@@ -28,7 +28,7 @@ const ExhibitionGallery = () => {
       <div className='container innerContainer'>
       <div className={styles.galleryHeader}>
         <h2 className={styles.heading}>Highlight of Exhibitions</h2>
-        <button className={styles.viewAllBtn}>View Full Gallery</button>
+        <button className={styles.viewAllBtn} onClick={()=>window.open('https://www.pharmaex.in/gallery/hyderabad')} >View Full Gallery</button>
       </div>
       </div>
       <div className={styles.galleryGrid}>

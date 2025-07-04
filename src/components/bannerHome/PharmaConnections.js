@@ -14,7 +14,7 @@ const PharmaConnections = () => {
             <p className="pharma-connections-desc">
               Mumbai, often referred to as the gateway to the Indian pharmaceutical industry, serves as the perfect backdrop for this monumental event. With its strategic importance and global connections, the expo is expected to draw 8,000+ business delegates from around the world.
             </p>
-            <a href="#" className="btn btn-success pharma-connections-btn">Pre-Registration</a>
+            <a href=" https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx  " className="btn btn-success pharma-connections-btn">Pre-Registration</a>
           </div>
           {/* Right: Profile Cards */}
           <div className="col-lg-7">

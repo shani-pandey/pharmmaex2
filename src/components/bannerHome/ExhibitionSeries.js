@@ -29,8 +29,8 @@ const ExhibitionSeries = () => {
               <div>Bombay Exhibition Centre, Mumbai</div>
             </div>
             <div className="d-flex gap-2 ms-3 exhibition-series-btn-group">
-              <a href="#" className="btn btn-outline-light exhibition-series-btn">Pre-Registration</a>
-              <a href="#" className="btn btn-outline-light exhibition-series-btn">Become Exhibitor</a>
+              <a href=" https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx  " className="btn btn-outline-light exhibition-series-btn">Pre-Registration</a>
+              <a href="/exhibitor" className="btn btn-outline-light exhibition-series-btn">Become Exhibitor</a>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ const ExhibitionSeries = () => {
                 <img src="/assests/img/image1.webp" alt="Hyderabad" className="img-fluid rounded-4 exhibition-series-card-img" />
                 <div className="mt-3 exhibition-series-card-details">
                   <div>02-03 May, 2025<br />HITEX Exhibition Centre,<br/> Hyderabad</div>
-                  <a href="#" className="btn btn-outline-light exhibition-series-card-btn mt-2">
+                  <a href="/gallery/hyderabad" className="btn btn-outline-light exhibition-series-card-btn mt-2">
                     <span className="me-2">
                         <img src="/assests/img/gaIIcon.svg" />
                         </span>View Gallery
@@ -58,7 +58,7 @@ const ExhibitionSeries = () => {
                 <img src="/assests/img/image2.webp" alt="Ahmedabad" className="img-fluid rounded-4 exhibition-series-card-img" />
                 <div className="mt-3 exhibition-series-card-details">
                   <div>14-15 December, 2024<br />Vigyan Bhawan, Science City,<br/> Ahmedabad</div>
-                  <a href="#" className="btn btn-outline-light exhibition-series-card-btn mt-2">
+                  <a href="/gallery/ahmedabad" className="btn btn-outline-light exhibition-series-card-btn mt-2">
                     <span className="me-2">
                         <img src="/assests/img/gaIIcon.svg" />
                         </span>View Gallery
@@ -72,7 +72,7 @@ const ExhibitionSeries = () => {
                 <img src="/assests/img/image3.webp" alt="Pune" className="img-fluid rounded-4 exhibition-series-card-img" />
                 <div className="mt-3 exhibition-series-card-details">
                   <div>21-22 June, 2024<br />Auto Cluster Exhibition Centre, <br/> Chinchwad-Pune</div>
-                  <a href="#" className="btn btn-outline-light exhibition-series-card-btn mt-2">
+                  <a href="/gallery/pune" className="btn btn-outline-light exhibition-series-card-btn mt-2">
                     <span className="me-2">
                         <img src="/assests/img/gaIIcon.svg" />
                         </span>View Gallery
@@ -86,7 +86,7 @@ const ExhibitionSeries = () => {
                 <img src="/assests/img/image5.webp" alt="Bangalore" className="img-fluid rounded-4 exhibition-series-card-img" />
                 <div className="mt-3 exhibition-series-card-details">
                   <div>02-03 February, 2024<br />Manpho Convention Centre,<br/> Bangalore</div>
-                  <a href="#" className="btn btn-outline-light exhibition-series-card-btn mt-2">
+                  <a href="/gallery/banglore" className="btn btn-outline-light exhibition-series-card-btn mt-2">
                     <span className="me-2">
                         <img src="/assests/img/gaIIcon.svg" />
                         </span>View Gallery
