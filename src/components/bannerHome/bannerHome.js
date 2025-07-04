@@ -46,8 +46,8 @@ const BannerHome = () => {
               03–04 October, 2025 | Bombay Exhibition Centre, Mumbai
             </div>
             <div className={styles.bannerBtnGroup}>
-              <a href="#" className="btn btn-success px-4 py-2">Pre-Registration</a>
-              <a href="#" className="btn btn-outline-light px-4 py-2 border border-2">Become Exhibitor</a>
+              <a href=" https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx  " className="btn btn-success px-4 py-2">Pre-Registration</a>
+              <a href="/exhibitor" className="btn btn-outline-light px-4 py-2 border border-2">Become Exhibitor</a>
             </div>
           </div>
           {/* QR Code Box */}

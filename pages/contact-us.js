@@ -24,7 +24,7 @@ export default function About() {
         
       </Head>
       <Header />      
-      <InnerPageBanner pageName="Contact-Us" bgImage="/assests/img/aboutBanner.svg" />
+      <InnerPageBanner pageName="Contact-Us" bgImage="/assests/img/contactbanner.svg" />
 
       <ContactUs />
       <ExhibitionQueries />

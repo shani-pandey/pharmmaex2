@@ -22,15 +22,10 @@ export default function SponsorsAssociation
       </Head>
       <Header />
       
-      <InnerPageBanner pageName="Sponsors & Association" bgImage="/assests/img/aboutBanner.svg" />
+      <InnerPageBanner pageName="Sponsors & Association" bgImage="/assests/img/sponserbanner.png" />
      
       <KeySponsorsGrid />
       <Footer />
-
-     
-     
-    
-     
     </>
   )
 }

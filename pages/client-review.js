@@ -23,7 +23,7 @@ export default function ClientReview
       </Head>
       <Header />
       
-      <InnerPageBanner pageName="Reviews" bgImage="/assests/img/aboutBanner.svg" />
+      <InnerPageBanner pageName="Reviews" bgImage="/assests/img/reviewBanner.svg" />
       <ClientTestimonials />
    
       <Footer />

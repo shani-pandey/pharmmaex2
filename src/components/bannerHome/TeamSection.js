@@ -3,6 +3,9 @@ import styles from './TeamSection.module.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import shivamImg from '../../../public/assests/img/shivam.png';
+import vivekImg from '../../../public/assests/img/vivek.svg';
+import pankajImg from '../../../public/assests/img/pankaj.svg';
+import vkImg from '../../../public/assests/img/vk.svg';
 import Image from 'next/image';
 
 const team = [
@@ -14,17 +17,17 @@ const team = [
   {
     name: 'Vivek Agrawal',
     title: 'Operation Manager',
-    img: shivamImg, // Replace with actual image
+    img: vivekImg, // Replace with actual image
   },
   {
     name: 'Pankaj Sharma',
     title: 'Marketing Manager',
-    img: shivamImg, // Replace with actual image
+    img: pankajImg, // Replace with actual image
   },
   {
     name: 'Vijendra Kumar',
     title: 'Event Manager',
-    img: shivamImg, // Replace with actual image
+    img: vkImg, // Replace with actual image
   },
 ];
 

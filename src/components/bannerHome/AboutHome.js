@@ -29,7 +29,7 @@ const AboutHome = () => {
                 <strong>Showcase Innovations:</strong> Explore the latest advancements in pharmaceutical technologies, formulations, and manufacturing processes.
               </div>
             </div>
-            <a href="#" className="btn btn-outline-dark about-home-btn">Read More</a>
+            <a href="/about" className="btn btn-outline-dark about-home-btn">Read More</a>
           </div>
           {/* Right: Images Grid */}
           <div className="col-lg-6">

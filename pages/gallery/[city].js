@@ -49,7 +49,7 @@ export default function Gallery({ city: initialCity }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <InnerPageBanner pageName={`Gallery`} bgIage="/assests/img/aboutBanner.svg" />
+      <InnerPageBanner pageName={`Gallery`} bgIage="/assests/img/gallerybanner.svg" />
       <div className={gstyles.gallerySection}>
       <div className='container innerContainer'>
         <div className={gstyles.galleryHeader} style={{ justifyContent: 'center' }}>
