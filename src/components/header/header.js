@@ -9,9 +9,9 @@ const Header = () => {
                     <div className='row'>
                         <div className='col-lg-6 col-md-6 col-sm-12'>
                             <ul className='topBarLeftInfo d-flex'>
-                                <li><a href='tel:+919999999999'>
+                                <li><a href='tel:+919258002828'>
                                     <img src='/assests/img/phone.svg' alt='Phone Icon' />
-                                    +91 99999 99999</a></li>
+                                    +919258002828</a></li>
                                 <li><a href='mailto:info@pharmmaex.com'>
                                     <img src='/assests/img/Message.svg' alt='Phone Icon' />
                                     info@pharmmaex.com</a></li>
