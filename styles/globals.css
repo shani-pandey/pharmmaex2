@@ -57,7 +57,7 @@ ul {
   max-width: 1440px !important;
 }
 .innerContainer{
-  max-width: 1320px;
+  max-width: 1320px !important;
 }
 .tobBarArea {
     height: 50px;
@@ -107,6 +107,7 @@ ul {
   transition: all 0.3s ease;
   visibility: visible;
   opacity: 1;
+  z-index: 999999;
 }
 .dropdown-menu {
   display: none;
