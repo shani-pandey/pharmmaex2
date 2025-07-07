@@ -51,17 +51,16 @@ const Header = () => {
                                 <ul className="dropdown-menu" aria-labelledby="aboutDropdown">
                                     <li><a className="dropdown-item" href="/about">Who we are</a></li>
                                     <li><a className="dropdown-item" href="/about#our-mission">Our Mission</a></li>
-                                    <li><a className="dropdown-item" href="#">Press Release </a></li>
+                                    <li><a className="dropdown-item" href="/pressRealise">Press Release </a></li>
                                     <li><a className="dropdown-item" href="/privacyPolicy">Privacy Policy</a></li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="/events" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
                                 <ul className="dropdown-menu" aria-labelledby="eventsDropdown">
-                                    <li><a className="dropdown-item" href="/">Upcoming Events </a></li>
+                                    <li><a className="dropdown-item" href="/up-coming">Upcoming Events </a></li>
                                     <li><a className="dropdown-item" href="/past-exhibitions">Past Exhibitors</a></li>
-                                    <li><a className="dropdown-item" href="/sponsors-associations">Sponsors & Associations</a></li>
-                                    
+                                    <li><a className="dropdown-item" href="/sponsors-associations">Sponsors & Associations</a></li>        
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">
@@ -69,7 +68,7 @@ const Header = () => {
                                 <ul className="dropdown-menu" aria-labelledby="resourcesDropdown">
                                     <li><a className="dropdown-item" href="#">Download</a></li>
                                     <li><a className="dropdown-item" href="#">Review</a></li>
-                                    <li><a className="dropdown-item" href="#">Testimonial</a></li>
+                                    <li><a className="dropdown-item" href="/client-review">Testimonial</a></li>
                                     <li><a className="dropdown-item" href=" gallery/hyderabad">Gallery</a></li>
                                 </ul>
                             </li>
@@ -78,8 +77,8 @@ const Header = () => {
                             </li>
                         </ul>
                         <div className="d-flex gap-2">
-                            <a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx" className="btn btn-success ">Pre-Registration</a>
-                            <a href="/exhibitor" className="btn btn-outline-success ">Become Exhibitor</a>
+                        <a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx" className="btn btn-success ">Pre-Registration</a>
+                        <a href="/exhibitor" className="btn btn-outline-success ">Become Exhibitor</a>
                         </div>
                     </div>
                 </div>

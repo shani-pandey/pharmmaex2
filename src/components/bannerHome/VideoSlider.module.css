@@ -1,0 +1,48 @@
+.container {
+  margin: 60px auto 0;
+  max-width: 900px;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  position: absolute;
+  z-index: 2;
+  background: #00833d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.video {
+  border-radius: 16px;
+}
+
+.counter {
+  margin-top: 12px;
+  color: #555;
+}

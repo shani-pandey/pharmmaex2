@@ -23,7 +23,6 @@ export default function SponsorsAssociation
       <Header />
       
       <InnerPageBanner pageName="Sponsors & Association" bgImage="/assests/img/sponserbanner.png" />
-     
       <KeySponsorsGrid />
       <Footer />
     </>
