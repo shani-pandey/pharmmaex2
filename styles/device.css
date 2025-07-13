@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  .topBarLeftInfo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tobBarArea {
+    height: auto;
+  }
+  .topBarRightInfo h3.text-end {
+    text-align: center !important;
+  }
+  .our-exhibitors-carousel {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .client-reviews-carousel-item {
+    padding: 0 25px;
+  }
+  .client-reviews-heading {
+    text-align: center;
+  }
+}
