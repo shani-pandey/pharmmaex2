@@ -178,5 +178,9 @@ margin: 0 !important;
 .pastExhibitionsArea .row.pastrow:nth-child(2n){
     margin-bottom: 20px;
 }
+.exhibition-series-card-btn{
+display: flex;
+width: 150px;
+}
 
 }

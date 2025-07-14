@@ -1,8 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './bannerHome.module.css';
 import Ticker from './Ticker';
 
 const BannerHome = () => {
+    const eventDate = new Date("2025-10-03T17:05:00.000Z");
+
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+  });
+
+  useEffect(() => {
+    const updateCountdown = () => {
+      const now = new Date();
+      const diff = eventDate.getTime() - now.getTime();
+
+      if (diff > 0) {
+        const minutes = Math.floor(diff / (1000 * 60));
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+        setTimeLeft({ days, hours, minutes });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0 });
+      }
+    };
+
+    updateCountdown(); // initial call
+    const intervalId = setInterval(updateCountdown, 60 * 1000); // update every minute
+
+    return () => clearInterval(intervalId); // cleanup
+  }, []);
   return (
     <section className={styles.bannerHomeSection}>
       {/* Background Video */}
@@ -23,15 +52,19 @@ const BannerHome = () => {
           <div className="col-lg-1 col-md-4 mb-4 mb-md-0 countdownBoxArea">
             <div className={styles.countdownBox}>
               <div className="mb-3 ">
-                <div className="fw-bold" style={{ fontSize: '2.2rem', color: '#fff' }}>130</div>
+                <div className="fw-bold" style={{ fontSize: '2.2rem', color: '#fff' }}>{timeLeft.days.toLocaleString()}</div>
                 <div className="" style={{ fontSize: '1.1rem' }}>Days</div>
               </div>
               <div className="mb-3">
-                <div className="fw-bold" style={{ fontSize: '1.7rem', color: '#fff' }}>3,105</div>
+                <div className="fw-bold" style={{ fontSize: '1.7rem', color: '#fff' }}>
+                  {timeLeft.hours.toLocaleString()}
+                </div>
                 <div className="" style={{ fontSize: '1.1rem' }}>Hours</div>
               </div>
               <div className='d-none d-md-block '>
-                <div className="fw-bold" style={{ fontSize: '1.3rem', color: '#fff' }}>1,86,347</div>
+                <div className="fw-bold" style={{ fontSize: '1.3rem', color: '#fff' }}>
+                  {timeLeft.minutes.toLocaleString()}
+                </div>
                 <div className="" style={{ fontSize: '1.1rem' }}>Minutes</div>
               </div>
             </div>
