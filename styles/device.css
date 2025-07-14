@@ -20,4 +20,7 @@
   .client-reviews-heading {
     text-align: center;
   }
+  .react-multi-carousel-dot-list {
+    bottom: -15px !important;
+  }
 }

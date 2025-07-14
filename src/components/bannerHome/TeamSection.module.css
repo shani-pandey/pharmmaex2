@@ -1,6 +1,6 @@
 .teamSection {
   width: 100%;
-  margin: 3.5rem 0  ;
+  margin: 3.5rem 0;
   position: relative;
 }
 
@@ -9,6 +9,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2.2rem;
+  flex-wrap: wrap;
+  gap: 1.2rem;
 }
 
 .heading {
@@ -47,14 +49,13 @@
   margin-right: -0.6rem;
 }
 
-
 .card {
   min-width: 240px;
   max-width: 320px;
   border-radius: 1.5rem;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
   background: #eee;
   flex: 0 0 auto;
 }
@@ -75,15 +76,24 @@
 
 .cardOverlay {
   position: absolute;
-  left: 0; top: 0; right: 0; bottom: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.38) 100%);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.18) 40%,
+    rgba(0, 0, 0, 0.38) 100%
+  );
   z-index: 2;
   border-radius: 1.5rem;
 }
 
 .cardText {
   position: absolute;
-  left: 0; right: 0; bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 3;
   width: 100%;
   padding: 0 0 2.1rem 0;
@@ -98,14 +108,14 @@
   font-size: 1.35rem;
   font-weight: 600;
   margin-bottom: 0.2rem;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
 .cardTitle {
   color: #fff;
   font-size: 1.02rem;
   font-weight: 400;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
 .carouselDots {
@@ -142,4 +152,11 @@
   .cardImgWrapper {
     min-height: 120px;
   }
-} 
+  .carousel :global(.react-multi-carousel-item) {
+    margin-right: 0;
+  }
+  .card {
+    display: block;
+    margin: 0 auto;
+  }
+}
