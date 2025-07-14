@@ -40,7 +40,7 @@ const Footer = () => {
               
             </div>
             <div className='col-lg-6 mb-4 mb-lg-0'>
-            <div className='d-flex'>
+            <div className='d-flex flex-wrap'>
             <div className="footer-countdown d-flex gap-2 mb-3 me-3">
                 <div className="footer-countdown-box">
                   <div className="fw-bold">131</div>
@@ -81,12 +81,12 @@ const Footer = () => {
                 <div className="col-md-2 mb-4 mb-md-0">
                   <h5 className="footer-title">Quick Links</h5>
                   <ul className="footer-links">
-                    <li><a href="/#">Exhibitor Form</a></li>
-                    <li><a href="#">Visitor Registration</a></li>
+                    <li><a href="/exhibitor">Exhibitor Form</a></li>
+                    <li><a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx">Visitor Registration</a></li>
                     <li><a href="/gallery/hyderabad">Photo Gallery</a></li>
                     <li><a href="/about">About Us</a></li>
-                    <li><a href="/events">Past Events</a></li>
-                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/past-exhibitions">Past Events</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
                   </ul>
                 </div>
                 <div className="col-md-2 mb-4 mb-md-0">

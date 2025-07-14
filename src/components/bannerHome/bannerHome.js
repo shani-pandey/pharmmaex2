@@ -20,9 +20,9 @@ const BannerHome = () => {
       <div className="container position-relative h-100 z-3">
         <div className="row align-items-center h-100" style={{ minHeight: '80vh' }}>
           {/* Countdown Box */}
-          <div className="col-lg-1 col-md-4 mb-4 mb-md-0">
+          <div className="col-lg-1 col-md-4 mb-4 mb-md-0 countdownBoxArea">
             <div className={styles.countdownBox}>
-              <div className="mb-3">
+              <div className="mb-3 ">
                 <div className="fw-bold" style={{ fontSize: '2.2rem', color: '#fff' }}>130</div>
                 <div className="" style={{ fontSize: '1.1rem' }}>Days</div>
               </div>
@@ -30,11 +30,17 @@ const BannerHome = () => {
                 <div className="fw-bold" style={{ fontSize: '1.7rem', color: '#fff' }}>3,105</div>
                 <div className="" style={{ fontSize: '1.1rem' }}>Hours</div>
               </div>
-              <div>
+              <div className='d-none d-md-block '>
                 <div className="fw-bold" style={{ fontSize: '1.3rem', color: '#fff' }}>1,86,347</div>
                 <div className="" style={{ fontSize: '1.1rem' }}>Minutes</div>
               </div>
             </div>
+            <div className="qrBanner">
+            <div className={styles.qrBox}>
+              <img src="/assests/img/pharma-qr.jpeg" alt="QR Code" className="img-fluid mb-2" />
+              <div className={styles.textQR}>Scan QR for<br />Free Registration</div>
+            </div>
+          </div>
           </div>
           {/* Main Banner Content */}
           <div className="col-lg-6 col-md-8 text-start text-white mx-auto">
@@ -51,9 +57,9 @@ const BannerHome = () => {
             </div>
           </div>
           {/* QR Code Box */}
-          <div className="col-lg-3 d-flex flex-column align-items-end justify-content-end">
+          <div className="col-lg-3 d-flex flex-column align-items-end justify-content-end d-none d-md-flex">
             <div className={styles.qrBox}>
-              <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://pharmmaex.com/pre-registration" alt="QR Code" className="img-fluid mb-2" />
+              <img src="/assests/img/pharma-qr.jpeg" alt="QR Code" className="img-fluid mb-2" />
               <div className={styles.textQR}>Scan QR for<br />Free Registration</div>
             </div>
           </div>

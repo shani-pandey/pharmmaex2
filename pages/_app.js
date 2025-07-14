@@ -1,10 +1,16 @@
 
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/globals.css";
 import "@/styles/device.css";
+
 import Head from "next/head";
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
   return(
     <>
    <Head>
@@ -45,10 +51,10 @@ export default function App({ Component, pageProps }) {
        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="true" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
- <link
+ {/* <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-          />
+          /> */}
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{

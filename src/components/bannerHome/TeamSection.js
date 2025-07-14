@@ -49,8 +49,8 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 600, min: 0 },
-    items: 1,
-    gutter: 5,
+    items: 1.5,
+    gutter: 2,
   },
 };
 
@@ -67,7 +67,7 @@ const TeamSection = () => {
             responsive={responsive}
             infinite={true}
             arrows={false}
-            showDots={true}
+            showDots={false}
             keyBoardControl={true}
             containerClass={styles.carousel}
             itemClass={styles.cardItem}
