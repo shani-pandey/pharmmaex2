@@ -138,9 +138,12 @@
 margin: 0 !important;
     font-size: 0.8rem;
     padding: 5px 10px;
+    display: none;
 
 }
-
+.client-reviews-section{
+    padding-top: 0px !important;
+}
 
 .footer-registration-title {
     font-size: 1.2rem;
@@ -180,7 +183,9 @@ margin: 0 !important;
 }
 .exhibition-series-card-btn{
 display: flex;
-width: 150px;
+width: 180px;
 }
-
+.client-reviews-section-row2{
+    display: none !important;
+}
 }

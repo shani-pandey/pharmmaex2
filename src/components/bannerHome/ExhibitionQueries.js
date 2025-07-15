@@ -1,17 +1,34 @@
 import React from 'react';
 import styles from './ExhibitionQueries.module.css';
 
+
+const boxs = [
+    {
+        name : "Shivam Sharma",
+        pos : "Managing Director-PharmmaEx",
+        contact : "M. +91-9258002828, +91-701 733 6797",
+        email : "E. shivam.sharma@pharmmaex.com",
+        image : "/assests/img/exhPerson.png"
+    },
+     {
+        name : "Vivek Agarwal",
+        pos : "Operation Manager-PharmmaEx",
+        contact : "M. +91-789 573 8919, +91-701 733 6797",
+        email : "E. info@pharmmaex.com",
+        image : "/assests/img/vivek.svg"
+    }
+]
 const ExhibitionQueries = () => {
     return (
         <div className={styles.container}>
             <h2 className={styles.heading}>Exhibition Queries</h2>
             <div className={styles.cardsWrapper}>
-                {[1, 2].map((_, idx) => (
+                {boxs.map((item, idx) => (
                     <div key={idx} className={styles.card}>
                         {/* Image Column */}
                         <div className={styles.imageColumn}>
                             <img
-                                src="/assests/img/exhPerson.png"
+                                src={item.image}
                                 alt="Shivam Sharma"
                                 className={styles.image}
                             />
@@ -19,12 +36,12 @@ const ExhibitionQueries = () => {
                         {/* Data Column */}
                         <div className={styles.dataColumn}>
                             <div className={styles.nameSection}>
-                                <p>Shivam Sharma</p>
-                                <p className={styles.roleSection}>Managing Director-PharmmaEx</p>
+                                <p>{ item.name }</p>
+                                <p className={styles.roleSection}>{item.pos}</p>
                             </div>
                             <div className={styles.contactSection}>
-                                <p>M. +91-9258002828, +91-701 733 6797</p>
-                                <p>E. shivam.sharma@pharmmaex.com</p>
+                                <p>{item.contact}</p>
+                                <p>{item.email}</p>
                             </div>
                         </div>
                     </div>

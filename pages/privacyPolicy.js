@@ -14,95 +14,99 @@ const PrivacyPolicy = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <InnerPageBanner pageName="Privacy Policy" bgImage="/assests/img/privacy.png" />
+      <InnerPageBanner pageName="Terms & Conditions" bgImage="/assests/img/privacy.png" />
       <div className={styles.container}>
         <div className="innerContainer mx-auto">
           <h1 className={styles.pageTitle}>Privacy Policy</h1>
 
           <section className={styles.section}>
-            <h2>Introduction</h2>
-            <p>At PharmmaEx, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website or interact with our services.</p>
-            <p>By using our website, you agree to the terms of this Privacy Policy.</p>
+            <p>Last Updated: 05/07/2025</p>
+            <p>At PharmmaEx, accessible from www.pharmmaex.com, your privacy is of utmost importance to us. This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information when you visit our website or participate in our exhibitions.</p>
+            <p>By using our website and services, you consent to the practices described in this policy.</p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>Who We Are</h2>
+            <p>PharmmaEx is India’s leading pharmaceutical exhibition, bringing together exhibitors from across the country to showcase innovations, products, and services in the pharmaceutical, nutraceutical, ayurvedic, and healthcare industries.</p>
           </section>
 
           <section className={styles.section}>
             <h2>Information We Collect</h2>
-            <p>We may collect the following types of information:</p>
+            <p>We may collect the following types of personal data:</p>
             <ul>
-              <li><b>Personal Information:</b> Name, email address, phone number, company name, and other contact details provided via forms (e.g., contact, registration, or downloads).</li>
-              <li><b>Event Information:</b> Details you submit during exhibitor registration, visitor registration, or inquiry about sponsorships or booths.</li>
-              <li><b>Automatically Collected Data:</b> Device information, browser type, IP address, pages visited, and browsing behavior using cookies and analytics tools (e.g., Google Analytics).</li>
+              <li>Contact Information: Name, email address, phone number, company name, designation, city/state.</li>
+              <li>Registration Details: Information submitted during online registration for the event (exhibitor or visitor).</li>
+              <li>Communication Data: Queries, feedback, and communication through emails or contact forms.</li>
+            </ul>
+            <p>Usage Data: IP address, browser type, referring URLs, and pages visited on our site.</p>
+          </section>
+
+          <section className={styles.section}>
+            <h2> How We Use Your Information</h2>
+            <p>We use your personal information to:</p>
+            <ul>
+              <li>Register you for the exhibition (as an exhibitor or visitor)</li>
+              <li>Share event updates, exhibitor highlights, and promotional materials</li>
+              <li>Respond to your queries or support requests</li>
+              <li>Send newsletters, notifications, and event-related announcements</li>
+              <li>Improve website content, user experience, and marketing efforts </li>
             </ul>
           </section>
 
           <section className={styles.section}>
-            <h2>How We Use Your Information</h2>
-            <p>We may use your data for the following purposes:</p>
+            <h2>Sharing Your Information</h2>
+            <p>We do not sell or rent your personal data. However, we may share information with:</p>
             <ul>
-              <li>To respond to your inquiries or requests</li>
-              <li>To process registrations and send confirmations</li>
-              <li>To send updates about the exhibition or future events</li>
-              <li>To improve our website and user experience</li>
-              <li>To send marketing communications, newsletters, or promotional materials (you can opt out anytime)</li>
+              <li>Event Partners & Sponsors (for relevant communication or co-promotions)</li>
+              <li>Service Providers (such as registration platforms, analytics tools, or marketing partners)</li>
+              <li>Legal Authorities if required under law or to protect legal rights.</li>
             </ul>
           </section>
 
           <section className={styles.section}>
-            <h2>Cookies and Similar Technologies</h2>
-            <p>We use cookies, web beacons, and tracking pixels to:</p>
+            <h2> Cookies & Tracking Technologies</h2>
+            <p>Our website may use cookies and similar tracking technologies to:</p>
             <ul>
-              <li>Facilitate website functionality</li>
-              <li>Analyze site usage and performance</li>
-              <li>Customize user experience</li>
-              <li>Support marketing and advertising efforts</li>
+              <li>Enhance browsing experience</li>
+              <li>Monitor website traffic and visitor behavior</li>
+              <li>Provide targeted advertisements (if applicable)</li>
             </ul>
-            <p>You can manage or disable cookies in your browser, although this may affect site functionality.</p>
+            <p>You may choose to disable cookies through your browser settings, though it may limit certain features.</p>
           </section>
 
           <section className={styles.section}>
-            <h2>Disclosure of Your Information</h2>
-            <p>We do not sell or rent personal data to third parties. We may share your information in these scenarios:</p>
+            <h2> Data Security</h2>
+            <p>We implement appropriate security measures to protect your personal information. While we strive to safeguard your data, no method of electronic transmission is 100% secure. We encourage you to use secure networks and updated software while interacting with our platform.</p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>Your Rights</h2>
+            <p>Depending on your jurisdiction, you may have the right to:</p>
             <ul>
-              <li><b>Service Providers & Event Partners:</b> We may share with vendors who support our event (e.g., registration platforms, email services), strictly for defined purposes and under confidentiality.</li>
-              <li><b>Legal & Safety Compliance:</b> We may disclose to comply with legal obligations (e.g., court orders), enforce site policy, or protect the rights and safety of users and third parties.</li>
-              <li><b>Merger or Acquisition:</b> If our business is involved in a merger, sale, or asset acquisition, your information may be transferred as part of the transaction under legally binding terms.</li>
+              <li>Access the personal data we hold about you</li>
+              <li>Request correction or deletion of your information</li>
+              <li>Withdraw consent for marketing communications</li>
+              <li>Opt out of cookies and tracking</li>
             </ul>
+            <p>ou can exercise these rights by contacting us at: 📧 info@pharmmaex.com</p>
           </section>
 
           <section className={styles.section}>
-            <h2>Third-Party Links</h2>
-            <p>Our site may link to external websites (e.g., payment processors, exhibitor partner sites). We are not responsible for their content or data practices. Please review each site's privacy policy before submitting personal information.</p>
+            <h2>External Links</h2>
+            <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites. Please review their policies independently.</p>
           </section>
 
           <section className={styles.section}>
-            <h2>Data Security & Retention</h2>
-            <p>We implement robust security measures, such as:</p>
-            <ul>
-              <li>SSL encryption for data in transit</li>
-              <li>Secure hosting environments and firewalls</li>
-              <li>Access controls and regular data audits</li>
-            </ul>
-            <p>Although we employ industry-standard protections, no digital system is infallible. You acknowledge that you provide information at your own risk.</p>
-            <p><b>Data Retention:</b><br/>We retain personal data only as long as necessary to fulfill the purposes outlined (e.g., 2 years post-event), or as mandated by law.</p>
-          </section>
-
-          <section className={styles.section}>
-            <h2>International Data Transfers</h2>
-            <p>Your data may be stored and processed in servers located in India or abroad. If we transfer your information internationally, we will ensure it is protected under legally recognized data security frameworks.</p>
-          </section>
-
-          <section className={styles.section}>
-            <h2>Policy Updates</h2>
-            <p>This Privacy Policy may be updated from time to time (e.g., changes in technology, legal requirements). We'll post updates here with the latest Effective Date. We recommend returning periodically to review any changes.</p>
+            <h2> Updates to This Policy</h2>
+            <p>We may update this Privacy Policy periodically. Changes will be posted on this page with a revised effective date. Please review this policy regularly to stay informed.</p>
           </section>
 
           <section className={styles.section}>
             <h2>Contact Us</h2>
-            <p>For questions, requests, or concerns regarding this Policy or our data practices, please contact:<br/>
-              PharmmaEx Privacy Team<br/>
-              📧 Email: [Insert Privacy/Support Email]<br/>
-              📞 Phone: [Insert Contact Number]<br/>
-              🌐 Website: <a href="https://pharmmaex.com/" target="_blank" rel="noopener noreferrer">https://pharmmaex.com/</a>
+            <p>If you have any questions about this Privacy Policy or how your data is handled, please contact us:<br />
+              📧 info@pharmmaex.com<br />
+             📞 +91-9258002828 / +91-7017336797<br />
+              🌐 Website: <a href="https://pharmmaex.com/" target="_blank" rel="noopener noreferrer"> www.pharmmaex.com </a>
             </p>
           </section>
         </div>
