@@ -37,7 +37,7 @@ const BannerHome = () => {
       {/* Background Video */}
       <video
         className={styles.bannerVideo}
-        src="https://pharmmaex.com/assets/img/phasramex-Videos.mp4"
+        src="/assests/img/phasramex-Videos.mp4"
         autoPlay
         loop
         muted
