@@ -17,92 +17,143 @@ const PrivacyPolicy = () => {
       <InnerPageBanner pageName="Terms & Conditions" bgImage="/assests/img/privacy.png" />
       <div className={styles.container}>
         <div className="innerContainer mx-auto">
-          <h1 className={styles.pageTitle}>Terms & Conditions</h1>
+          <h1 className={styles.pageTitle}>Terms & Conditions – PharmmaEx</h1>
 
           <section className={styles.section}>
-            <h2>Introduction</h2>
-            <p>At PharmmaEx, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you visit our website or interact with our services.</p>
-            <p>By using our website, you agree to the terms of this Privacy Policy.</p>
+            <p>Last Updated: 05/07/2025</p>
+            <p>Welcome to PharmmaEx, India’s leading exhibition platform for pharmaceutical, nutraceutical, and allied healthcare industries. These Terms and Conditions (“Terms”) govern your access to and participation in the PharmmaEx event(s) and the use of our official website (www.pharmmaex.com).</p>
+            <p>By registering, attending, or interacting with the event in any capacity—either as a visitor, exhibitor, sponsor, or media—you agree to abide by these Terms. If you do not agree, you should not participate in or use the services of PharmmaEx.</p>
           </section>
 
           <section className={styles.section}>
-            <h2>Information We Collect</h2>
-            <p>We may collect the following types of information:</p>
-            <ul>
-              <li><b>Personal Information:</b> Name, email address, phone number, company name, and other contact details provided via forms (e.g., contact, registration, or downloads).</li>
-              <li><b>Event Information:</b> Details you submit during exhibitor registration, visitor registration, or inquiry about sponsorships or booths.</li>
-              <li><b>Automatically Collected Data:</b> Device information, browser type, IP address, pages visited, and browsing behavior using cookies and analytics tools (e.g., Google Analytics).</li>
-            </ul>
+            <h2> Organizer Details</h2>
+            <p>PharmmaEx is organized and managed by Devasya Media, a professional event and exhibition management company based in India.</p>
           </section>
 
           <section className={styles.section}>
-            <h2>How We Use Your Information</h2>
-            <p>We may use your data for the following purposes:</p>
+            <h2> Registration & Admission</h2>
             <ul>
-              <li>To respond to your inquiries or requests</li>
-              <li>To process registrations and send confirmations</li>
-              <li>To send updates about the exhibition or future events</li>
+              <li>Online registration is mandatory for all participants and must be completed truthfully</li>
+              <li>Confirmation of registration via email or SMS must be shown at the event entrance.</li>
+              <li>Entry is subject to security verification and ID checks.</li>
               <li>To improve our website and user experience</li>
-              <li>To send marketing communications, newsletters, or promotional materials (you can opt out anytime)</li>
+              <li>PharmmaEx reserves the right to refuse entry or cancel registration at its sole discretion.</li>
             </ul>
           </section>
 
           <section className={styles.section}>
-            <h2>Cookies and Similar Technologies</h2>
-            <p>We use cookies, web beacons, and tracking pixels to:</p>
+            <h2>Exhibitor Participation</h2>
             <ul>
-              <li>Facilitate website functionality</li>
-              <li>Analyze site usage and performance</li>
-              <li>Customize user experience</li>
-              <li>Support marketing and advertising efforts</li>
+              <li>Exhibitors must adhere to the exhibitor manual and guidelines provided upon booth booking.</li>
+              <li>No subletting, reselling, or transferring of stall space is permitted.</li>
+              <li>Display of counterfeit, illegal, or unrelated products is strictly prohibited.</li>
+              <li>Exhibitors are responsible for any damage caused to the booth area, venue infrastructure, or other exhibitors.</li>
             </ul>
-            <p>You can manage or disable cookies in your browser, although this may affect site functionality.</p>
           </section>
 
           <section className={styles.section}>
-            <h2>Disclosure of Your Information</h2>
-            <p>We do not sell or rent personal data to third parties. We may share your information in these scenarios:</p>
+            <h2>Booth Setup & Dismantling</h2>
             <ul>
-              <li><b>Service Providers & Event Partners:</b> We may share with vendors who support our event (e.g., registration platforms, email services), strictly for defined purposes and under confidentiality.</li>
-              <li><b>Legal & Safety Compliance:</b> We may disclose to comply with legal obligations (e.g., court orders), enforce site policy, or protect the rights and safety of users and third parties.</li>
-              <li><b>Merger or Acquisition:</b> If our business is involved in a merger, sale, or asset acquisition, your information may be transferred as part of the transaction under legally binding terms.</li>
+              <li>Setup and dismantling must take place during allocated hours only.</li>
+              <li>All materials, branding, and products must be cleared within the specified dismantling window.</li>
+              <li>Organizers are not responsible for any loss or damage to exhibitor materials during setup or teardown.</li>
             </ul>
           </section>
 
           <section className={styles.section}>
-            <h2>Third-Party Links</h2>
-            <p>Our site may link to external websites (e.g., payment processors, exhibitor partner sites). We are not responsible for their content or data practices. Please review each site's privacy policy before submitting personal information.</p>
-          </section>
-
-          <section className={styles.section}>
-            <h2>Data Security & Retention</h2>
-            <p>We implement robust security measures, such as:</p>
+            <h2>Code of Conduct</h2>
+            <p>All participants must:</p>
             <ul>
-              <li>SSL encryption for data in transit</li>
-              <li>Secure hosting environments and firewalls</li>
-              <li>Access controls and regular data audits</li>
+              <li>Act respectfully, professionally, and lawfully throughout the event</li>
+              <li>Avoid offensive, inappropriate, or aggressive behavior</li>
+              <li>Comply with event safety measures and instructions from staff</li>
             </ul>
-            <p>Although we employ industry-standard protections, no digital system is infallible. You acknowledge that you provide information at your own risk.</p>
-            <p><b>Data Retention:</b><br/>We retain personal data only as long as necessary to fulfill the purposes outlined (e.g., 2 years post-event), or as mandated by law.</p>
+            <p>Unethical practices or violations may result in suspension or permanent banning from future events.</p>
           </section>
 
           <section className={styles.section}>
-            <h2>International Data Transfers</h2>
-            <p>Your data may be stored and processed in servers located in India or abroad. If we transfer your information internationally, we will ensure it is protected under legally recognized data security frameworks.</p>
+            <h2> Marketing, Promotions & Advertising</h2>
+            <ul>
+              <li>Unauthorized distribution of flyers, banners, or digital material outside the designated booth or area is not allowed.</li>
+              <li>- PharmmaEx reserves the right to remove any promotional material it deems inappropriate or misleading.</li>
+            </ul>
           </section>
 
           <section className={styles.section}>
-            <h2>Policy Updates</h2>
-            <p>This Privacy Policy may be updated from time to time (e.g., changes in technology, legal requirements). We'll post updates here with the latest Effective Date. We recommend returning periodically to review any changes.</p>
+            <h2>Intellectual Property & Branding</h2>
+            <ul>
+              <li>All content, logos, and branding used by PharmmaEx are the intellectual property of Devasya Media or its licensors.</li>
+              <li>No one may use PharmmaEx’s brand assets without written approval.</li>
+              <li>Exhibitors must ensure they have rights for all third-party content used at their stalls.</li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
+            <h2>Photography, Videography & Media Consent</h2>
+            <ul>
+              <li>PharmmaEx may capture photos and videos during the event for promotional and documentation purposes.</li>
+              <li>By attending, you grant us the irrevocable right to use your image, voice, and likeness for future marketing, without any compensation.</li>
+              <li>Media representatives must be pre-approved and adhere to the official media policy.</li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
+            <h2>Data Collection & Privacy</h2>
+            <p>By registering or attending PharmmaEx, you consent to the collection and processing of your personal data in line with our Privacy Policy. We may use your data to:</p>
+            <ul>
+              <li>Share event-related updates</li>
+              <li>Inform you of future events</li>
+              <li>Connect you with relevant exhibitors or sponsors</li>
+            </ul>
+            <p>Your data will be handled securely and shared only with trusted partners under compliance.</p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>. Cancellation & Refund Policy</h2>
+            <ul>
+              <li>Visitor registration is free, and there are no cancellation fees.</li>
+              <li>Exhibitor cancellation must be made in writing. Any refund, if applicable, will be subject to terms outlined in the exhibitor agreement.</li>
+              <li>PharmmaEx reserves the right to cancel or reschedule the event due to force majeure, in which case the organizer’s liability is limited to the amount paid by the exhibitor (if any).</li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
+            <h2>. Force Majeure</h2>
+            <p>PharmmaEx shall not be held responsible for delay or failure in performance resulting from events beyond its control, including but not limited to:</p>
+            <ul>
+              <li>Natural disasters</li>
+              <li>Fire, flood, or pandemics</li>
+              <li>Strikes or labor issues</li>
+              <li>Acts of war or terrorism</li>
+              <li>Government orders or venue restrictions</li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
+            <h2>. Disclaimer & Limitation of Liability</h2>
+            <ul>
+              <li>PharmmaEx is not liable for any direct or indirect loss, injury, damage, or theft occurring during the event.</li>
+              <li>All attendees are responsible for their personal belongings and health precautions.</li>
+              <li>Participation is at your own risk.</li>
+            </ul>
+          </section>
+
+          <section className={styles.section}>
+            <h2>. Modification of Terms</h2>
+            <p>PharmmaEx reserves the right to modify these Terms & Conditions at any time. Continued participation following changes implies acceptance of the updated Terms.</p>
+          </section>
+
+          <section className={styles.section}>
+            <h2>. Governing Law</h2>
+            <p>These Terms are governed by and construed in accordance with the laws of the Republic of India. All disputes shall be subject to the exclusive jurisdiction of courts located in Ahmedabad, Gujarat.</p>
           </section>
 
           <section className={styles.section}>
             <h2>Contact Us</h2>
-            <p>For questions, requests, or concerns regarding this Policy or our data practices, please contact:<br/>
-              PharmmaEx Privacy Team<br/>
-              📧 Email: [Insert Privacy/Support Email]<br/>
-              📞 Phone: [Insert Contact Number]<br/>
-              🌐 Website: <a href="https://pharmmaex.com/" target="_blank" rel="noopener noreferrer">https://pharmmaex.com/</a>
+            <p>For questions, requests, or concerns regarding this Policy or our data practices, please contact:<br />
+              📧 info@pharmmaex.com<br />
+              📞 +91-9258002828 / +91-7017336797<br />
+              🌐 Website: <a href="https://pharmmaex.com/" target="_blank" rel="noopener noreferrer"> www.pharmmaex.com </a>
             </p>
           </section>
         </div>

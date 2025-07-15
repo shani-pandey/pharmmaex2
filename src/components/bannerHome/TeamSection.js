@@ -65,9 +65,9 @@ const TeamSection = () => {
         <div className={styles.carouselWrapper}>
           <Carousel
             responsive={responsive}
-            infinite={true}
+            infinite={false}
             arrows={false}
-            showDots={true}
+            showDots={false}
             keyBoardControl={true}
             containerClass={styles.carousel}
             itemClass={styles.cardItem}
