@@ -10,7 +10,7 @@ const WhatsInExhibition = () => {
           </div>
           <div className="col-lg-8 d-flex justify-content-lg-start justify-content-center gap-4 whats-in-exhibition-stats">
             <div className="whats-in-exhibition-box">
-              <div className="whats-in-exhibition-number">150+</div>
+              <div className="whats-in-exhibition-number">10K</div>
               <div className="whats-in-exhibition-label">Attendees</div>
             </div>
             <div className="whats-in-exhibition-box">

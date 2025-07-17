@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './PastExhibitionsSimple.module.css';
 import Image from 'next/image';
-import pastExb1 from '../../../public/assests/img/past-exb1.svg';
-import pastExb2 from '../../../public/assests/img/past-exb2.svg';
-import pastExb3 from '../../../public/assests/img/pastex3.svg';
+import pastExb1 from '../../../public/assests/img/pastex3.svg';
+import pastExb2 from '../../../public/assests/img/pastex2.svg';
+import pastExb3 from '../../../public/assests/img/pastex1.svg';
 import pastExb4 from '../../../public/assests/img/pastex4.svg';
 const exhibitions = [
   {

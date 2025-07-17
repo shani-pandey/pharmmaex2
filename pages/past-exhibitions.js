@@ -1,15 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-
 import Header from "@/src/components/header/header";
-
 import Footer from "@/src/components/bannerHome/Footer";
 import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import PastExhibitionsSimple from "@/src/components/bannerHome/PastExhibitionsSimple";
- 
-
- 
-
 export default function PastExhibitions
 
 () {
@@ -21,17 +14,10 @@ export default function PastExhibitions
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      
+      <Header />  
       <InnerPageBanner pageName="Past Exhibitions" bgImage="/assests/img/pastExhibitionbanner.svg" />
       <PastExhibitionsSimple />
-   
       <Footer />
-
-     
-     
-    
-     
     </>
   )
 }
