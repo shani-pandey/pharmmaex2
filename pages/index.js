@@ -31,9 +31,6 @@ export default function Home() {
   return (
     <>
       <Head>
-      
-   
-     
       </Head>
       <Header />
       <RegisterDialog />

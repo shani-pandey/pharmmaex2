@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ClientTestimonials.module.css';
 import { clientsReviewData } from '@/src/shared/clientReviewData';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -55,7 +56,8 @@ const ClientTestimonials = () => {
         {clientsReviewData.map((t, idx) => (
           <div className={styles.card} key={idx}>
             <div className={styles.cardHeader}>
-              <img src={t.avatar} alt={t.name} className={styles.avatar} />
+             <Image src={t.avatar} alt={t.name} className={styles.avatar} width={40}
+                  height={40} />
               <div>
                 <div className={styles.name}>{t.name}</div>
                 <div className={styles.title}>{t.title + ", " + t.company}</div>

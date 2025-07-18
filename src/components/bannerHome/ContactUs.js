@@ -1,6 +1,7 @@
 import React from 'react';
-
+import Image from 'next/image';
 const ContactUs = () => {
+
     return (
         <div className="contactUsFlexWrap">
             <div className="contactLeftBox">
@@ -11,8 +12,8 @@ const ContactUs = () => {
                         <p style={{ paddingLeft: 32 }}>Behind HDFC Bank, Krishna Nagar, Bulandshahr</p>
                         <p style={{ paddingLeft: 32 }}>(U.P.)-203001</p>
                     </div>
-                    <p className='contact-el'><span className="iconSpan"><img src="/assests/img/whitemailicon.svg" alt="Mail Icon" width={20} height={20}  /></span>info@pharmmaex.com</p>
-                    <p className='contact-el'><span className="iconSpan"><img src="/assests/img/whiteiconct.svg" alt="Phone Icon" width={20} height={20} /></span>+91-9258002828 &nbsp; +91-701 733 6797</p>
+                    <p className='contact-el'><span className="iconSpan"><Image src="/assests/img/whitemailicon.svg" alt="Mail Icon" width={20} height={20} class='img' /></span>info@pharmmaex.com</p>
+                    <p className='contact-el'><span className="iconSpan"><Image src="/assests/img/whiteiconct.svg" alt="Phone Icon" width={20} height={20} class='img'/></span>+91-9258002828 &nbsp; +91-701 733 6797</p>
                 </div>
                 <div className="venue-details">
                     <h3>Exhibition Venue-Mumbai</h3>
@@ -119,7 +120,7 @@ const ContactUs = () => {
                   min-width: 24px;
                   height: 24px;
                 }
-                .iconSpan img {
+                .iconSpan .img {
                   width: 18px;
                   height: 18px;
                   display: block;

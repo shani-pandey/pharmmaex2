@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const AboutMain = () => {
   return (
@@ -21,7 +22,9 @@ const AboutMain = () => {
             </p>
           </div>
           <div className="col-lg-6 text-end">
-            <img src="/assests/img/abtShivam.svg" alt="Shivam Sharma" className="about-main-org-img" />
+            <Image src="/assests/img/abtShivam.svg" alt="Shivam Sharma" className="about-main-org-img" width={40}
+              height={40} />
+
           </div>
         </div>
       </div>

@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-
 import Header from "@/src/components/header/header";
-
 import Footer from "@/src/components/bannerHome/Footer";
 import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import AboutMain from "@/src/components/bannerHome/AboutMain";
@@ -11,10 +9,6 @@ import WhoWeServe from "@/src/components/bannerHome/WhoWeServe";
 import PastExhibitions from "@/src/components/bannerHome/PastExhibitions";
 import TeamSection from "@/src/components/bannerHome/TeamSection";
 import ExhibitionGallery from "@/src/components/bannerHome/ExhibitionGallery";
-
- 
-
- 
 
 export default function About() {
   return (
@@ -26,7 +20,6 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      
       <InnerPageBanner pageName="Who we are" bgImage="/assests/img/aboutBanner.svg" />
       <AboutMain />
       <MissionBox/>
@@ -34,12 +27,7 @@ export default function About() {
       <PastExhibitions />
       <TeamSection /> 
       <ExhibitionGallery/>
-      <Footer />
-
-     
-     
-    
-     
+      <Footer /> 
     </>
   )
 }

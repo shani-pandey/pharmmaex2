@@ -3,7 +3,7 @@ import styles from './MissionBox.module.css';
 
 const MissionBox = () => {
   return (
-    <div className={styles.missionBoxWrapper} id='#our-mission'>
+    <div className={styles.missionBoxWrapper} id='our-mission'>
       <div className={styles.missionBox}>
         <h2 className={styles.missionTitle}>Our Mission</h2>
         <p className={styles.missionText}>
