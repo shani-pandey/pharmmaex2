@@ -5,6 +5,7 @@ import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import React from 'react';
 import VideoSlider from "@/src/components/bannerHome/videoSlider";
 import styles from "@/styles/PressRelease.module.css";
+import Image from 'next/image';
 
 const features = [
     {
@@ -60,7 +61,7 @@ const PressRelease = () => {
                     <div className={styles.grid}>
                         {news.map((img, i) => (
                             <div key={i} className={styles.card}>
-                                <img src={img} alt={`testimonial-${i}`} className={styles.image} />
+                                <Image src={img} alt={`testimonial-${i}`} className={styles.image} width={100} height={100}/>
                             </div>
                         ))}
                     </div>

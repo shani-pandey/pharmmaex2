@@ -1,16 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-
 import Header from "@/src/components/header/header";
-
 import Footer from "@/src/components/bannerHome/Footer";
 import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import ClientTestimonials from "@/src/components/bannerHome/ClientTestimonials";
- 
- 
-
- 
-
 export default function ClientReview
 () {
   return (
@@ -22,16 +15,9 @@ export default function ClientReview
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      
       <InnerPageBanner pageName="Reviews" bgImage="/assests/img/reviewBanner.svg" />
       <ClientTestimonials />
-   
-      <Footer />
-
-     
-     
-    
-     
+      <Footer /> 
     </>
   )
 }

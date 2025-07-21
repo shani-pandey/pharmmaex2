@@ -106,10 +106,10 @@ const PastExhibitions = () => {
             {exhibitions.map((ex, idx) => (
               <div className={styles.card} key={idx}>
                 <div className={styles.cardImgWrapper}>
-                  <Image src={ex.img} alt={ex.venue} className={styles.cardImg} fill style={{objectFit:'cover'}} />
+                  <Image src={ex.img} alt={ex.venue} className={styles.cardImg} fill style={{ objectFit: 'cover' }} />
                   <div className={styles.cardOverlay}></div>
                   <div className={styles.cardText}>
-                    <div className={styles.cardTitle}>{ex.date}<br/>{ex.venue}</div>
+                    <div className={styles.cardTitle}>{ex.date}<br />{ex.venue}</div>
                     <button className={styles.galleryBtn}>
                       <span className={styles.galleryIcon}
                       

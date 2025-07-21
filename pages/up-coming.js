@@ -4,6 +4,7 @@ import Footer from "@/src/components/bannerHome/Footer";
 import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import React from 'react';
 import styles from "@/styles/Upcoming.module.css";
+import Image from 'next/image';
 
 
 const Upcoming = () => {
@@ -23,7 +24,7 @@ const Upcoming = () => {
             </h1>
 
             <div className={styles.imageContainer}>
-                <img src="/assests/img/mum-up.webp" alt="PharmmaEx Event" className={styles.image} />
+                <Image src="/assests/img/mum-up.webp" alt="PharmmaEx Event" className={styles.image}    width={1000}   height={600}/>
             </div>
 
             <div className={styles.buttonGroup}>
@@ -59,7 +60,7 @@ const Upcoming = () => {
                 </div>
 
                 <div className={styles.registerBtnWrapper}>
-                    <button className={styles.registerBtn}>Registration Open!</button>
+                    <a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx" className={styles.registerBtn}>Registration Open!</a>
                 </div>
             </div>
             <Footer />

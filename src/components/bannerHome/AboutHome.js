@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const AboutHome = () => {
   return (
@@ -14,7 +15,13 @@ const AboutHome = () => {
             <div className="d-flex align-items-start mb-3 about-home-feature">
               <span className="about-home-icon me-3">
                 {/* Globe SVG */}
-                <img src="/assests/img/about-icon.svg" alt="About PharmmaEx 1" className="img-fluid " />
+                <Image
+                  src="/assests/img/about-icon.svg"
+                  alt="About PharmmaEx 1"
+                  className="img-fluid"
+                  width={40}
+                  height={40}
+                />
               </span>
               <div>
                 <strong>Global Networking Opportunities:</strong> Connect with top industry stakeholders, researchers, and decision-makers from across the globe.
@@ -23,7 +30,13 @@ const AboutHome = () => {
             <div className="d-flex align-items-start mb-4 about-home-feature">
               <span className="about-home-icon me-3">
                 {/* Capsule SVG */}
-                <img src="/assests/img/about-icon1.svg" alt="About PharmmaEx 1" className="img-fluid " />
+                <Image
+                  src="/assests/img/about-icon1.svg"
+                  alt="About PharmmaEx 1"
+                  className="img-fluid"
+                  width={40}
+                  height={40}
+                />
               </span>
               <div>
                 <strong>Showcase Innovations:</strong> Explore the latest advancements in pharmaceutical technologies, formulations, and manufacturing processes.
@@ -35,13 +48,31 @@ const AboutHome = () => {
           <div className="col-lg-6">
             <div className="row g-3">
               <div className="col-12">
-                <img src="/assests/img/hyderabad.webp" alt="About PharmmaEx 1" className="img-fluid rounded-4 w-100 about-home-img mb-2" />
+                <Image
+                  src="/assests/img/hyderabad.webp"
+                  alt="About PharmmaEx 1"
+                  className="img-fluid rounded-4 w-100 about-home-img mb-2"
+                  width={800}
+                  height={400}
+                />
               </div>
               <div className="col-6">
-                <img src="/assests/img/about2.webp" alt="About PharmmaEx 2" className="img-fluid rounded-4 w-100 about-home-img" />
+                <Image
+                  src="/assests/img/about2.webp"
+                  alt="About PharmmaEx 2"
+                  className="img-fluid rounded-4 w-100 about-home-img"
+                  width={400}
+                  height={400}
+                />
               </div>
               <div className="col-6">
-                <img src="/assests/img/about3.svg" alt="About PharmmaEx 3" className="img-fluid rounded-4 w-100 about-home-img" />
+                <Image
+                  src="/assests/img/about3.svg"
+                  alt="About PharmmaEx 3"
+                  className="img-fluid rounded-4 w-100 about-home-img"
+                  width={400}
+                  height={400}
+                />
               </div>
             </div>
           </div>
@@ -51,4 +82,4 @@ const AboutHome = () => {
   );
 };
 
-export default AboutHome; 
+export default AboutHome;

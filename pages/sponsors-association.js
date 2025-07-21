@@ -1,14 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-
 import Header from "@/src/components/header/header";
-
 import Footer from "@/src/components/bannerHome/Footer";
 import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import KeySponsorsGrid from "@/src/components/bannerHome/KeySponsorsGrid";
-
-
- 
 
 export default function SponsorsAssociation
 () {

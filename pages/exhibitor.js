@@ -1,8 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-
 import Header from "@/src/components/header/header";
-
 import Footer from "@/src/components/bannerHome/Footer";
 import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import ExhibitionGallery from "@/src/components/bannerHome/ExhibitionGallery";
@@ -18,7 +16,6 @@ const Exhibitor = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      
       <InnerPageBanner pageName="Exhibitor Registration Form" bgImage="/assests/img/exbg.svg" />
       <ExhibitorRegistrationPage />
       <ExhibitionGallery/>

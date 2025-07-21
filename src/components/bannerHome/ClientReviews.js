@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Image from 'next/image';
 import { clientsReviewData } from '@/src/shared/clientReviewData';
 
 const stars = (count) =>

@@ -48,11 +48,11 @@
   padding: 0 1vw;
 }
 
+
 .galleryItem {
   width: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
- 
   background: #f5f5f5;
   display: flex;
   align-items: center;
@@ -100,6 +100,9 @@
   }
   .galleryHeader{
     padding-top: 0;
+  }
+  .galery-btn{
+    font-size: 10px;
   }
 }
 

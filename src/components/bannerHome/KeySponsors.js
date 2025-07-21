@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './KeySponser.module.css'
 const sponsors = [
   [
     { label: 'Endorsed By', img: '/assests/img/Sponsor Logo/Sponsor Logo/Endorsed By.png' },
