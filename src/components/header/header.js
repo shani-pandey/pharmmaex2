@@ -71,8 +71,8 @@ const Header = () => {
                   <li className="dropdown-submenu position-relative">
                     <a className="dropdown-item dropdown-toggle" href="#">Download</a>
                     <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="/assests/pdf/PharmmaEx-Floor-Plan-mumbai.pdf" download>Brochure</a></li>
-                      <li><a className="dropdown-item" href="/assests/pdf/pharmmaex-mumbai-Brochure-2025 (1).pdf" download>Floor Plan</a></li>
+                      <li><a className="dropdown-item" href="/assests/pdf/PharmmaEx-Floor-Plan-mumbai.pdf" download>Floor Plan</a></li>
+                      <li><a className="dropdown-item" href="/assests/pdf/pharmmaex-mumbai-Brochure-2025 (1).pdf" download>Brochure</a></li>
                     </ul>
                   </li>
                   <li><a className="dropdown-item" href="/review-form">Review</a></li>
