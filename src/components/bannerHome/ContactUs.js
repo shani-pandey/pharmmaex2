@@ -60,6 +60,16 @@ const ContactUs = () => {
                         {/* recaptcha to add after registeration key
                     </div> */}
                     <div className="form-row">
+                        <div className="form-group full-width">
+                            <div className="checkbox-container">
+                                <input type="checkbox" id="communication-consent" name="communication-consent" />
+                                <label htmlFor="communication-consent" className="checkbox-label">
+                                    I would like to receive communication from Pharmmaex via SMS, email, RCS, and WhatsApp for services, offers, and updates.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="form-row">
                         <button type="submit" className="btn submit-btn contact-btns">Send Message</button>
                     </div>
                 </form>
@@ -179,9 +189,9 @@ const ContactUs = () => {
                   flex-direction: column;
                   flex: 1 1 0;
                 }
-                .form-group label {
-                  display: none;
-                }
+                // .form-group label {
+                //   display: none;
+                // }
                 .form-group input,
                 .form-group textarea {
                   border: 1px solid #DBDBDB;
@@ -232,6 +242,27 @@ const ContactUs = () => {
                   background: #FFFFFF;
                   color: #00833D;
                   border: 2px solid #00833D;
+                }
+                .checkbox-container {
+                  display: flex;
+                  align-items: flex-start;
+                  gap: 0.5rem;
+                  margin-bottom: 0.5rem;
+                }
+                .checkbox-container input[type="checkbox"] {
+                  margin-top: 0.2rem;
+                  width: 16px;
+                  height: 16px;
+                  accent-color: #00833D;
+                  cursor: pointer;
+                }
+                .checkbox-label {
+                  font-size: 0.85rem;
+                  color: #666;
+                  line-height: 1.4;
+                  cursor: pointer;
+                  margin: 0;
+                  display: block;
                 }
                 @media (max-width: 900px) {
                   .contactUsFlexWrap {
