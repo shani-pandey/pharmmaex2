@@ -188,4 +188,20 @@ width: 180px;
 .client-reviews-section-row2{
     display: none !important;
 }
+.registration-section .form-item-HalfField{
+    width: 49%;
+  }
+
+  .registration-section .form-item:nth-last-child(1) {
+    width: 100%;
+}
+.cartright {
+    position: relative ;
+    right: 0;
+    background: #ddd;
+    top: 0;
+    width: 100% ;
+    border-radius: 10px;
+    padding: 15px;
+}
 }

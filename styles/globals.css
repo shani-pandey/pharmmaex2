@@ -1308,3 +1308,256 @@ filter: none;
 .no-scroll {
   overflow: hidden !important;
 }
+  .productImg
+ 
+ {
+    margin: auto;
+}
+
+
+
+.registration-section {
+  padding: 80px 0 160px;
+  background: #FAFAFA;
+}
+
+.registration-section h3 {
+  color: #111;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 60px;
+  margin: 0 0 30px 0;
+}
+
+.registration-section h3 small {
+  display: block;
+  color: #73BF45;
+  font-size: 48px;
+  font-family: 'british_shorthairregular';
+}
+
+.registration-section .free-registration-form {
+  margin-top: 60px
+}
+
+.registration-section .form-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 60px
+}
+
+.registration-section .form-item {
+  width: 49%;
+  margin: 15px 0;
+  position: relative;
+}
+
+.registration-section .form-item label {
+  display: none
+}
+
+.registration-section .form-item input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  color: #03833d;
+  outline: 0;
+  background: transparent;
+
+}
+.registration-section .form-item select {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  color: #33333396;
+  outline: 0;
+  background: transparent;
+  position: relative;
+  bottom: -3px;
+
+}
+.registration-section .form-item input:focus-visible {
+  border: 0;
+  outline: 0;
+  background: none;
+  box-shadow: 0px 1px 1px #dddddd8a;
+}
+
+.registration-section .submit-reg-form {
+  background-color: green;
+  color: #fff;
+  border: 0;
+  padding: 10px 40px;
+  margin: auto;
+  display: flex
+}
+.registration-section .submit-reg-form:hover {
+  background-color: #0c1728;
+  color: #fff;
+}
+
+
+    
+.prdcutListArae {
+  position: relative;
+}
+
+.prdcutListArae {
+  position: relative;
+}
+
+.cartright {
+  position: fixed;
+  right: 1%;
+  background: #ddd;
+  top: 29.8%;
+  width: 23%;
+  border-radius: 10px;
+  padding: 0;
+  z-index: 1000;
+}
+.cartright.posRelative {
+  position: relative;
+  right: 0;
+  background: #ddd;
+  top: 0;
+  width: auto;
+  border-radius: 10px;
+  padding: 0 0 1px;
+}
+.prdcutListArae .col-md-3 {
+  order: 2;
+  margin-bottom: 0px;
+}
+
+.prdcutListArae .col-md-9 {
+  order: 2;
+}
+.registration-section.orderForm{padding: 0 0 15px;margin: 25px 0;}
+
+.registration-section.orderForm .free-registration-form {
+    margin: 0;
+}
+
+.registration-section.orderForm .form-box {
+    margin: 0;
+}
+
+.registration-section.orderForm .form-item {
+    width: 100%;
+}
+.prdcutListAraeHeader {
+  background: #0b1525;
+  padding: 10px 0;
+}
+
+.prdcutListAraeHeader h3 {
+  color: #fff;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  text-align: center;
+}
+
+.prdcutListArae .cartBTN {   
+  background:#00833d;
+   color: #fff;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 600;
+
+   position: relative;
+}
+
+.prdcutListArae .cartBTN:hover {
+   background: #73bf45;
+   color: #fff;
+}
+
+.prdcutListArae button.btn.btn-secondary {
+   background: #0a1525;
+}
+
+.prdcutListArae  .card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  text-align: center;
+}
+
+.prdcutListArae  .card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.prdcutListArae .input-group {
+  justify-content: space-between;
+}
+
+
+.prdcutListArae h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 20px 0;
+  color: #0a1525;
+}
+
+.cartright h2 {
+  padding: 10px;
+  background: #0a1525;
+  color: #fff;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 22px;
+  position: relative;
+}
+
+.cartright h2:before {
+  content: "";
+  width: 76%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.cartData {
+  padding: 10px;
+}
+
+.cartData table th,.cartData table td {
+  border: 1px solid #0a152545;
+  padding: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.cartData p {
+  padding: 5px;
+  border: 1px dashed #0a15253b;
+}
+.btn.addOrderBtn {
+  background: linear-gradient(138deg,#00833d,#73bf45 95.45%);
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  width: 120px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.cartright .registration-section.orderForm {
+  margin: 0;
+}
+.cartright .registration-section.orderForm .error-message {
+  position: absolute;
+  left: 10px;
+  bottom: -17px;
+}
+.cartright  .registration-section .submit-reg-form {
+  margin: 10px auto 0;
+}
