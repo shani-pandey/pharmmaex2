@@ -46,7 +46,7 @@ export const OrderForm = (props) => {
             // Email sent successfully
             // alert('Order successful! Check your email for confirmation.');
 		  			// Router.reload();
-		  			router.push('/thankYou');
+		  			router.push('/thank-you');
 
           } else {
             // Email sending failed
