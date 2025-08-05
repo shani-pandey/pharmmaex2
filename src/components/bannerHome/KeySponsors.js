@@ -17,6 +17,7 @@ const sponsors = [
    { label: 'Association-01', img: '/assests/img/Sponsor Logo/Sponsor Logo/Association-01.jpg' },
      { label: 'Association-02', img: '/assests/img/Sponsor Logo/Sponsor Logo/Association-02.jpg' },
       { label: 'Association-03', img: '/assests/img/Sponsor Logo/Sponsor Logo/Association-03.jpg' },
+      { label: 'Association-04', img: '/assests/img/Sponsor Logo/Sponsor Logo/Association-04.png' }
   ]
 ];
 

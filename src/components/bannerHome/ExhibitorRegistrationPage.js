@@ -141,6 +141,8 @@ const ExhibitorRegistrationPage = () => {
         state: form.state,
         pin: form.pincode,
         website: form.website,
+        gst: form.gst,
+        tax: form.tax,
         Fascia: form.stallFascia,
         selectedPaymentMode: other.paymentMode,
         space: other.spaceType,
