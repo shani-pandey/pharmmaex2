@@ -33,10 +33,10 @@ const ReviewForm = () => {
     return (
         <>
             <Head>
-                <title>PharmmaEx</title>
+                <title>Review | Pharma Exhibition India 2025</title>
                 <meta name="description" content="PharmmaEx Visitor Registration" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
             <Header />
             <InnerPageBanner pageName="Review Form" bgImage="/assests/img/sponserbanner.png" />

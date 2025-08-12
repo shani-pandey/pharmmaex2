@@ -43,10 +43,9 @@ const PressRelease = () => {
   return (
     <>
       <Head>
-        <title>PharmmaEx</title>
+        <title>India Largest Pharma Exhibition</title>
         <meta name="description" content="PharmmaEx Visitor Registration" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <InnerPageBanner

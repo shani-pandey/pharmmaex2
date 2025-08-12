@@ -19,7 +19,7 @@ const Upcoming = () => {
   return (
     <>
       <Head>
-        <title>PharmmaEx</title>
+        <title>Upcoming Pharma Exhibition In India</title>
         <meta
           name="keywords"
           content="PharmmaEx 2025, Mumbai pharma exhibition, Bombay Exhibition Centre event, pharmaceutical networking Mumbai, pharma technology India, healthcare business expo"
@@ -74,24 +74,12 @@ const Upcoming = () => {
                 name: "PharmmaEx",
                 url: "https://pharmmaex.com",
               },
-              //   eventStatus: "https://schema.org/EventScheduled",
-              //   eventAttendanceMode:
-              //     "https://schema.org/OfflineEventAttendanceMode",
-              //   offers: {
-              //     "@type": "Offer",
-              //     url: "https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx",
-              //     availability: "https://schema.org/InStock",
-              //     price: "0",
-              //     priceCurrency: "INR",
-              //     validFrom: "2025-08-01T00:00:00+05:30",
-              //   },
             }),
           }}
         />
 
         <meta name="description" content="PharmmaEx Visitor Registration" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <InnerPageBanner
