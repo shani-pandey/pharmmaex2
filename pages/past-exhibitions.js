@@ -4,9 +4,9 @@ import Footer from "@/src/components/bannerHome/Footer";
 import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import PastExhibitionsSimple from "@/src/components/bannerHome/PastExhibitionsSimple";
 export default function PastExhibitions() {
-  const pageTitle = "Past Exhibitions | PharmmaEx";
+  const pageTitle = "pharmaceutical exhibition";
   const pageDescription =
-    "Explore past editions of PharmmaEx and discover highlights, innovations, and milestones from previous pharmaceutical exhibitions.";
+    "pharmaceutical exhibition";
   const pageUrl = "https://pharmmaex.com/past-exhibitions";
   const pageImage =
     "https://pharmmaex.com/assets/img/past-exhibitions-banner.jpg"; // Replace with actual image URL

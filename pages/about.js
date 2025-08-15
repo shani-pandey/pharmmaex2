@@ -20,6 +20,7 @@ export default function About() {
   return (
     <>
       <Head>
+        <title>About Us - PharmmaEx 2025</title>
         <meta name="description" content={pageDescription} />
         <meta
           name="keywords"
