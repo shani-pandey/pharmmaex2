@@ -1,110 +1,191 @@
-import  {useState,useEffect} from 'react'
-import { useForm } from 'react-hook-form';
-import { useRouter } from 'next/router';
-
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { useRouter } from "next/router";
 
 export const OrderForm = (props) => {
-		const router = useRouter();
+  const { cart, totalPrices } = props;
+  // console.log(totalPrices, "totalPrices");
+  const router = useRouter();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-	const { register, handleSubmit, formState: { errors } } = useForm();
-	const [name, setName] = useState('')
-	const [email, setEmail] = useState('');
-	const [phone, setPhone] = useState('');
-	const [disableStatus, setDisableStatus] = useState(false);
+  const [disableStatus, setDisableStatus] = useState(false);
 
+  const loadRazorpay = () => {
+    return new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = "https://checkout.razorpay.com/v1/checkout.js";
+      script.onload = () => resolve(true);
+      script.onerror = () => resolve(false);
+      document.body.appendChild(script);
+    });
+  };
 
+  const onSubmit = async (data) => {
+    setDisableStatus(true);
 
-	
+    // 1️⃣ Load Razorpay script
+    const res = await loadRazorpay();
+    if (!res) {
+      alert("Razorpay SDK failed to load. Check your internet.");
+      return;
+    }
 
-	const onSubmit = async (data) => {
+    // 2️⃣ Create order from backend
+    const orderRes = await fetch("https://apis.pharmmaex.com/create-order", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        amount: totalPrices,
+        name: data.firstName,
+        email: data.email,
+        phone: data.phone,
+        cart: cart,
+      }),
+    });
 
-		setDisableStatus(true);
-		
-		setName(data.firstName )
-		setEmail(data.email)
-		setPhone(data.phone)
+    const orderData = await orderRes.json();
+    console.log(orderData, "orderData");
 
-    
-	
-		//Send the form data as an email using Node.js and Nodemailer.
-		const response = await fetch('https://apis.pharmmaex.com/extra-product-list', {
-		  method: 'POST',
-		  body: JSON.stringify({...data,totalPrices:props.totalPrices,productTable:props.cart}),
-		  headers: {
-			'Content-Type': 'application/json',
-		  },
-		});
-		// const response = await fetch('http://localhost:5001/extra-product-list', {
-		// 	method: 'POST',
-		// 	body: JSON.stringify({...data,totalPrices:props.totalPrices,productTable:props.cart}),
-		// 	headers: {
-		// 	  'Content-Type': 'application/json',
-		// 	},
-		//   });
-	  
-          if (response.status === 200) {
-            // Email sent successfully
-            // alert('Order successful! Check your email for confirmation.');
-		  			// Router.reload();
-		  			router.push('/thank-you');
+    // 3️⃣ Open Razorpay Popup
+    const options = {
+      key: "rzp_test_R7z6dY1nMfTwQu", // Replace with Razorpay test Key ID
+      amount: orderData.amount,
+      currency: "INR",
+      name: "My Shop",
+      description: "Order Payment",
+      order_id: orderData.orderId,
+      // method: {
+      //   card: true,
+      //   netbanking: true,
+      // },
+      handler: async function (response) {
+        // 4️⃣ Verify payment on backend
+        const verifyRes = await fetch("https://apis.pharmmaex.com/verify-payment", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(response),
+        });
 
-          } else {
-            // Email sending failed
-            alert('Order failed. Please try again later.');
-		  			router.refresh();
+        const verifyData = await verifyRes.json();
+        console.log(verifyData, "verifyData");
 
-          }
-  
-	
-		};
+        if (verifyData.success) {
+          // ✅ Payment success → save order
+            await fetch("https://apis.pharmmaex.com/extra-product-list", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                ...data,
+                totalPrices,
+                productTable: cart,
+              }),
+            });
 
-	  
-	return (
-		<>
-			<section id='registrationForm' className="registration-section orderForm ">
-				<div className="container">
-					<div className="row">
-						<div className="col-sm-12 col-md 12 col-lg-12">
-							
-							<form className="free-registration-form" onSubmit={handleSubmit(onSubmit)}>
-								<div className="form-box">
-									<div className="form-item">
-										<label htmlFor="fname">First Name:</label>
-										<input type='text' {...register('firstName', { required: true })} placeholder="First Name" />
-										{errors.firstName && <span className="error-message">First name is required</span>}
+          router.push("/thank-you");
+        } else {
+          alert("Payment verification failed!");
+          // router.refresh();
+        }
+      },
+      prefill: {
+        name: data.firstName,
+        email: data.email,
+        contact: data.phone,
+      },
+      theme: {
+        color: "#3399cc",
+      },
+    };
 
-									</div>
-									
-									<div className="form-item">
-										<label htmlFor="email">Enter Email:</label>
-										<input type="text" id="email" {...register('email', { required: true, pattern: /^\S+@\S+$/i })} name="email" placeholder="Enter Email" />
-										{errors.email && errors.email.type === 'required' && <span className="error-message">Email is required</span>}
-                    {errors.email && errors.email.type === 'pattern' && <span className="error-message">Invalid email format</span>}
-									</div>
-									<div className="form-item">
-										<label htmlFor="phone">Phone Number:</label>
-										<input type="number" id="phone" {...register('phone', { required: true, minLength: 10, maxLength: 10, pattern: /^[0-9]+$/ })} name="phone" placeholder="Phone Number" min-length="10" maxLength="10" />
-										{errors.phone && errors.phone.type === 'required' && <span className="error-message">Phone number is required</span>}
-                    {errors.phone && errors.phone.type === 'minLength' && <span className="error-message">Phone number should be at least 10 digits</span>}
-                    {errors.phone && errors.phone.type === 'maxLength' && <span className="error-message">Phone number should not exceed 10 digits</span>}
-                    {errors.phone && errors.phone.type === 'pattern' && <span className="error-message">Invalid phone number</span>}
-									</div>
-									<div className="form-item">
-										<label htmlFor="company">Company:</label>
-										<input type="text" id="company" name="company"     {...register('company', { required: true })} placeholder="Company" />
-										{errors.company && <span className="error-message">Company name is required</span>}
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  };
 
-									</div>
-									
-								</div>
+  return (
+    <section id="registrationForm" className="registration-section orderForm">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12 col-md 12 col-lg-12">
+            <form
+              className="free-registration-form"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <div className="form-box">
+                <div className="form-item">
+                  <label htmlFor="fname">First Name:</label>
+                  <input
+                    type="text"
+                    {...register("firstName", { required: true })}
+                    placeholder="First Name"
+                  />
+                  {errors.firstName && (
+                    <span className="error-message">
+                      First name is required
+                    </span>
+                  )}
+                </div>
 
-								<button disabled={disableStatus} type="submit" className="submit-reg-form">Submit Now</button>
+                <div className="form-item">
+                  <label htmlFor="email">Enter Email:</label>
+                  <input
+                    type="text"
+                    {...register("email", {
+                      required: true,
+                      pattern: /^\S+@\S+$/i,
+                    })}
+                    placeholder="Enter Email"
+                  />
+                  {errors.email && (
+                    <span className="error-message">
+                      Valid Email is required
+                    </span>
+                  )}
+                </div>
 
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
-		</>
-	)
-}
+                <div className="form-item">
+                  <label htmlFor="phone">Phone Number:</label>
+                  <input
+                    type="number"
+                    {...register("phone", { required: true })}
+                    placeholder="Phone Number"
+                  />
+                  {errors.phone && (
+                    <span className="error-message">
+                      Phone number is invalid
+                    </span>
+                  )}
+                </div>
+
+                <div className="form-item">
+                  <label htmlFor="company">Company:</label>
+                  <input
+                    type="text"
+                    {...register("company", { required: true })}
+                    placeholder="Company"
+                  />
+                  {errors.company && (
+                    <span className="error-message">
+                      Company name is required
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <button
+                disabled={disableStatus}
+                type="submit"
+                className="submit-reg-form"
+              >
+                Pay Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
