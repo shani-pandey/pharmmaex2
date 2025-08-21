@@ -10,55 +10,128 @@ import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import ExhibitionGallery from "@/src/components/bannerHome/ExhibitionGallery";
 import Footer from "@/src/components/bannerHome/Footer";
 
-
 export default function ExtraRequirment() {
-    const products = [
-        { name: 'Octunam Table', price: 1000, url : '/assests/img/extraRequirmentImg/octonumTable.jpg' },
-        { name: 'Banqute Chair', price: 400,url : '/assests/img/extraRequirmentImg/banketChair.webp' },
-        { name: 'Glass Round Table', price: 2200,url : '/assests/img/extraRequirmentImg/glassRoundTable.jpg' },
-        { name: 'Bar Stool', price: 1500,url : '/assests/img/extraRequirmentImg/barStool.webp' },
-        { name: 'Glass Self', price: 1000,url : '/assests/img/extraRequirmentImg/glassSelf.jpeg' },
-        { name: 'Showcase with 2 Rack 1mt *1/2', price: 6000,url : '/assests/img/extraRequirmentImg/showcash.webp' },
-        { name: 'Singal Sofa', price: 2200,url : '/assests/img/extraRequirmentImg/singleSofa.webp' },
-        { name: 'Double Sofa', price: 3000,url : '/assests/img/extraRequirmentImg/dobleSiterSofa.webp' },
-        { name: 'Center Table', price: 2000,url : '/assests/img/extraRequirmentImg/glassCentreTable.jpg' },
-        { name: 'Spot Light', price: 1000,url : '/assests/img/extraRequirmentImg/spotLight.webp' },
-        { name: 'Metal Light', price: 1200,url : '/assests/img/extraRequirmentImg/metaLight.jpg' },
-        { name: 'VIP Chair', price: 1500,url : '/assests/img/extraRequirmentImg/vipChair.jpg' },
-        { name: 'Broucher Rack', price: 2000,url : '/assests/img/extraRequirmentImg/brouscureRack.webp' },
-        { name: 'LED TV', price: 5000,url : '/assests/img/extraRequirmentImg/ledTv.webp' },
-        { name: 'Bowl', price: 400,url : '/assests/img/extraRequirmentImg/bowl.webp' },
-        { name: 'Girl Hostess', price: 5000,url : '/assests/img/extraRequirmentImg/girlHostest.jpg' },
-        { name: 'Boys Volunteer ', price: 3000,url : '/assests/img/extraRequirmentImg/boyHostess.webp' },
-        { name: 'Potter ', price: 2500,url : '/assests/img/extraRequirmentImg/helper.jpg' },
-        { name: 'Flex With Frame Per Seq FEET', price: 42, flexInput:true,url : '/assests/img/extraRequirmentImg/default.jpg' },
-      ];
+  const products = [
+    {
+      name: "Octunam Table",
+      price: 1000,
+      url: "/assests/img/extraRequirmentImg/octonumTable.jpg",
+    },
+    {
+      name: "Banqute Chair",
+      price: 400,
+      url: "/assests/img/extraRequirmentImg/banketChair.webp",
+    },
+    {
+      name: "Glass Round Table",
+      price: 2200,
+      url: "/assests/img/extraRequirmentImg/glassRoundTable.jpg",
+    },
+    {
+      name: "Bar Stool",
+      price: 1500,
+      url: "/assests/img/extraRequirmentImg/barStool.webp",
+    },
+    {
+      name: "Glass Self",
+      price: 1000,
+      url: "/assests/img/extraRequirmentImg/glassSelf.jpeg",
+    },
+    {
+      name: "Showcase with 2 Rack 1mt *1/2",
+      price: 6000,
+      url: "/assests/img/extraRequirmentImg/showcash.webp",
+    },
+    {
+      name: "Singal Sofa",
+      price: 2200,
+      url: "/assests/img/extraRequirmentImg/singleSofa.webp",
+    },
+    {
+      name: "Double Sofa",
+      price: 3000,
+      url: "/assests/img/extraRequirmentImg/dobleSiterSofa.webp",
+    },
+    {
+      name: "Center Table",
+      price: 2000,
+      url: "/assests/img/extraRequirmentImg/glassCentreTable.jpg",
+    },
+    {
+      name: "Spot Light",
+      price: 1000,
+      url: "/assests/img/extraRequirmentImg/spotLight.webp",
+    },
+    {
+      name: "Metal Light",
+      price: 1200,
+      url: "/assests/img/extraRequirmentImg/metaLight.jpg",
+    },
+    {
+      name: "VIP Chair",
+      price: 1500,
+      url: "/assests/img/extraRequirmentImg/vipChair.jpg",
+    },
+    {
+      name: "Broucher Rack",
+      price: 2000,
+      url: "/assests/img/extraRequirmentImg/brouscureRack.webp",
+    },
+    {
+      name: "LED TV",
+      price: 5000,
+      url: "/assests/img/extraRequirmentImg/ledTv.webp",
+    },
+    {
+      name: "Bowl",
+      price: 400,
+      url: "/assests/img/extraRequirmentImg/bowl.webp",
+    },
+    {
+      name: "Girl Hostess",
+      price: 5000,
+      url: "/assests/img/extraRequirmentImg/girlHostest.jpg",
+    },
+    {
+      name: "Boys Volunteer ",
+      price: 3000,
+      url: "/assests/img/extraRequirmentImg/boyHostess.webp",
+    },
+    {
+      name: "Potter ",
+      price: 2500,
+      url: "/assests/img/extraRequirmentImg/helper.jpg",
+    },
+    {
+      name: "Flex With Frame Per Seq FEET",
+      price: 42,
+      flexInput: true,
+      url: "/assests/img/extraRequirmentImg/default.jpg",
+    },
+  ];
 
   const [cart, setCart] = useState({});
   const [totalPrice, setTotalPrice] = useState(0);
   const [openForm, setOpenForm] = useState(false);
-  const [posRelative,setPosRelative] = useState("")
-  const [showCartRight,setShowCartRight] = useState(false)
+  const [posRelative, setPosRelative] = useState("");
+  const [showCartRight, setShowCartRight] = useState(false);
   const [flexInput, setFlexInput] = useState(0);
 
+  const handleFlex = (e) => {
+    console.log(e * 48);
+    setFlexInput(0);
+    setFlexInput(e);
+  };
 
-
-
-  const handleFlex = (e)=>{
-    console.log(e*48)
-    setFlexInput(0)
-    setFlexInput(e)
-  }
-
-  const handleAddToCartFlex=(productName)=>{
+  const handleAddToCartFlex = (productName) => {
     const updatedCart = {
       ...cart,
-      [productName]:  flexInput,
+      [productName]: flexInput,
     };
-    console.log("updatedCart2",updatedCart)
+    console.log("updatedCart2", updatedCart);
     setCart(updatedCart);
     calculateTotalPrice(updatedCart);
-  }
+  };
 
   const handleAddToCart = (productName, quantity) => {
     const updatedCart = {
@@ -66,12 +139,12 @@ export default function ExtraRequirment() {
       [productName]: (cart[productName] || 0) + quantity,
     };
 
-    console.log("updatedCart",updatedCart)
+    console.log("updatedCart", updatedCart);
     setCart(updatedCart);
     calculateTotalPrice(updatedCart);
-  
-    if(Object.keys(cart).length >5){
-        setPosRelative("posRelative")
+
+    if (Object.keys(cart).length > 5) {
+      setPosRelative("posRelative");
     }
   };
 
@@ -93,81 +166,99 @@ export default function ExtraRequirment() {
         total += product.price * quantity;
       }
     }
+    console.log(total, "total");
     setTotalPrice(total);
   };
   const onErrorHandler = (e) => {
-    e.target.src = '/assests/img/PharmmaEx-updated-logo.svg'; // Replace with the path to your default image
+    e.target.src = "/assests/img/PharmmaEx-updated-logo.svg"; // Replace with the path to your default image
   };
 
   return (
     <>
-    <style jsx>{`
-
-
-    `}</style>
+      <style jsx>{``}</style>
       <Head>
-       
         <meta name="description" content="Generated by create next app" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <InnerPageBanner pageName="Additional Requirements " bgImage="/assests/img/exbg.svg" />
+      <InnerPageBanner
+        pageName="Additional Requirements "
+        bgImage="/assests/img/exbg.svg"
+      />
       <div className="prdcutListArae">
-      
         <div className="container innerContainer">
-<div className="container-fluid py-4">
-          <h1 className="text-center mb-4">{"EXTRA REQUERMENTS  Product's List"}</h1>
-          <div className="row">
-            <div className="col-md-9">
-              <div className="row">
-                
-                {products.map((product, index) => (
-                  product.flexInput != true ? 
-                    <div key={index} className="col-md-4 mb-4">
-                    <div className="card h-100 shadow-sm">
-                      <div className="card-body card-1">
-                        <h2 className="card-title fs-6 fw-bold mb-3">{product.name}</h2>
-                        <div className="productImage">
-                        <Image 
-                        src={`${product.url}`}
-                         width={'150'} height={'150'}
-                          alt='Auther'
-                          onError={onErrorHandler}
-                          className="img-fluid mb-3 productImg"
-                        />
-                                                </div>
-                        <p className="card-text">Price: <span className="text-danger">₹</span> {product.price}</p>
-                        <div className="input-group ">
-                          <button
-                            className="btn btn-secondary"
-                            onClick={() => handleDecrement(product.name)}
-                          >
-                            -
-                          </button>
-                          <span className="input-group-text">{cart[product.name] || 0}</span>
-                          <button
-                            className="btn btn-secondary"
-                            onClick={() => handleIncrement(product.name)}
-                          >
-                            +
-                          </button>
-                          <button
-                            className="btn  cartBTN"
-                            onClick={() =>{ handleAddToCart(product.name, 1);setShowCartRight(true)}}
-                          >
-                            Add to cart
-                          </button>
+          <div className="container-fluid py-4">
+            <h1 className="text-center mb-4">
+              {"EXTRA REQUERMENTS  Product's List"}
+            </h1>
+            <div className="row">
+              <div className="col-md-9">
+                <div className="row">
+                  {products.map((product, index) =>
+                    product.flexInput != true ? (
+                      <div key={index} className="col-md-4 mb-4">
+                        <div className="card h-100 shadow-sm">
+                          <div className="card-body card-1">
+                            <h2 className="card-title fs-6 fw-bold mb-3">
+                              {product.name}
+                            </h2>
+                            <div className="productImage">
+                              <Image
+                                src={`${product.url}`}
+                                width={"150"}
+                                height={"150"}
+                                alt="Auther"
+                                onError={onErrorHandler}
+                                className="img-fluid mb-3 productImg"
+                              />
+                            </div>
+                            <p className="card-text">
+                              Price: <span className="text-danger">₹</span>{" "}
+                              {product.price}
+                            </p>
+                            <div className="input-group ">
+                              <button
+                                className="btn btn-secondary"
+                                onClick={() => handleDecrement(product.name)}
+                              >
+                                -
+                              </button>
+                              <span className="input-group-text">
+                                {cart[product.name] || 0}
+                              </span>
+                              <button
+                                className="btn btn-secondary"
+                                onClick={() => handleIncrement(product.name)}
+                              >
+                                +
+                              </button>
+                              <button
+                                className="btn  cartBTN"
+                                onClick={() => {
+                                  handleAddToCart(product.name, 1);
+                                  setShowCartRight(true);
+                                }}
+                              >
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>:<div key={index} className="col-md-4 mb-4">
-                    <div className="card h-100 shadow-sm">
-                      <div className="card-body card-1">
-                        <h2 className="card-title fs-6 fw-bold mb-3">{product.name}</h2>
-                        <p className="card-text">Price: <span className="text-danger">₹</span> {product.price}</p>
-                        <div className="input-group ">
-                          {/* <button
+                    ) : (
+                      <div key={index} className="col-md-4 mb-4">
+                        <div className="card h-100 shadow-sm">
+                          <div className="card-body card-1">
+                            <h2 className="card-title fs-6 fw-bold mb-3">
+                              {product.name}
+                            </h2>
+                            <p className="card-text">
+                              Price: <span className="text-danger">₹</span>{" "}
+                              {product.price}
+                            </p>
+                            <div className="input-group ">
+                              {/* <button
                             className="btn btn-secondary"
                             onClick={() => handleDecrement(product.name)}
                           >
@@ -180,68 +271,84 @@ export default function ExtraRequirment() {
                           >
                             +
                           </button> */}
-                          <input type="number"  
-                          placeholder="0" className="numberInputFlex mb-2"
-                          // onChange={handleFlex(flexInput)} 
-                          onChange={(e) => handleFlex(e.target.value, 1)}
-                          />
-                          <button 
-                            className="btn  cartBTN"
-                            onClick={() =>{ handleAddToCartFlex(product.name); {flexInput >0 && setShowCartRight(true)}}}
-                          >
-                            Add to cart
-                          </button>
+                              <input
+                                type="number"
+                                placeholder="0"
+                                className="numberInputFlex mb-2"
+                                // onChange={handleFlex(flexInput)}
+                                onChange={(e) => handleFlex(e.target.value, 1)}
+                              />
+                              <button
+                                className="btn  cartBTN"
+                                onClick={() => {
+                                  handleAddToCartFlex(product.name);
+                                  {
+                                    flexInput > 0 && setShowCartRight(true);
+                                  }
+                                }}
+                              >
+                                Add to cart
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                
-                
-
-                ))}
-              </div>
-            </div>
-            {showCartRight && <div className="col-md-3">
-              <div className={`cartright ${posRelative} `}>
-                <h2>Cart</h2>
-           
-                <div className="cartData">
-                <table className="table table-dark table-striped">
-                    <tr>
-                        <th>
-                            Product Name 
-                        </th>
-                        <th>
-                            Selected Quantity
-                        </th>
-                    </tr>
-                    {Object.keys(cart).map((productName, index) => (
-                    cart[productName] > 0 &&  <tr key={index}>
-
-                    <td>{ productName} </td>
-                    <td>{cart[productName]} {productName == "Flex With Frame Per Seq FEET" && "sq ft"}  </td>
-                    </tr>
-                    ))}
-                    </table>
-                    <p>Total Price: ₹{totalPrice}</p>
+                    )
+                  )}
                 </div>
-                {!openForm &&  <button
-                            className="btn addOrderBtn"
-                            onClick={() => {setOpenForm(!openForm); setPosRelative("posRelative")}}
-                          
-                          >
-                            Add Order
-                          </button>}
-
-                      {openForm && <OrderForm cart={cart} totalPrices={totalPrice} />  } 
               </div>
-            </div>}
+              {showCartRight && (
+                <div className="col-md-3">
+                  <div className={`cartright ${posRelative} `}>
+                    <h2>Cart</h2>
+
+                    <div className="cartData">
+                      <table className="table table-dark table-striped">
+                        <tr>
+                          <th>Product Name</th>
+                          <th>Selected Quantity</th>
+                        </tr>
+                        {Object.keys(cart).map(
+                          (productName, index) =>
+                            cart[productName] > 0 && (
+                              <tr key={index}>
+                                <td>{productName} </td>
+                                <td>
+                                  {cart[productName]}{" "}
+                                  {productName ==
+                                    "Flex With Frame Per Seq FEET" &&
+                                    "sq ft"}{" "}
+                                </td>
+                              </tr>
+                            )
+                        )}
+                      </table>
+                      <p>Total Price: ₹{totalPrice}</p>
+                    </div>
+                    {!openForm && (
+                      <button
+                        className="btn addOrderBtn"
+                        onClick={() => {
+                          setOpenForm(!openForm);
+                          setPosRelative("posRelative");
+                        }}
+                      >
+                        Add Order
+                      </button>
+                    )}
+
+                    {openForm && (
+                      <OrderForm cart={cart} totalPrices={totalPrice} />
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
-        </div>
       </div>
-     
-      <ExhibitionGallery/>
+
+      <ExhibitionGallery />
       <Footer />
     </>
   );

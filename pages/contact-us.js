@@ -8,7 +8,7 @@ import ExhibitionQueries from "@/src/components/bannerHome/ExhibitionQueries";
 import Ticker from "@/src/components/bannerHome/Ticker";
 
 export default function About() {
-  const pageTitle = "Contact Us | PharmmaEx";
+  const pageTitle = "Contact Us | PharmmaEx , pharmaceutical exhibition";
   const pageDescription =
     "Get in touch with PharmmaEx for exhibition inquiries, visitor information, and partnership opportunities. Contact us via phone, email, or visit our office.";
   const pageUrl = "https://pharmmaex.com/contact-us";
