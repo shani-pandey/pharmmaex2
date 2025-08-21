@@ -12,13 +12,13 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>{`pharmaceutical exhibition`}</title>
+        <title>{`PharmmaEx 2025 - Bombay Exhibition Centre, Mumbai , pharmaceutical exhibition`}</title>
         <link rel="icon" type="image/x-icon" href="/assests/img/favicon.ico" />
 
         {/* Meta Tags */}
         <meta
           name="description"
-          content="pharmaceutical exhibition"
+          content="Join PharmmaEx 2025 on 03–04 October at Bombay Exhibition Centre, Mumbai, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders"
         />
         <meta
           name="keywords"

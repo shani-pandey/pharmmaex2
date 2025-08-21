@@ -6,9 +6,9 @@ import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import KeySponsorsGrid from "@/src/components/bannerHome/KeySponsorsGrid";
 
 export default function SponsorsAssociation() {
-  const pageTitle = "pharmaceutical exhibition";
+  const pageTitle = "Sponsors & Association - PharmmaEx , pharmaceutical exhibition";
   const pageDescription =
-    "pharmaceutical exhibition";
+    "Explore the key sponsors and associations supporting PharmmaEx, the leading pharmaceutical exhibition in India.";
   const pageUrl = "https://pharmmaex.com/sponsors-association"; // Update with your actual URL
   const pageImage = "https://pharmmaex.com/assets/img/sponserbanner.png"; // Update with actual path
   return (

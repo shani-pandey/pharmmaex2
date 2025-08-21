@@ -32,7 +32,9 @@ const ReviewForm = () => {
   return (
     <>
       <Head>
-        <title>pharmaceutical exhibition</title>
+        <title>
+          Review | Pharma Exhibition India 2025, pharmaceutical exhibition
+        </title>
         <meta name="description" content="pharmaceutical exhibition" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* <link rel="icon" href="/favicon.ico" /> */}

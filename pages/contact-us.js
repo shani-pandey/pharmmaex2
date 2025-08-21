@@ -8,9 +8,9 @@ import ExhibitionQueries from "@/src/components/bannerHome/ExhibitionQueries";
 import Ticker from "@/src/components/bannerHome/Ticker";
 
 export default function About() {
-  const pageTitle = "pharmaceutical exhibition";
+  const pageTitle = "Contact Us | PharmmaEx , pharmaceutical exhibition";
   const pageDescription =
-    "pharmaceutical exhibition";
+    "Get in touch with PharmmaEx for exhibition inquiries, visitor information, and partnership opportunities. Contact us via phone, email, or visit our office.";
   const pageUrl = "https://pharmmaex.com/contact-us";
   const pageImage = "https://pharmmaex.com/assets/img/contactbanner.jpg"; // Replace with actual hosted image
   return (
