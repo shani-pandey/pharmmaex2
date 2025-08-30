@@ -116,9 +116,10 @@ export default function ExtraRequirment() {
   const [posRelative, setPosRelative] = useState("");
   const [showCartRight, setShowCartRight] = useState(false);
   const [flexInput, setFlexInput] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const handleFlex = (e) => {
-    console.log(e * 48);
+    // console.log(e * 48);
     setFlexInput(0);
     setFlexInput(e);
   };
@@ -128,7 +129,7 @@ export default function ExtraRequirment() {
       ...cart,
       [productName]: flexInput,
     };
-    console.log("updatedCart2", updatedCart);
+    // console.log("updatedCart2", updatedCart);
     setCart(updatedCart);
     calculateTotalPrice(updatedCart);
   };
@@ -166,7 +167,7 @@ export default function ExtraRequirment() {
         total += product.price * quantity;
       }
     }
-    console.log(total, "total");
+    // console.log(total, "total");
     setTotalPrice(total);
   };
   const onErrorHandler = (e) => {
@@ -220,7 +221,11 @@ export default function ExtraRequirment() {
                             <div className="input-group ">
                               <button
                                 className="btn btn-secondary"
-                                onClick={() => handleDecrement(product.name)}
+                                onClick={() => {
+                                  if (!open) {
+                                    handleDecrement(product.name);
+                                  }
+                                }}
                               >
                                 -
                               </button>
@@ -229,15 +234,21 @@ export default function ExtraRequirment() {
                               </span>
                               <button
                                 className="btn btn-secondary"
-                                onClick={() => handleIncrement(product.name)}
+                                onClick={() => {
+                                  if (!open) {
+                                    handleIncrement(product.name);
+                                  }
+                                }}
                               >
                                 +
                               </button>
                               <button
                                 className="btn  cartBTN"
                                 onClick={() => {
-                                  handleAddToCart(product.name, 1);
-                                  setShowCartRight(true);
+                                  if (!open) {
+                                    handleAddToCart(product.name, 1);
+                                    setShowCartRight(true);
+                                  }
                                 }}
                               >
                                 Add to cart
@@ -323,7 +334,9 @@ export default function ExtraRequirment() {
                             )
                         )}
                       </table>
-                      <p>Total Price: ₹{totalPrice}</p>
+                      <p>Price: ₹{totalPrice}</p>
+                      <p>Gst (18%): ₹{(totalPrice * 0.18).toFixed(2)}</p>
+                      <p>Total Price: ₹{(totalPrice * 1.18).toFixed(2)}</p>
                     </div>
                     {!openForm && (
                       <button
@@ -338,7 +351,12 @@ export default function ExtraRequirment() {
                     )}
 
                     {openForm && (
-                      <OrderForm cart={cart} totalPrices={totalPrice} />
+                      <OrderForm
+                        cart={cart}
+                        totalPrices={totalPrice}
+                        setOpen={setOpen}
+                        open={open}
+                      />
                     )}
                   </div>
                 </div>

@@ -1,108 +1,60 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/router";
+import QRCode from "react-qr-code";
 
 export const OrderForm = (props) => {
-  const { cart, totalPrices } = props;
-  // console.log(totalPrices, "totalPrices");
+  const { cart, totalPrices, open, setOpen } = props;
+  // console.log((totalPrices * 1.18).toFixed(2), "totalPrices");
   const router = useRouter();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+  // console.log(open, "open");
 
   const [disableStatus, setDisableStatus] = useState(false);
+  const [formData, setFormData] = useState(null);
 
-  const loadRazorpay = () => {
-    return new Promise((resolve) => {
-      const script = document.createElement("script");
-      script.src = "https://checkout.razorpay.com/v1/checkout.js";
-      script.onload = () => resolve(true);
-      script.onerror = () => resolve(false);
-      document.body.appendChild(script);
-    });
-  };
+  const upiId = "9258002828@pz";
+  const upiLink = `upi://pay?pa=${upiId}&pn=YourName&am=100&cu=INR`;
 
   const onSubmit = async (data) => {
     setDisableStatus(true);
+    setFormData(data);
+    setOpen(true);
+  };
 
-    // 1️⃣ Load Razorpay script
-    const res = await loadRazorpay();
-    if (!res) {
-      alert("Razorpay SDK failed to load. Check your internet.");
-      return;
-    }
-
-    // 2️⃣ Create order from backend
-    const orderRes = await fetch("https://apis.pharmmaex.com/create-order", {
+  const handleContinue = async () => {
+    if (!formData) return; // safeguard
+    // const orderRes = await fetch("https://apis.pharmmaex.com/create-order", {
+    const orderRes = await fetch("http://localhost:5001/create-order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        amount: totalPrices,
-        name: data.firstName,
-        email: data.email,
-        phone: data.phone,
+        amount: (totalPrices * 1.18).toFixed(2),
+        name: formData.firstName,
+        email: formData.email,
+        phone: formData.phone,
         cart: cart,
       }),
     });
-
     const orderData = await orderRes.json();
-    console.log(orderData, "orderData");
 
-    // 3️⃣ Open Razorpay Popup
-    const options = {
-      key: "rzp_test_R7z6dY1nMfTwQu", // Replace with Razorpay test Key ID
-      amount: orderData.amount,
-      currency: "INR",
-      name: "My Shop",
-      description: "Order Payment",
-      order_id: orderData.orderId,
-      // method: {
-      //   card: true,
-      //   netbanking: true,
-      // },
-      handler: async function (response) {
-        // 4️⃣ Verify payment on backend
-        const verifyRes = await fetch("https://apis.pharmmaex.com/verify-payment", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(response),
-        });
-
-        const verifyData = await verifyRes.json();
-        console.log(verifyData, "verifyData");
-
-        if (verifyData.success) {
-          // ✅ Payment success → save order
-            await fetch("https://apis.pharmmaex.com/extra-product-list", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({
-                ...data,
-                totalPrices,
-                productTable: cart,
-              }),
-            });
-
-          router.push("/thank-you");
-        } else {
-          alert("Payment verification failed!");
-          // router.refresh();
-        }
-      },
-      prefill: {
-        name: data.firstName,
-        email: data.email,
-        contact: data.phone,
-      },
-      theme: {
-        color: "#3399cc",
-      },
-    };
-
-    const paymentObject = new window.Razorpay(options);
-    paymentObject.open();
+    if (orderData?.status == 200) {
+      // await fetch("https://apis.pharmmaex.com/extra-product-list", {
+      await fetch("http://localhost:5001/extra-product-list", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          totalPrices: (totalPrices * 1.18).toFixed(2),
+          productTable: cart,
+        }),
+      });
+      router.push("/thank-you");
+    }
   };
 
   return (
@@ -175,17 +127,42 @@ export const OrderForm = (props) => {
                 </div>
               </div>
 
-              <button
-                disabled={disableStatus}
-                type="submit"
-                className="submit-reg-form"
-              >
-                Pay Now
-              </button>
+              {!open ? (
+                <button
+                  disabled={disableStatus}
+                  type="submit"
+                  className="submit-reg-form"
+                >
+                  Pay Now
+                </button>
+              ) : (
+                <></>
+              )}
             </form>
           </div>
         </div>
       </div>
+
+      {/* Popup Modal */}
+      {open && (
+        <div className="d-flex flex-column justify-content-center align-items-center mt-4">
+          <div className="d-flex justify-content-center mb-4">
+            <QRCode value={upiLink} size={150} />
+          </div>
+
+          <p className="text-center mb-2">
+            UPI ID: <span className="font-medium">{upiId}</span>
+          </p>
+
+          <p className="text-center text-muted mb-4 small">
+            If you have already made the payment, just click continue below.
+          </p>
+
+          <button onClick={handleContinue} className="submit-reg-form">
+            Continue
+          </button>
+        </div>
+      )}
     </section>
   );
 };
