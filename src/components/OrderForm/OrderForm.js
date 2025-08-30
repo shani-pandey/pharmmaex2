@@ -18,7 +18,9 @@ export const OrderForm = (props) => {
   const [formData, setFormData] = useState(null);
 
   const upiId = "9258002828@pz";
-  const upiLink = `upi://pay?pa=${upiId}&pn=YourName&am=100&cu=INR`;
+  const upiLink = `upi://pay?pa=${upiId}&pn=pharmmaex&am=${(
+    totalPrices * 1.18
+  ).toFixed(2)}&cu=INR`;
 
   const onSubmit = async (data) => {
     setDisableStatus(true);
