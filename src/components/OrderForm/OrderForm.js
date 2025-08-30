@@ -28,8 +28,8 @@ export const OrderForm = (props) => {
 
   const handleContinue = async () => {
     if (!formData) return; // safeguard
-    // const orderRes = await fetch("https://apis.pharmmaex.com/create-order", {
-    const orderRes = await fetch("http://localhost:5001/create-order", {
+    const orderRes = await fetch("https://apis.pharmmaex.com/create-order", {
+      // const orderRes = await fetch("http://localhost:5001/create-order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -43,8 +43,8 @@ export const OrderForm = (props) => {
     const orderData = await orderRes.json();
 
     if (orderData?.status == 200) {
-      // await fetch("https://apis.pharmmaex.com/extra-product-list", {
-      await fetch("http://localhost:5001/extra-product-list", {
+      await fetch("https://apis.pharmmaex.com/extra-product-list", {
+        // await fetch("http://localhost:5001/extra-product-list", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

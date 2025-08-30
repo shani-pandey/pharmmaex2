@@ -11,7 +11,7 @@ export default function Order() {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const res = await fetch("http://localhost:5001/orders"); // your API
+        const res = await fetch("https://apis.pharmmaex.com/orders"); // your API
         const data = await res.json();
         setOrders(data?.orders);
       } catch (err) {
@@ -26,7 +26,7 @@ export default function Order() {
   // Update payment status in backend
   const handleStatusChange = async (orderId, newStatus) => {
     try {
-      const res = await fetch(`http://localhost:5001/change-status`, {
+      const res = await fetch(`https://apis.pharmmaex.com/change-status`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
