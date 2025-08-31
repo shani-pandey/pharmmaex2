@@ -6,12 +6,50 @@ import React, { useEffect, useState } from "react";
 export default function Order() {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [loginError, setLoginError] = useState("");
 
-  // Fetch orders from API
+  // Hardcoded credentials
+  const USERNAME = "admin";
+  const PASSWORD = "Admin@2025";
+
+  // ✅ Check localStorage on mount
   useEffect(() => {
+    const authStatus = localStorage.getItem("isAuthenticated");
+    if (authStatus === "true") {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
+  // Handle login
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const username = e.target.username.value;
+    const password = e.target.password.value;
+
+    if (username === USERNAME && password === PASSWORD) {
+      setIsAuthenticated(true);
+      localStorage.setItem("isAuthenticated", "true"); // ✅ Save login
+      setLoginError("");
+    } else {
+      setLoginError("❌ Invalid username or password");
+    }
+  };
+
+  // ✅ Logout (optional)
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem("isAuthenticated");
+  };
+
+  // Fetch orders only if logged in
+  useEffect(() => {
+    if (!isAuthenticated) return;
+
     const fetchOrders = async () => {
       try {
-        const res = await fetch("https://apis.pharmmaex.com/orders"); // your API
+        const res = await fetch("https://apis.pharmmaex.com/orders");
+        // const res = await fetch("http://localhost:5001/orders");
         const data = await res.json();
         setOrders(data?.orders);
       } catch (err) {
@@ -20,13 +58,15 @@ export default function Order() {
         setLoading(false);
       }
     };
+
     fetchOrders();
-  }, []);
+  }, [isAuthenticated]);
 
   // Update payment status in backend
   const handleStatusChange = async (orderId, newStatus) => {
     try {
       const res = await fetch(`https://apis.pharmmaex.com/change-status`, {
+        // const res = await fetch(`http://localhost:5001/change-status`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +80,7 @@ export default function Order() {
             order.orderId == orderId ? { ...order, status: newStatus } : order
           )
         );
-        alert("Updated Successfully!");
+        alert("✅ Updated Successfully!");
       } else {
         alert("❌ Failed to update status");
       }
@@ -49,7 +89,53 @@ export default function Order() {
     }
   };
 
-  //   if (loading) return <p className="p-4">Loading orders...</p>;
+  // 🚪 If not authenticated, show login form
+  if (!isAuthenticated) {
+    return (
+      <>
+        <Header />
+        <div className="container mt-5" style={{ marginBottom: "150px" }}>
+          <h2 className="text-center mb-4">Login Required</h2>
+          <form
+            onSubmit={handleLogin}
+            className="mx-auto"
+            style={{ maxWidth: "400px" }}
+          >
+            <div className="mb-3">
+              <label className="form-label">Username</label>
+              <input
+                type="text"
+                name="username"
+                className="form-control"
+                placeholder="Enter username"
+              />
+            </div>
+
+            <div className="mb-3">
+              <label className="form-label">Password</label>
+              <input
+                type="password"
+                name="password"
+                className="form-control"
+                placeholder="Enter password"
+              />
+            </div>
+
+            {loginError && <p className="text-danger">{loginError}</p>}
+
+            <button
+              type="submit"
+              className="btn  w-100"
+              style={{ backgroundColor: "#00833d", color: "#ffffff" }}
+            >
+              Login
+            </button>
+          </form>
+        </div>
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>
@@ -60,7 +146,13 @@ export default function Order() {
       </Head>
       <Header />
       <div className="container mt-5 mb-5">
-        <h2 className="text-center fw-bold mb-4">Orders</h2>
+        <div className="d-flex justify-content-between align-items-center mb-3">
+          <h2 className="fw-bold">Orders</h2>
+          <button onClick={handleLogout} className="btn btn-danger btn-sm">
+            Logout
+          </button>
+        </div>
+
         {loading ? (
           <div
             className="d-flex justify-content-center align-items-center"
