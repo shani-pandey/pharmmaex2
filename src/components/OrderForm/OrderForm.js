@@ -16,6 +16,7 @@ export const OrderForm = (props) => {
 
   const [disableStatus, setDisableStatus] = useState(false);
   const [formData, setFormData] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const upiId = "9258002828@pz";
   const upiLink = `upi://pay?pa=${upiId}&pn=pharmmaex&am=${(
@@ -29,33 +30,40 @@ export const OrderForm = (props) => {
   };
 
   const handleContinue = async () => {
-    if (!formData) return; // safeguard
-    const orderRes = await fetch("https://apis.pharmmaex.com/create-order", {
-      // const orderRes = await fetch("http://localhost:5001/create-order", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        amount: (totalPrices * 1.18).toFixed(2),
-        name: formData.firstName,
-        email: formData.email,
-        phone: formData.phone,
-        cart: cart,
-      }),
-    });
-    const orderData = await orderRes.json();
+    if (!formData || isLoading) return;
 
-    if (orderData?.status == 200) {
-      await fetch("https://apis.pharmmaex.com/extra-product-list", {
-        // await fetch("http://localhost:5001/extra-product-list", {
+    setIsLoading(true);
+    try {
+      const orderRes = await fetch("https://apis.pharmmaex.com/create-order", {
+        // const orderRes = await fetch("http://localhost:5001/create-order", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          ...formData,
-          totalPrices: (totalPrices * 1.18).toFixed(2),
-          productTable: cart,
+          amount: (totalPrices * 1.18).toFixed(2),
+          name: formData.firstName,
+          email: formData.email,
+          phone: formData.phone,
+          cart: cart,
         }),
       });
-      router.push("/thank-you");
+      const orderData = await orderRes.json();
+
+      if (orderData?.status == 200) {
+        await fetch("https://apis.pharmmaex.com/extra-product-list", {
+          // await fetch("http://localhost:5001/extra-product-list", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ...formData,
+            totalPrices: (totalPrices * 1.18).toFixed(2),
+            productTable: cart,
+          }),
+        });
+        router.push("/thank-you");
+      }
+    } catch (error) {
+      console.error("Error in order process:", error);
+      setIsLoading(false); // loading finish
     }
   };
 
@@ -160,8 +168,12 @@ export const OrderForm = (props) => {
             If you have already made the payment, just click continue below.
           </p>
 
-          <button onClick={handleContinue} className="submit-reg-form">
-            Continue
+          <button
+            onClick={handleContinue}
+            className="submit-reg-form"
+            disabled={isLoading}
+          >
+            {isLoading ? "Processing..." : "Continue"}
           </button>
         </div>
       )}
