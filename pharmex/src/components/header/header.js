@@ -13,7 +13,7 @@ const Header = () => {
                   +91-925 800 2828</a></li>
                 <li><a href='mailto:shivam.sharma@pharmmaex.com'>
                   <img src='/assests/img/Message.svg' alt='Phone Icon' />
-                  shivam.sharma@pharmmaex.com</a></li>
+                 info@pharmmaex.com</a></li>
               </ul>
             </div>
             <div className='col-lg-6 col-md-6 col-sm-6  '>
