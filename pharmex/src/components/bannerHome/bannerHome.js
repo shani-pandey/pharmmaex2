@@ -4,7 +4,7 @@ import styles from './bannerHome.module.css';
 import Ticker from './Ticker';
 
 const BannerHome = () => {
-  const eventDate = new Date("2025-10-03T17:05:00.000Z");
+  const eventDate = new Date("2026-02-20T09:00:00.000Z");
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -89,7 +89,7 @@ const BannerHome = () => {
               India&apos;s Largest Platform for Third Party Pharma Manufacturing and PCD Franchise Opportunities.
             </h1>
             <div className={`${styles.bannerSubtitle} mb-3`}>
-              20-21 February, 2026 | Codissia Trade Fair Complex Coimbatore, Tamil Nadu
+              20–21 Feburary, 2026 | Codissia Trade Fair Complex Coimbatore, Tamil Nadu
             </div>
             <div className={styles.bannerBtnGroup}>
               <a href=" https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx  " className="btn btn-success px-4 py-2">Pre-Registration</a>

@@ -7,9 +7,9 @@ import styles from "@/styles/Upcoming.module.css";
 import Image from "next/image";
 
 const Upcoming = () => {
-  const eventName = "PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu";
+  const eventName = "PharmmaEx 2025 - Mumbai";
   const eventDescription =
-    "Join PharmmaEx 2025 on 03–04 October at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders.";
+    "Join PharmmaEx 2025 on 03–04 October at Mumbai, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders.";
   const eventImage =
     "https://pharmmaex.com/assets/img/pharmmaex-event-bombay-exhibition-centre.webp";
   const eventUrl = "https://pharmmaex.com/up-coming";
@@ -102,7 +102,7 @@ const Upcoming = () => {
       </div>
 
       <div className={styles.buttonGroup}>
-        <a
+        {/* <a
           href="/assests/pdf/PharmmaEx-Floor-Plan-mumbai.pdf"
           className="btn btn-success about-home-btn "
           download
@@ -113,6 +113,18 @@ const Upcoming = () => {
           href="/assests/pdf/pharmmaex-mumbai-Brochure-2025 (1).pdf"
           className="btn btn-outline-success about-home-btn"
           download
+        >
+          Download Brochure
+        </a> */}
+        <a
+          href="#"
+          className="btn btn-success about-home-btn"
+        >
+          Download Floor Plan
+        </a>
+        <a
+          href="#"
+          className="btn btn-outline-success about-home-btn"
         >
           Download Brochure
         </a>
@@ -131,9 +143,9 @@ const Upcoming = () => {
           <div className={styles.eventItem}>
             <span className={styles.eventIcon}>📍</span>
             <div className={styles.eventTextBox}>
-              <div className={styles.eventTitle}>Bombay Exhibition Centre</div>
+              <div className={styles.eventTitle}>Codissia Trade Fair Complex</div>
               <div className={styles.eventSub}>
-                NESCO, Goregaon, Mumbai, Maharashtra 400063
+                Coimbatore, Tamil Nadu
               </div>
             </div>
           </div>
