@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const Footer = () => {
 
-   const eventDate = new Date("2025-10-03T17:05:00.000Z");
+   const eventDate = new Date("2026-02-20T09:00:00.000Z");
     
       const [timeLeft, setTimeLeft] = useState({
         days: 0,

@@ -4,7 +4,7 @@ import styles from './bannerHome.module.css';
 import Ticker from './Ticker';
 
 const BannerHome = () => {
-  const eventDate = new Date("2025-10-03T17:05:00.000Z");
+  const eventDate = new Date("2026-02-20T09:00:00.000Z");
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

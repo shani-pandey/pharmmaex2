@@ -33,8 +33,8 @@ const Header = () => {
               height={60} />
             <span className="d-none d-md-block ms-3" style={{ fontSize: '0.85rem', lineHeight: 1.1, color: '#222' }}>
               <strong>20-21 February, 2026</strong><br />
-              Bombay Exhibition Centre,<br />
-              Mumbai
+              Codissia Trade Fair Complex Coimbatore,<br />
+               Tamil Nadu
             </span>
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
