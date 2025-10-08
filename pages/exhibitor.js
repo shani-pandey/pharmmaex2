@@ -9,7 +9,7 @@ import ExhibitorRegistrationPage from "@/src/components/bannerHome/ExhibitorRegi
 const Exhibitor = () => {
   const pageTitle = "Exhibitor Registration | PharmmaEx 2025";
   const pageDescription =
-    "Register as an exhibitor for PharmmaEx 2025 at Bombay Exhibition Centre, Mumbai. Showcase your products and services to top pharmaceutical industry professionals.";
+    "Register as an exhibitor for PharmmaEx 2025 at Codissia Trade Fair Complex Coimbatore, Tamil Nadu. Showcase your products and services to top pharmaceutical industry professionals.";
   const pageUrl = "https://pharmmaex.com/exhibitor-registration";
   const pageImage = "https://pharmmaex.com/assets/img/exhibitor-banner.jpg"; // Replace with actual image URL
   return (

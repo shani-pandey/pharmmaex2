@@ -60,8 +60,8 @@ const ExhibitionSeries = () => {
               </div>
             </div>
             <div className="ms-3 exhibition-series-upcoming-details">
-              <div className="fw-bold">03-04 October, 2025</div>
-              <div>Bombay Exhibition Centre, Mumbai</div>
+              <div className="fw-bold">20-21 February, 2026</div>
+              <div>Codissia Trade Fair Complex Coimbatore, Tamil Nadu</div>
             </div>
             <div className="d-flex gap-2 ms-3 exhibition-series-btn-group">
               <a href=" https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx  " className="exhibition-series-btn">Pre-Registration</a>

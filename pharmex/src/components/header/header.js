@@ -32,7 +32,7 @@ const Header = () => {
             <Image src="/assests/img/logo.svg" alt="Logo" className="websiteLogo" width={60}
               height={60} />
             <span className="d-none d-md-block ms-3" style={{ fontSize: '0.85rem', lineHeight: 1.1, color: '#222' }}>
-              <strong>03–04 October, 2025</strong><br />
+              <strong>20-21 February, 2026</strong><br />
               Bombay Exhibition Centre,<br />
               Mumbai
             </span>

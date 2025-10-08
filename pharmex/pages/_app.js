@@ -14,13 +14,13 @@ export default function App({ Component, pageProps }) {
   return(
     <>
    <Head>
-  <title>{`PharmmaEx 2025 - Bombay Exhibition Centre, Mumbai`}</title>
+  <title>{`PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu`}</title>
         <link rel="icon" type="image/x-icon" href="/assests/img/favicon.ico" />
 
   {/* Meta Tags */}
   <meta
     name="description"
-    content="Join PharmmaEx 2025 on 03–04 October at Bombay Exhibition Centre, Mumbai, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders."
+    content="Join PharmmaEx 2025 on 03–04 October at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders."
   />
   <meta
     name="keywords"
@@ -33,12 +33,12 @@ export default function App({ Component, pageProps }) {
   <meta property="og:image" content="/assets/img/PharmmaEx-updated-logo.svg" />
   <meta
     property="og:title"
-    content="PharmmaEx 2025 - Bombay Exhibition Centre, Mumbai"
+    content="PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu"
   />
   <meta property="og:url" content="https://pharmmaex.com/" />
   <meta
     property="og:description"
-    content="Join PharmmaEx 2025 at Bombay Exhibition Centre, Mumbai, and experience the future of pharmaceuticals through innovation, networking, and emerging healthcare technologies."
+    content="Join PharmmaEx 2025 at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, and experience the future of pharmaceuticals through innovation, networking, and emerging healthcare technologies."
   />
   <meta property="og:image:height" content={300} />
   <meta property="og:image:width" content={300} />
@@ -83,7 +83,7 @@ export default function App({ Component, pageProps }) {
       __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Event",
-        "name": "PharmmaEx 2025 - Bombay Exhibition Centre, Mumbai",
+        "name": "PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu",
         "startDate": "2025-10-03T09:00:00+05:30",
         "endDate": "2025-10-04T18:00:00+05:30",
         "location": {
@@ -98,7 +98,7 @@ export default function App({ Component, pageProps }) {
             "addressCountry": "India"
           }
         },
-        "description": "Join PharmmaEx 2025 at Bombay Exhibition Centre, Mumbai, for two days of pharmaceutical innovation, networking, and insights into the future of the healthcare industry.",
+        "description": "Join PharmmaEx 2025 at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, for two days of pharmaceutical innovation, networking, and insights into the future of the healthcare industry.",
         "image": "https://pharmmaex.com/assets/img/pharmmaex-event-bombay-exhibition-centre.webp",
         "organizer": {
           "@type": "Organization",
