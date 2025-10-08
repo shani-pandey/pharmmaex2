@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ticker.module.css';
 
 const Ticker = () => {
-  const text = "PharmmaEx Coming to Mumbai | 03–04 October, 2025 | Bombay Exhibition Centre, Mumbai • ";
+  const text = "PharmmaEx Coming to Mumbai | 20-21 February, 2026 | Codissia Trade Fair Complex Coimbatore, Tamil Nadu • ";
 
   return (
     <div className={styles.ticker}>

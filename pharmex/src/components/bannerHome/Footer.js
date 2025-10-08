@@ -39,17 +39,17 @@ const Footer = () => {
       </div>
       <div className="container footer-content">
         <div className="footer-registration-box">
-          <h2 className="footer-registration-title">Registration for Mumbai</h2>
+          <h2 className="footer-registration-title">Registration for Tamil Nadu</h2>
           <div className="footer-registration-details d-flex align-items-center mb-3">
             <div className="footer-registration-date-icon me-2">
               <img src="/assests/img/Calendar.svg" alt="Calendar" />
-              <div className="footer-registration-date">03-04 October, 2025</div>
+              <div className="footer-registration-date">20-21 February, 2026</div>
             </div>
            
               
               <div className="footer-registration-venue">
                 <img src="/assests/img/Location.svg" alt="Location" className="me-1" />
-                Bombay Exhibition Centre, Mumbai
+                Codissia Trade Fair Complex Coimbatore, Tamil Nadu
                 </div>
            
           </div>
@@ -92,8 +92,8 @@ const Footer = () => {
                 </div>
               </div>
               <div className="footer-event-info">
-                <div className="fw-bold">03-04 October, 2025</div>
-                <div>Bombay Exhibition Centre, Mumbai</div>
+                <div className="fw-bold">20-21 February, 2026</div>
+                <div>Codissia Trade Fair Complex Coimbatore, Tamil Nadu</div>
               </div>
             </div>
             </div>

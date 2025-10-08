@@ -89,7 +89,7 @@ const BannerHome = () => {
               India&apos;s Largest Platform for Third Party Pharma Manufacturing and PCD Franchise Opportunities.
             </h1>
             <div className={`${styles.bannerSubtitle} mb-3`}>
-              03–04 October, 2025 | Bombay Exhibition Centre, Mumbai
+              20-21 February, 2026 | Codissia Trade Fair Complex Coimbatore, Tamil Nadu
             </div>
             <div className={styles.bannerBtnGroup}>
               <a href=" https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx  " className="btn btn-success px-4 py-2">Pre-Registration</a>

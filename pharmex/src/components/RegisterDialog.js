@@ -189,13 +189,13 @@ const RegisterDialog = () => {
                             >
                                 <img src="assests/img/greenCalendar.png" style={{ marginRight: "8px" }} />
                                 <h5 style={{ fontSize: "1.25rem", fontWeight: 600 }}>
-                                    03-04 October, 2025 | 10am–6pm
+                                    20-21 February, 2026 | 10am–6pm
                                 </h5>
                             </div>
                             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                                 <img src="assests/img/greenLocation.png" style={{ marginRight: "8px" }} />
                                 <h5 style={{ fontSize: "1.25rem", fontWeight: 600 }}>
-                                    Bombay Exhibition Centre NESCO, Mumbai
+                                    Codissia Trade Fair Complex Coimbatore, Tamil Nadu
                                 </h5>
                             </div>
                             <button

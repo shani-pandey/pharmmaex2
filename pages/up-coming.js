@@ -7,9 +7,9 @@ import styles from "@/styles/Upcoming.module.css";
 import Image from "next/image";
 
 const Upcoming = () => {
-  const eventName = "PharmmaEx 2025 - Bombay Exhibition Centre, Mumbai";
+  const eventName = "PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu";
   const eventDescription =
-    "Join PharmmaEx 2025 on 03–04 October at Bombay Exhibition Centre, Mumbai, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders.";
+    "Join PharmmaEx 2025 on 03–04 October at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders.";
   const eventImage =
     "https://pharmmaex.com/assets/img/pharmmaex-event-bombay-exhibition-centre.webp";
   const eventUrl = "https://pharmmaex.com/up-coming";
@@ -123,7 +123,7 @@ const Upcoming = () => {
           <div className={styles.eventItem}>
             <span className={styles.eventIcon}>📅</span>
             <div className={styles.eventTextBox}>
-              <div className={styles.eventTitle}>03–04 October, 2025</div>
+              <div className={styles.eventTitle}>20-21 February, 2026</div>
               <div className={styles.eventSub}>(Friday,Saturday)</div>
             </div>
           </div>

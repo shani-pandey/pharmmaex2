@@ -13,7 +13,7 @@ import ExhibitionGallery from "@/src/components/bannerHome/ExhibitionGallery";
 export default function About() {
   const pageTitle = "About Us - PharmmaEx 2025";
   const pageDescription =
-    "Learn about PharmmaEx 2025 — our mission, vision, and the people behind India's premier pharmaceutical exhibition at the Bombay Exhibition Centre, Mumbai.";
+    "Learn about PharmmaEx 2025 — our mission, vision, and the people behind India's premier pharmaceutical exhibition at the Codissia Trade Fair Complex Coimbatore, Tamil Nadu.";
   const pageUrl = "https://pharmmaex.com/about";
   const pageImage = "https://pharmmaex.com/assets/img/aboutBanner.svg";
 
@@ -48,7 +48,7 @@ export default function About() {
               "@type": "AboutPage",
               name: "About Us - PharmmaEx 2025",
               description:
-                "Learn about PharmmaEx 2025 — our mission, vision, and the people behind India's premier pharmaceutical exhibition at the Bombay Exhibition Centre, Mumbai.",
+                "Learn about PharmmaEx 2025 — our mission, vision, and the people behind India's premier pharmaceutical exhibition at the Codissia Trade Fair Complex Coimbatore, Tamil Nadu.",
               url: "https://pharmmaex.com/about",
               publisher: {
                 "@type": "Organization",

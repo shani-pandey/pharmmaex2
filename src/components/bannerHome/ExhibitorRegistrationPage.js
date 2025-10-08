@@ -184,13 +184,13 @@ const ExhibitorRegistrationPage = () => {
         <div>
           Exhibition Date & Time:{" "}
           <span className={styles.eventHighlight}>
-            October 3rd–4th, 2025, 10.00 AM to 6.00 PM
+            February 20th–21th, 2026, 10.00 AM to 6.00 PM
           </span>
         </div>
         <div>
           Exhibition Venue:{" "}
           <span className={styles.eventHighlight}>
-            Bombay Exhibition Centre NESCO, Goregaon, Mumbai, Maharashtra 400063
+            Codissia Trade Fair Complex Coimbatore, Tamil Nadu
           </span>
         </div>
       </div>

@@ -18,7 +18,7 @@ const ContactUs = () => {
                 <div className="venue-details">
                     <h3>Exhibition Venue-Mumbai</h3>
                     <p>Bombay Exhibition Centre, (NESCO) Mumbai</p>
-                    <p>03-04 October, 2025</p>
+                    <p>20-21 February, 2025</p>
                 </div>
                 <div className="contact-btns">
                     <a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx" className="btn btn-outline-success">Pre-Registration</a>

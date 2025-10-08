@@ -32,9 +32,9 @@ const Header = () => {
             <Image src="/assests/img/logo.svg" alt="Logo" className="websiteLogo" width={60}
               height={60} />
             <span className="d-none d-md-block ms-3" style={{ fontSize: '0.85rem', lineHeight: 1.1, color: '#222' }}>
-              <strong>03–04 October, 2025</strong><br />
-              Bombay Exhibition Centre,<br />
-              Mumbai
+              <strong>20-21 February, 2026</strong><br />
+              Codissia Trade Fair Complex Coimbatore,<br />
+               Tamil Nadu
             </span>
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,8 +71,10 @@ const Header = () => {
                   <li className="dropdown-submenu position-relative">
                     <a className="dropdown-item dropdown-toggle" href="#">Download</a>
                     <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="/assests/pdf/PharmmaEx-Floor-Plan-mumbai.pdf" download>Floor Plan</a></li>
-                      <li><a className="dropdown-item" href="/assests/pdf/pharmmaex-mumbai-Brochure-2025 (1).pdf" download>Brochure</a></li>
+                      {/* <li><a className="dropdown-item" href="/assests/pdf/PharmmaEx-Floor-Plan-mumbai.pdf" download>Floor Plan</a></li>
+                      <li><a className="dropdown-item" href="/assests/pdf/pharmmaex-mumbai-Brochure-2025 (1).pdf" download>Brochure</a></li> */}
+                      <li><a className="dropdown-item" href="#" >Floor Plan</a></li>
+                      <li><a className="dropdown-item" href="#" >Brochure</a></li>
                     </ul>
                   </li>
                   <li><a className="dropdown-item" href="/review-form">Review</a></li>
