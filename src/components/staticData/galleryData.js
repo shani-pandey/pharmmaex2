@@ -1,4 +1,5 @@
 export const locations = [
+    { name: "Mumbai, 2025", id: "mumbai" },
     { name: "Hyderabad, 2025", id: "hyderabad" },
     { name: "Ahmedabad, 2024", id: "ahmedabad" },
     { name: "Pune, 2024", id: "pune" },
@@ -7,7 +8,6 @@ export const locations = [
   
 export const images = {
       hyderabad: [
-
       "/assests/img/PHOTOS-HYDERABAD/0E0A2741.JPG",
       "/assests/img/PHOTOS-HYDERABAD/0E0A2742.JPG",
       "/assests/img/PHOTOS-HYDERABAD/0E0A2743.JPG",
@@ -113,7 +113,6 @@ export const images = {
       "/assests/img/PHOTOS-HYDERABAD/0E0A3028.JPG"
     ],
     ahmedabad: [
-  
       "/assests/img/gallery-amd-photos/PharmmaEx-Ahmedabad-event-IMG_7878.JPG ",
       "/assests/img/gallery-amd-photos/PharmmaEx-Ahmedabad-event-IMG_7901.JPG ",
       "/assests/img/gallery-amd-photos/PharmmaEx-Ahmedabad-event-visitor.jpg ",
@@ -365,5 +364,47 @@ export const images = {
       "/assests/img/gal2024/IMG-0088.jpg",
       "/assests/img/gal2024/IMG-0089.jpg",
       "/assests/img/gal2024/IMG-0090.jpg",
+    ],
+    mumbai:[
+      "/assests/img/photos-mumbai/ABCD0111.JPG",
+      "/assests/img/photos-mumbai/ABCD9673.JPG",
+      "/assests/img/photos-mumbai/ABCD9675.JPG",
+      "/assests/img/photos-mumbai/ABCD9678.JPG",
+      "/assests/img/photos-mumbai/ABCD9680.JPG",
+      "/assests/img/photos-mumbai/ABCD9681.JPG",
+      "/assests/img/photos-mumbai/ABCD9689.JPG",
+      "/assests/img/photos-mumbai/ABCD9698.JPG",
+      "/assests/img/photos-mumbai/ABCD9700.JPG",
+      "/assests/img/photos-mumbai/ABCD9712.JPG",
+      "/assests/img/photos-mumbai/ABCD9715.JPG",
+      "/assests/img/photos-mumbai/ABCD9730.JPG",
+      "/assests/img/photos-mumbai/ABCD9738.JPG",
+      "/assests/img/photos-mumbai/ABCD9740.JPG",
+      "/assests/img/photos-mumbai/ABCD9742.JPG",
+      "/assests/img/photos-mumbai/ABCD9744.JPG",
+      "/assests/img/photos-mumbai/ABCD9771.JPG",
+      "/assests/img/photos-mumbai/ABCD9775.JPG",
+      "/assests/img/photos-mumbai/ABCD9776.JPG",
+      "/assests/img/photos-mumbai/ABCD9778.JPG",
+      "/assests/img/photos-mumbai/ABCD9780.JPG",
+      "/assests/img/photos-mumbai/ABCD9781.JPG",
+      "/assests/img/photos-mumbai/ABCD9783.JPG",
+      "/assests/img/photos-mumbai/ABCD9786.JPG",
+      "/assests/img/photos-mumbai/ABCD9787.JPG",
+      "/assests/img/photos-mumbai/ABCD9790.JPG",
+      "/assests/img/photos-mumbai/ABCD9793.JPG",
+      "/assests/img/photos-mumbai/ABCD9796.JPG",
+      "/assests/img/photos-mumbai/ABCD9803.JPG",
+      "/assests/img/photos-mumbai/ABCD9805.JPG",
+      "/assests/img/photos-mumbai/ABCD9808.JPG",
+      "/assests/img/photos-mumbai/ABCD9820.JPG",
+      "/assests/img/photos-mumbai/ABCD9837.JPG",
+      "/assests/img/photos-mumbai/ABCD9842.JPG",
+      "/assests/img/photos-mumbai/ABCD9843.JPG",
+      "/assests/img/photos-mumbai/ABCD9849.JPG",
+      "/assests/img/photos-mumbai/ABCD9857.JPG",
+      "/assests/img/photos-mumbai/ABCD9886.JPG",
+      "/assests/img/photos-mumbai/ABCD9908.JPG",
+      "/assests/img/photos-mumbai/ABCD9936.JPG",
     ]
   };
