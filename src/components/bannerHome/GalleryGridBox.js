@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import gstyles from './ExhibitionGallery.module.css';
+import React, { useState, useEffect } from "react";
+import gstyles from "./ExhibitionGallery.module.css";
+import Image from "next/image";
 
 const GalleryGrid = ({ images = [] }) => {
   const [page, setPage] = useState(1);
@@ -9,24 +10,87 @@ const GalleryGrid = ({ images = [] }) => {
   const endIdx = startIdx + imagesPerPage;
   const currentImages = images.slice(startIdx, endIdx);
 
- 
+  // Track which images are loaded
+  const [loadedImages, setLoadedImages] = useState({});
+
   React.useEffect(() => {
     setPage(1);
+    setLoadedImages({});
   }, [images]);
 
+  const handleImageLoad = (index) => {
+    setLoadedImages((prev) => ({ ...prev, [index]: true }));
+  };
+
   return (
-        <>
+    <>
       {/* Gallery Grid */}
-      <div className={gstyles.galleryGrid} style={{ gridTemplateColumns: `repeat(4, 1fr)`, width: '80%' }}>
-        {currentImages.map((img, idx) => (
-          <div className={gstyles.galleryItem} key={startIdx + idx}>
-            <img loading='lazy' src={img} alt={`Exhibition ${startIdx + idx + 1}`} className={gstyles.galleryImg} />
-          </div>
-        ))}
+      <div
+        className={gstyles.galleryGrid}
+        style={{ gridTemplateColumns: `repeat(4, 1fr)`, width: "80%" }}
+      >
+        {currentImages.map((img, idx) => {
+          const globalIndex = startIdx + idx;
+          const isLoaded = loadedImages[globalIndex];
+          return (
+            <div
+              className={gstyles.galleryItem}
+              key={globalIndex}
+              style={{
+                position: "relative",
+                overflow: "hidden",
+              }}
+            >
+              {/* Skeleton Loader */}
+              {!isLoaded && (
+                <div
+                  className="skeleton-box"
+                  style={{
+                    width: "100%",
+                    height:"100%",
+                    paddingTop: "75%", // 4:3 ratio placeholder
+                    background:
+                      "linear-gradient(110deg, #e0e0e0 8%, #f5f5f5 18%, #e0e0e0 33%)",
+                    backgroundSize: "200% 100%",
+                    animation: "shine 1.3s linear infinite",
+                  }}
+                />
+              )}
+              <Image
+                loading="lazy"
+                src={img?.trim()}
+                alt={`Exhibition ${startIdx + idx + 1}`}
+                onLoad={() => handleImageLoad(globalIndex)}
+                 width={400}
+                height={300}
+                className={gstyles.galleryImg}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  opacity: isLoaded ? 1 : 0,
+                  transition: "opacity 0.5s ease",
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                }}
+              />
+            </div>
+          );
+        })}
       </div>
       {/* Pagination Controls */}
       {totalPages > 1 && (
-        <div className='pagination' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 24, gap: 8 }}>
+        <div
+          className="pagination"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: 24,
+            gap: 8,
+          }}
+        >
           {/* Prev Arrow */}
           <button
             onClick={() => setPage(page - 1)}
@@ -34,17 +98,17 @@ const GalleryGrid = ({ images = [] }) => {
             style={{
               width: 36,
               height: 36,
-              borderRadius: '50%',
-              border: '2px solid',
-              background: '#fff',
-              color: '#444444',
+              borderRadius: "50%",
+              border: "2px solid",
+              background: "#fff",
+              color: "#444444",
               fontSize: 20,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              cursor: page === 1 ? 'not-allowed' : 'pointer',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              cursor: page === 1 ? "not-allowed" : "pointer",
               opacity: page === 1 ? 0.5 : 1,
-              transition: 'background 0.2s',
+              transition: "background 0.2s",
             }}
             aria-label="Previous page"
           >
@@ -59,16 +123,39 @@ const GalleryGrid = ({ images = [] }) => {
               }
             } else {
               if (page <= 3) {
-                pages.push(1, 2, 3, 4, 5, '.....', totalPages);
+                pages.push(1, 2, 3, 4, 5, ".....", totalPages);
               } else if (page >= totalPages - 2) {
-                pages.push(1, '.....', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages);
+                pages.push(
+                  1,
+                  ".....",
+                  totalPages - 4,
+                  totalPages - 3,
+                  totalPages - 2,
+                  totalPages - 1,
+                  totalPages
+                );
               } else {
-                pages.push(1, '.....', page - 1, page, page + 1, '.....', totalPages);
+                pages.push(
+                  1,
+                  ".....",
+                  page - 1,
+                  page,
+                  page + 1,
+                  ".....",
+                  totalPages
+                );
               }
             }
             return pages.map((p, idx) => {
-              if (p === '.....') {
-                return <span key={"ellipsis-"+idx} style={{ padding: '0 8px', color: '#888', fontSize: 18 }}>. . . . .</span>;
+              if (p === ".....") {
+                return (
+                  <span
+                    key={"ellipsis-" + idx}
+                    style={{ padding: "0 8px", color: "#888", fontSize: 18 }}
+                  >
+                    . . . . .
+                  </span>
+                );
               }
               const isActive = p === page;
               return (
@@ -77,20 +164,20 @@ const GalleryGrid = ({ images = [] }) => {
                   onClick={() => setPage(p)}
                   disabled={isActive}
                   style={{
-                    color: isActive ? '#009688' : '#222',
-                    background: 'none',
-                    fontWeight: isActive ? 'bold' : 'normal',
+                    color: isActive ? "#009688" : "#222",
+                    background: "none",
+                    fontWeight: isActive ? "bold" : "normal",
                     fontSize: 18,
-                    border: 'none',
-                    borderBottom: isActive ? '3px solid #b2dfdb' : 'none',
-                    padding: '0 12px',
-                    lineHeight: '36px',
-                    textDecoration: 'none',
-                    margin: '0 2px',
-                    cursor: isActive ? 'default' : 'pointer',
-                    outline: 'none',
+                    border: "none",
+                    borderBottom: isActive ? "3px solid #b2dfdb" : "none",
+                    padding: "0 12px",
+                    lineHeight: "36px",
+                    textDecoration: "none",
+                    margin: "0 2px",
+                    cursor: isActive ? "default" : "pointer",
+                    outline: "none",
                   }}
-                  aria-current={isActive ? 'page' : undefined}
+                  aria-current={isActive ? "page" : undefined}
                 >
                   {p}
                 </button>
@@ -104,17 +191,17 @@ const GalleryGrid = ({ images = [] }) => {
             style={{
               width: 36,
               height: 36,
-              borderRadius: '50%' ,
-              border: '2px solid' ,
-              background: '#fff',
-              color: '#444444',
+              borderRadius: "50%",
+              border: "2px solid",
+              background: "#fff",
+              color: "#444444",
               fontSize: 20,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              cursor: page === totalPages ? 'not-allowed' : 'pointer',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              cursor: page === totalPages ? "not-allowed" : "pointer",
               opacity: page === totalPages ? 0.5 : 1,
-              transition: 'background 0.2s',
+              transition: "background 0.2s",
             }}
             aria-label="Next page"
           >
@@ -122,8 +209,8 @@ const GalleryGrid = ({ images = [] }) => {
           </button>
         </div>
       )}
-      </>
+    </>
   );
 };
 
-export default GalleryGrid; 
+export default GalleryGrid;
