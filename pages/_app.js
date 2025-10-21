@@ -12,14 +12,14 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>{`PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu , pharmaceutical exhibition`}</title>
+        {/* <title>{`PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu , pharmaceutical exhibition`}</title> */}
         <link rel="icon" type="image/x-icon" href="/assests/img/favicon.ico" />
 
         {/* Meta Tags */}
-        <meta
+        {/* <meta
           name="description"
           content="Join PharmmaEx 2025 on 03–04 October at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders"
-        />
+        /> */}
         <meta
           name="keywords"
           content="PharmmaEx 2025 Mumbai event, Bombay Exhibition Centre pharma expo, PharmmaEx conference Mumbai, Pharmaceutical innovations Mumbai 2025, Pharma networking Mumbai, Pharma technology event 2025, Mumbai pharma industry expo, Healthcare pharma business Mumbai, Pharmaceutical exhibition Bombay Exhibition Centre"
@@ -32,10 +32,10 @@ export default function App({ Component, pageProps }) {
           property="og:image"
           content="/assets/img/PharmmaEx-updated-logo.svg"
         />
-        <meta
+        {/* <meta
           property="og:title"
           content="PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu"
-        />
+        /> */}
         <meta property="og:url" content="https://pharmmaex.com/" />
         <meta
           property="og:description"
