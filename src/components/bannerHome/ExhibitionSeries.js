@@ -38,7 +38,7 @@ const ExhibitionSeries = () => {
         <div className="mb-5">
           <h5 className="mb-3 exhibition-series-subtitle">Upcoming Exhibition</h5>
           <div className="d-flex flex-wrap align-items-center gap-4">
-            <img src="/assests/img/image58.svg" alt="Bombay Exhibition Centre" className="exhibition-series-upcoming-img rounded-4" />
+            <img src="/assests/img/newlogopharmmaex.jpg" alt="Bombay Exhibition Centre" className="exhibition-series-upcoming-img rounded-4" />
             <div className="d-flex gap-3 align-items-center exhibition-series-countdown">
               <div className="exhibition-series-countdown-box">
                 <div className="fw-bold" style={{ fontSize: '2rem' }}>
@@ -71,7 +71,7 @@ const ExhibitionSeries = () => {
         </div>
         {/* Past Exhibitions */}
         <div>
-          <h5 className="mb-3 exhibition-series-subtitle">Past Exhibitions</h5>
+          <h5 className="mb-3 exhibition-series-subtitle">Successful Events</h5>
           <div className="row g-4">
             {/* Card 1 */}
             <div className="col-md-3">
