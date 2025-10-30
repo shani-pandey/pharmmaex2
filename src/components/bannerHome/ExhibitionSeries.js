@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./crausel.module.css"; // optional: keep your existing styles here
+import "./Crausel.module.css"; // optional: keep your existing styles here
 
 const pastEvents = [
   {
