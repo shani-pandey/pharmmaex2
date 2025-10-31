@@ -8,12 +8,18 @@ import pastExb1 from '../../../public/assests/img/pastex3.svg';
 import pastExb2 from '../../../public/assests/img/pastex2.svg';
 import pastExb3 from '../../../public/assests/img/pastex1.svg';
 import pastExb4 from '../../../public/assests/img/pastex4.svg';
+import pastExb5 from '../../../public/assests/img/image58.svg';
 
 const exhibitions = [
   {
+    date: '03-04 October, 2025',
+    venue: 'Bombay exhibition centre, Mumbai',
+    img: pastExb5, // Replace with actual image path if needed
+  },
+  {
     date: '02-03 May, 2025',
     venue: 'HITEX Exhibition Centre, Hyderabad',
-    img: pastExb1, // Replace with actual image path if needed
+    img: pastExb4, // Replace with actual image path if needed
   },
   {
     date: '14-15 December, 2024',
@@ -28,7 +34,7 @@ const exhibitions = [
   {
     date: '02-03 February, 2024',
     venue: 'Manpho Convention Centre, Bangalore',
-    img: pastExb4, // Replace with actual image path if needed
+    img: pastExb1, // Replace with actual image path if needed
   },
 ];
 

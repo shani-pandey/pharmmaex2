@@ -5,6 +5,8 @@ import pastExb1 from '../../../public/assests/img/pastex3.svg';
 import pastExb2 from '../../../public/assests/img/pastex2.svg';
 import pastExb3 from '../../../public/assests/img/pastex1.svg';
 import pastExb4 from '../../../public/assests/img/pastex4.svg';
+import pastExb5 from '../../../public/assests/img/mumbai_resize.png';
+
 const exhibitions = [
   {
     edition: '1st Edition',
@@ -29,10 +31,17 @@ const exhibitions = [
   },
   {
     edition: '4nd Edition',
-    city: 'Hyderabad-2024',
+    city: 'Hyderabad-2025',
     date: '02-03 May, 2025',
     venue: 'HITEX Exhibition Centre,Hyderabad',
     img: pastExb4,
+  },
+  {
+    edition: '5th Edition',
+    city: 'Mumbai-2025',
+    date: '03-04 October, 2025',
+    venue: 'Bombay exhibition centre, Mumbai',
+    img: pastExb5,
   },
 
 ];

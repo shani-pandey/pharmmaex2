@@ -46,10 +46,10 @@ const AboutHome = () => {
           </div>
           {/* Right: Images Grid */}
           <div className="col-lg-6">
-            <div className="row g-3">
+            <div className="row g-2">
               <div className="col-12">
                 <Image
-                  src="/assests/img/hyderabad.webp"
+                  src="/assests/img/ABCD9815.JPG"
                   alt="About PharmmaEx 1"
                   className="img-fluid rounded-4 w-100 about-home-img mb-2"
                   width={800}
@@ -58,7 +58,7 @@ const AboutHome = () => {
               </div>
               <div className="col-6">
                 <Image
-                  src="/assests/img/about2.webp"
+                  src="/assests/img/ABCD0533.JPG"
                   alt="About PharmmaEx 2"
                   className="img-fluid rounded-4 w-100 about-home-img"
                   width={400}
@@ -67,7 +67,7 @@ const AboutHome = () => {
               </div>
               <div className="col-6">
                 <Image
-                  src="/assests/img/about3.svg"
+                  src="/assests/img/DSC05936.jpg"
                   alt="About PharmmaEx 3"
                   className="img-fluid rounded-4 w-100 about-home-img"
                   width={400}

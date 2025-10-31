@@ -93,7 +93,7 @@ const Upcoming = () => {
 
       <div className={styles.imageContainer}>
         <Image
-          src="/assests/img/mum-up.webp"
+          src="/assests/img/entryplaza.jpg"
           alt="PharmmaEx Event"
           className={styles.image}
           width={1000}
@@ -117,7 +117,7 @@ const Upcoming = () => {
           Download Brochure
         </a> */}
         <a
-          href="#"
+          href="/assests/pdf/Coimbotore_layout.pdf"
           className="btn btn-success about-home-btn"
         >
           Download Floor Plan
