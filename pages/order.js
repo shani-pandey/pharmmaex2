@@ -1,5 +1,5 @@
-import Footer from "@/pharmex/src/components/bannerHome/Footer";
-import Header from "@/pharmex/src/components/header/header";
+import Footer from "@/src/components/bannerHome/Footer";
+import Header from "@/src/components/header/header";
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
 
