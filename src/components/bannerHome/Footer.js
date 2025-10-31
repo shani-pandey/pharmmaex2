@@ -141,7 +141,7 @@ const Footer = () => {
                       <img src="/assests/img/twitter.jpg" alt="X" />
                     </a>
                     <a href="https://www.linkedin.com/company/pharmmaex/">
-                      <img src="/assests/img/new_linkedin.jpg" alt="LinkedIn" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/500px-LinkedIn_logo_initials.png" alt="LinkedIn" />
                     </a>
                   </div>
                 </div>
