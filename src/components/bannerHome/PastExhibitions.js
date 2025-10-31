@@ -43,6 +43,7 @@ const timeline = [
   { num: '02', city: 'Pune', year: '2024' },
   { num: '03', city: 'Ahmedabad', year: '2024' },
   { num: '04', city: 'Hyderabad', year: '2025' },
+  { num: '05', city: 'Mumbai', year: '2025' },
 ];
 
 const responsive = {
