@@ -126,6 +126,7 @@ export default function Gallery({ city: initialCity }) {
             gap: 16,
             margin: "0 0 40px 0",
             overflowX: "auto",
+            alignItems: "center",
           }}
         >
           {locations.map((loc) => (

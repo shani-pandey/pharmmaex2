@@ -6,7 +6,7 @@ import "./Crausel.module.css"; // optional: keep your existing styles here
 const pastEvents = [
   {
     id: 0,
-    img: "/assests/img/entryplaza.jpg",
+    img: "/assests/img/image58.svg",
     title: "03–04 October, 2025",
     venue: "Bombay exhibition centre, Mumbai",
     link: "/gallery/mumbai",
@@ -38,7 +38,7 @@ const pastEvents = [
   },
   {
     id: 4,
-    img: "/assests/img/image5.webp",
+    img: "/assests/img/manpho.jpg",
     title: "02-03 February, 2024",
     venue: "Manpho Convention Centre, Bangalore",
     link: "/gallery/banglore",
