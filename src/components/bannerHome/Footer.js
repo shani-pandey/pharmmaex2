@@ -229,7 +229,10 @@ const Footer = () => {
             <div className="footer-copyright">
               Copyright © 2025 PharmmaEx. All rights reserved.
             </div>
-            <div className="footer-floating-icons d-flex gap-3">
+            <div
+              className="footer-floating-icons d-flex gap-2"
+              style={{ "flex-direction": "column" }}
+            >
               <a href="https://wa.me/">
                 <img src="/assests/img/watsapp.svg" alt="WhatsApp" />
               </a>
