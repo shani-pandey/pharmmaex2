@@ -230,7 +230,7 @@ const Footer = () => {
               Copyright © 2025 PharmmaEx. All rights reserved.
             </div>
             <div
-              className="footer-floating-icons d-flex gap-2"
+              className="footer-floating-icons d-flex"
               style={{ "flex-direction": "column" }}
             >
               <a href="https://wa.me/">
