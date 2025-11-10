@@ -7,9 +7,9 @@ import ExhibitionGallery from "@/src/components/bannerHome/ExhibitionGallery";
 import ExhibitorRegistrationPage from "@/src/components/bannerHome/ExhibitorRegistrationPage";
 
 const Exhibitor = () => {
-  const pageTitle = "Exhibitor Registration | PharmmaEx 2025";
+  const pageTitle = "Exhibitor Registration | PharmmaEx 2026";
   const pageDescription =
-    "Register as an exhibitor for PharmmaEx 2025 at Mumbai. Showcase your products and services to top pharmaceutical industry professionals.";
+    "Register as an exhibitor for PharmmaEx 2026 at Coimbatore, Tamil Nadu. Showcase your products and services to top pharmaceutical industry professionals.";
   const pageUrl = "https://pharmmaex.com/exhibitor-registration";
   const pageImage = "https://pharmmaex.com/assets/img/exhibitor-banner.jpg"; // Replace with actual image URL
   return (
@@ -19,7 +19,7 @@ const Exhibitor = () => {
         <meta name="description" content={pageDescription} />
         <meta
           name="keywords"
-          content="pharma exhibition exhibitor registration, Mumbai pharma expo, exhibit pharma products, pharmaceutical trade show India"
+          content="pharma exhibition exhibitor registration, Coimbatore pharma expo, exhibit pharma products, pharmaceutical trade show India"
         />
         <meta name="author" content="PharmmaEx" />
         <meta name="publisher" content="PharmmaEx" />
@@ -49,9 +49,9 @@ const Exhibitor = () => {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Event",
-              name: "PharmmaEx 2025",
-              startDate: "2025-10-03T09:00:00+05:30",
-              endDate: "2025-10-04T18:00:00+05:30",
+              name: "PharmmaEx 2026",
+              startDate: "2026-10-03T09:00:00+05:30",
+              endDate: "2026-10-04T18:00:00+05:30",
               eventStatus: "https://schema.org/EventScheduled",
               eventAttendanceMode:
                 "https://schema.org/OfflineEventAttendanceMode",
@@ -60,11 +60,11 @@ const Exhibitor = () => {
                 name: "Bombay Exhibition Centre",
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: "Western Express Highway, Goregaon (East)",
-                  addressLocality: "Mumbai",
-                  addressRegion: "Maharashtra",
-                  postalCode: "400063",
-                  addressCountry: "IN",
+                   streetAddress: "Avinashi Road, Peelamedu",
+                  addressLocality: "Coimbatore",
+                  addressRegion: "Tamil Nadu",
+                  postalCode: "641014",
+                  addressCountry: "India",
                 },
               },
               image: [pageImage],
@@ -80,7 +80,7 @@ const Exhibitor = () => {
                 price: "0",
                 priceCurrency: "INR",
                 availability: "https://schema.org/InStock",
-                validFrom: "2025-01-01T00:00:00+05:30",
+                validFrom: "2026-01-01T00:00:00+05:30",
               },
             }),
           }}

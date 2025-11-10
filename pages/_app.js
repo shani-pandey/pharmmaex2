@@ -12,17 +12,17 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        {/* <title>{`PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu , pharmaceutical exhibition`}</title> */}
+        <title>{`PharmmaEx 2026 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu , pharmaceutical exhibition`}</title>
         <link rel="icon" type="image/x-icon" href="/assests/img/favicon.ico" />
 
         {/* Meta Tags */}
-        {/* <meta
+        <meta
           name="description"
-          content="Join PharmmaEx 2025 on 03–04 October at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders"
-        /> */}
+          content="Join PharmmaEx 2026 on 20-21 February at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders"
+        />
         <meta
           name="keywords"
-          content="PharmmaEx 2025 Mumbai event, Bombay Exhibition Centre pharma expo, PharmmaEx conference Mumbai, Pharmaceutical innovations Mumbai 2025, Pharma networking Mumbai, Pharma technology event 2025, Mumbai pharma industry expo, Healthcare pharma business Mumbai, Pharmaceutical exhibition Bombay Exhibition Centre"
+          content="PharmmaEx 2026 Tamil Nadu event, Codissia Trade Fair Complex pharma expo, PharmmaEx conference Coimbatore, Pharmaceutical innovations Tamil Nadu 2026, Pharma networking Coimbatore, Pharma technology event 2026, Coimbatore pharma industry expo, Healthcare pharma business Tamil Nadu, Pharmaceutical exhibition Codissia Trade Fair Complex"
         />
         <meta name="author" content="PharmmaEx" />
         <meta name="publisher" content="PharmmaEx" />
@@ -32,14 +32,14 @@ export default function App({ Component, pageProps }) {
           property="og:image"
           content="/assets/img/PharmmaEx-updated-logo.svg"
         />
-        {/* <meta
+        <meta
           property="og:title"
-          content="PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu"
-        /> */}
+          content="PharmmaEx 2026 - Codissia Trade Fair Complex, Coimbatore, Tamil Nadu"
+        />
         <meta property="og:url" content="https://pharmmaex.com/" />
         <meta
           property="og:description"
-          content="Join PharmmaEx 2025 at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, and experience the future of pharmaceuticals through innovation, networking, and emerging healthcare technologies."
+          content="Join PharmmaEx 2026 at Codissia Trade Fair Complex, Coimbatore, Tamil Nadu, and experience the future of pharmaceuticals through innovation, networking, and emerging healthcare technologies."
         />
         <meta property="og:image:height" content={300} />
         <meta property="og:image:width" content={300} />
@@ -91,23 +91,23 @@ export default function App({ Component, pageProps }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Event",
-              name: "PharmmaEx 2025 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu",
-              startDate: "2025-10-03T09:00:00+05:30",
-              endDate: "2025-10-04T18:00:00+05:30",
+              name: "PharmmaEx 2026 - Codissia Trade Fair Complex, Coimbatore, Tamil Nadu",
+              startDate: "2026-02-20T09:00:00+05:30",
+              endDate: "2026-02-21T18:00:00+05:30",
               location: {
                 "@type": "Place",
-                name: "Bombay Exhibition Centre",
+                name: "Codissia Trade Fair Complex",
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: "Western Express Highway, Goregaon (East)",
-                  addressLocality: "Mumbai",
-                  addressRegion: "Maharashtra",
-                  postalCode: "400063",
+                  streetAddress: "Avinashi Road, Peelamedu",
+                  addressLocality: "Coimbatore",
+                  addressRegion: "Tamil Nadu",
+                  postalCode: "641014",
                   addressCountry: "India",
                 },
               },
               description:
-                "Join PharmmaEx 2025 at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, for two days of pharmaceutical innovation, networking, and insights into the future of the healthcare industry.",
+                "Join PharmmaEx 2026 at Codissia Trade Fair Complex, Coimbatore, Tamil Nadu, for two days of pharmaceutical innovation, networking, and insights into the future of the healthcare industry.",
               image:
                 "https://pharmmaex.com/assets/img/pharmmaex-event-bombay-exhibition-centre.webp",
               organizer: {

@@ -10,7 +10,7 @@ const PharmaConnections = () => {
           <div className="col-lg-5 mb-4 mb-lg-0">
             <h2 className="pharma-connections-heading">Pharma Connections<br />Made Easy</h2>
             <p className="pharma-connections-desc">
-              PharmmaEx is set to make history as the first-of-its-kind event in the bustling commercial capital of India – Mumbai. This three-day business extravaganza will showcase the very best of the pharmaceutical industry, featuring.
+              PharmmaEx is set to make history as the first-of-its-kind event in the bustling commercial capital of India – Tamil Nadu. This three-day business extravaganza will showcase the very best of the pharmaceutical industry, featuring.
             </p>
             <p className="pharma-connections-desc">
               Mumbai, often referred to as the gateway to the Indian pharmaceutical industry, serves as the perfect backdrop for this monumental event. With its strategic importance and global connections, the expo is expected to draw 8,000+ business delegates from around the world.

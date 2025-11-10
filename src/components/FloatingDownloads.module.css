@@ -1,0 +1,39 @@
+.floatingContainer {
+  position: fixed;
+  left: 20px;
+  bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.downloadButton {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 5px 16px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px);
+}
+
+.floorplan {
+  background-color: #28a745;
+}
+
+.floorplan:hover {
+  background-color: #218838;
+}
+
+.brochure {
+  background-color: #007bff;
+}
+
+.brochure:hover {
+  background-color: #0069d9;
+}

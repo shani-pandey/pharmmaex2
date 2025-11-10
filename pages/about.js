@@ -11,20 +11,20 @@ import TeamSection from "@/src/components/bannerHome/TeamSection";
 import ExhibitionGallery from "@/src/components/bannerHome/ExhibitionGallery";
 
 export default function About() {
-  const pageTitle = "About Us - PharmmaEx 2025";
+  const pageTitle = "About Us - PharmmaEx 2026";
   const pageDescription =
-    "Learn about PharmmaEx 2025 — our mission, vision, and the people behind India's premier pharmaceutical exhibition at the Mumbai.";
+    "Learn about PharmmaEx 2026 — our mission, vision, and the people behind India's premier pharmaceutical exhibition at the Coimbatore, Tamil Nadu";
   const pageUrl = "https://pharmmaex.com/about";
   const pageImage = "https://pharmmaex.com/assets/img/aboutBanner.svg";
 
   return (
     <>
       <Head>
-        <title>About Us - PharmmaEx 2025</title>
+        <title>About Us - PharmmaEx 2026</title>
         <meta name="description" content={pageDescription} />
         <meta
           name="keywords"
-          content="About PharmmaEx, Pharma exhibition Mumbai, Pharmaceutical event India, Healthcare expo 2025"
+          content="About PharmmaEx, Pharma exhibition Coimbatore, Pharmaceutical event India, Healthcare expo 2026"
         />
         <meta name="author" content="PharmmaEx" />
         <meta name="publisher" content="PharmmaEx" />
@@ -46,9 +46,9 @@ export default function About() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "AboutPage",
-              name: "About Us - PharmmaEx 2025",
+              name: "About Us - PharmmaEx 2026",
               description:
-                "Learn about PharmmaEx 2025 — our mission, vision, and the people behind India's premier pharmaceutical exhibition at the Mumbai.",
+                "Learn about PharmmaEx 2026 — our mission, vision, and the people behind India's premier pharmaceutical exhibition at the Coimbatore, Tamil Nadu.",
               url: "https://pharmmaex.com/about",
               publisher: {
                 "@type": "Organization",

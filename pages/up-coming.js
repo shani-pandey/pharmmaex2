@@ -7,14 +7,14 @@ import styles from "@/styles/Upcoming.module.css";
 import Image from "next/image";
 
 const Upcoming = () => {
-  const eventName = "PharmmaEx 2025 - Mumbai";
+  const eventName = "PharmmaEx 2026 - Coimbatore, Tamil Nadu";
   const eventDescription =
-    "Join PharmmaEx 2025 on 03–04 October at Mumbai, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders.";
+    "Join PharmmaEx 2026 on 20–21 February at Coimbatore, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders.";
   const eventImage =
     "https://pharmmaex.com/assets/img/pharmmaex-event-bombay-exhibition-centre.webp";
   const eventUrl = "https://pharmmaex.com/up-coming";
-  const startDate = "2025-10-03T09:00:00+05:30";
-  const endDate = "2025-10-04T18:00:00+05:30";
+  const startDate = "2026-02-20T09:00:00+05:30";
+  const endDate = "2026-02-21T18:00:00+05:30";
 
   return (
     <>
@@ -22,7 +22,7 @@ const Upcoming = () => {
         <title>Upcoming Pharma Exhibition In India</title>
         <meta
           name="keywords"
-          content="PharmmaEx 2025, Mumbai pharma exhibition, Bombay Exhibition Centre event, pharmaceutical networking Mumbai, pharma technology India, healthcare business expo"
+          content="PharmmaEx 2026, Coimbatore, Tamil Nadu pharma exhibition, Codissia Trade Fair Complex event, pharmaceutical networking Coimbatore, pharma technology India, healthcare business expo"
         />
         <meta name="author" content="PharmmaEx" />
         <meta name="publisher" content="PharmmaEx" />
@@ -56,17 +56,14 @@ const Upcoming = () => {
               url: "https://pharmmaex.com/up-coming",
               location: {
                 "@type": "Place",
-                name: "Bombay Exhibition Centre",
+                name: "Codissia Trade Fair Complex",
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: "Western Express Highway, Goregaon (East)",
-                  addressLocality: "Mumbai",
-                  addressRegion: "Maharashtra",
-                  postalCode: "400063",
-                  addressCountry: {
-                    "@type": "Country",
-                    name: "India",
-                  },
+                  streetAddress: "Avinashi Road, Peelamedu",
+                  addressLocality: "Coimbatore",
+                  addressRegion: "Tamil Nadu",
+                  postalCode: "641014",
+                  addressCountry: "India",
                 },
               },
               organizer: {
@@ -110,7 +107,7 @@ const Upcoming = () => {
           Download Floor Plan
         </a>
         <a
-          href="/assests/pdf/pharmmaex-mumbai-Brochure-2025 (1).pdf"
+          href="/assests/pdf/pharmmaex-mumbai-Brochure-2026 (1).pdf"
           className="btn btn-outline-success about-home-btn"
           download
         >
@@ -122,10 +119,7 @@ const Upcoming = () => {
         >
           Download Floor Plan
         </a>
-        <a
-          href="#"
-          className="btn btn-outline-success about-home-btn"
-        >
+        <a href="#" className="btn btn-outline-success about-home-btn">
           Download Brochure
         </a>
       </div>
@@ -143,10 +137,10 @@ const Upcoming = () => {
           <div className={styles.eventItem}>
             <span className={styles.eventIcon}>📍</span>
             <div className={styles.eventTextBox}>
-              <div className={styles.eventTitle}>Codissia Trade Fair Complex</div>
-              <div className={styles.eventSub}>
-                Coimbatore, Tamil Nadu
+              <div className={styles.eventTitle}>
+                Codissia Trade Fair Complex
               </div>
+              <div className={styles.eventSub}>Coimbatore, Tamil Nadu</div>
             </div>
           </div>
 
