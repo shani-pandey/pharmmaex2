@@ -15,6 +15,7 @@ import OurExhibitors from "@/src/components/bannerHome/OurExhibitors";
 import ClientReviews from "@/src/components/bannerHome/ClientReviews";
 import Footer from "@/src/components/bannerHome/Footer";
 import dynamic from "next/dynamic";
+import FloatingDownloads from "@/src/components/FloatingDownloads";
 const RegisterDialog = dynamic(() => import("@/src/components/RegisterDialog"), { ssr: false });
 
 const geistSans = Geist({
@@ -45,6 +46,7 @@ export default function Home() {
       <OurExhibitors />
       <ClientReviews />
       <Footer />
+      <FloatingDownloads />
     </>
   )
 }

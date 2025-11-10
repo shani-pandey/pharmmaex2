@@ -20,7 +20,7 @@ export default function About() {
         <meta name="description" content={pageDescription} />
         <meta
           name="keywords"
-          content="PharmmaEx contact, exhibition queries, pharma exhibition Mumbai, pharma networking India, contact pharma expo"
+          content="PharmmaEx contact, exhibition queries, pharma exhibition Coimbatore, Tamil Nadu, pharma networking India, contact pharma expo"
         />
         <meta name="author" content="PharmmaEx" />
         <meta name="publisher" content="PharmmaEx" />
@@ -58,11 +58,11 @@ export default function About() {
               email: "info@pharmmaex.com", // Replace with actual contact email
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Western Express Highway, Goregaon (East)",
-                addressLocality: "Mumbai",
-                addressRegion: "Maharashtra",
-                postalCode: "400063",
-                addressCountry: "IN",
+                streetAddress: "Avinashi Road, Peelamedu",
+                addressLocality: "Coimbatore",
+                addressRegion: "Tamil Nadu",
+                postalCode: "641014",
+                addressCountry: "India",
               },
               openingHours: "Mo-Fr 09:00-18:00",
               sameAs: [

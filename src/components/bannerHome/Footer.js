@@ -141,7 +141,10 @@ const Footer = () => {
                       <img src="/assests/img/twitter.jpg" alt="X" />
                     </a>
                     <a href="https://www.linkedin.com/company/pharmmaex/">
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_1pP-d-s0pW8ZglY5Po9duednuRdY4x4Otw&s" alt="LinkedIn" />
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_1pP-d-s0pW8ZglY5Po9duednuRdY4x4Otw&s"
+                        alt="LinkedIn"
+                      />
                     </a>
                   </div>
                 </div>
