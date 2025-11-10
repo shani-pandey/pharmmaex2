@@ -119,7 +119,7 @@ const Upcoming = () => {
         >
           Download Floor Plan
         </a>
-        <a href="#" className="btn btn-outline-success about-home-btn">
+        <a href="/assests/pdf/Brochure-coimbatore.pdf" className="btn btn-outline-success about-home-btn">
           Download Brochure
         </a>
       </div>
