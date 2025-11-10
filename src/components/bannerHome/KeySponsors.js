@@ -26,7 +26,7 @@ const sponsors = [
   [
     {
       label: "Supported Partners",
-      img: "/assests/img/Supported-Partner-Bionexy-Logo.png",
+      img: "/assests/img/Supported-Partner-Bionexy-Logo.webp",
     },
     //
     {
