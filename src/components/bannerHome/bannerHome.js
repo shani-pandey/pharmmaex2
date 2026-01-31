@@ -39,7 +39,7 @@ const BannerHome = () => {
       {/* Background Video */}
       <video
         className={styles.bannerVideo}
-        src="https://agiledigitaledge.com/ust-pay/phasramex-Videos.mp4"
+        src="https://agiledigitaledge.dev/ust-pay/phasramex-Videos.mp4"
         autoPlay
         loop
         muted
