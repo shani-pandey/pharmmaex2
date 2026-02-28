@@ -27,17 +27,17 @@ const RegisterDialog = () => {
     return (
         <div
             style={{
-               display: showDialog ? "flex" : "none",
-        justifyContent: "center",
-        alignItems: "center",
-        position: "fixed",
-        top: 0,
-        left: 0,
-        width: "100vw",
-        height: "100vh",
-        zIndex: 99999,
-        backgroundColor: "rgba(0,0,0,0.3)",
-        pointerEvents: "auto"
+                display: showDialog ? "flex" : "none",
+                justifyContent: "center",
+                alignItems: "center",
+                position: "fixed",
+                top: 0,
+                left: 0,
+                width: "100vw",
+                height: "100vh",
+                zIndex: 99999,
+                backgroundColor: "rgba(0,0,0,0.3)",
+                pointerEvents: "auto"
             }}
             className={`dialog ${showDialog ? "show" : ""}`}
         >
@@ -189,13 +189,15 @@ const RegisterDialog = () => {
                             >
                                 <img src="assests/img/greenCalendar.png" style={{ marginRight: "8px" }} />
                                 <h5 style={{ fontSize: "1.25rem", fontWeight: 600 }}>
-                                    20-21 February, 2026 | 10am–6pm
+                                    {/* 20-21 February, 2026 | 10am–6pm */}
+                                    Coming soon
                                 </h5>
                             </div>
                             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                                 <img src="assests/img/greenLocation.png" style={{ marginRight: "8px" }} />
                                 <h5 style={{ fontSize: "1.25rem", fontWeight: 600 }}>
-                                   Codissia Trade Fair Complex Coimbatore, Tamil Nadu
+                                    {/* Codissia Trade Fair Complex Coimbatore, Tamil Nadu */}
+                                    Kolkata, West Bengal
                                 </h5>
                             </div>
                             <button

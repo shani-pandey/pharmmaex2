@@ -2,79 +2,80 @@ import React from 'react';
 import Image from 'next/image';
 const ContactUs = () => {
 
-    return (
-        <div className="contactUsFlexWrap">
-            <div className="contactLeftBox">
-                <h2>Devasya Media Pvt. Ltd.</h2>
-                <div className="contact-details">
-                    <div className='contact-el'>
-                        <p><span className="iconSpan"><img src="/assests/img/whiteiconct.svg" alt="Address Icon" width={20} height={20} /></span>Bhardwaj Complex, Near Mobile Tower,</p>
-                        <p style={{ paddingLeft: 32 }}>Behind HDFC Bank, Krishna Nagar, Bulandshahr</p>
-                        <p style={{ paddingLeft: 32 }}>(U.P.)-203001</p>
-                    </div>
-                    <p className='contact-el'><span className="iconSpan"><Image src="/assests/img/whitemailicon.svg" alt="Mail Icon" width={20} height={20} class='img' /></span>info@pharmmaex.com</p>
-                    <p className='contact-el'><span className="iconSpan"><Image src="/assests/img/whiteiconct.svg" alt="Phone Icon" width={20} height={20} class='img'/></span>+91-9258002828 &nbsp; +91-701 733 6797</p>
-                </div>
-                <div className="venue-details">
-                    <h3>Exhibition Venue-Tamil Nadu</h3>
-                    <p>Codissia Trade Fair Complex Coimbatore, Tamil Nadu</p>
-                    <p>20-21 February, 2026</p>
-                </div>
-                <div className="contact-btns">
-                    <a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx" className="btn btn-outline-success">Pre-Registration</a>
-                    <a href="/exhibitor" className="btn btn-outline-success">Become Exhibitor</a>
-                </div>
+  return (
+    <div className="contactUsFlexWrap">
+      <div className="contactLeftBox">
+        <h2>Devasya Media Pvt. Ltd.</h2>
+        <div className="contact-details">
+          <div className='contact-el'>
+            <p><span className="iconSpan"><img src="/assests/img/whiteiconct.svg" alt="Address Icon" width={20} height={20} /></span>Bhardwaj Complex, Near Mobile Tower,</p>
+            <p style={{ paddingLeft: 32 }}>Behind HDFC Bank, Krishna Nagar, Bulandshahr</p>
+            <p style={{ paddingLeft: 32 }}>(U.P.)-203001</p>
+          </div>
+          <p className='contact-el'><span className="iconSpan"><Image src="/assests/img/whitemailicon.svg" alt="Mail Icon" width={20} height={20} class='img' /></span>info@pharmmaex.com</p>
+          <p className='contact-el'><span className="iconSpan"><Image src="/assests/img/whiteiconct.svg" alt="Phone Icon" width={20} height={20} class='img' /></span>+91-9258002828 &nbsp; +91-701 733 6797</p>
+        </div>
+        <div className="venue-details">
+          <h3>Exhibition Venue-Tamil Nadu</h3>
+          {/* <p>Codissia Trade Fair Complex Coimbatore, Tamil Nadu</p>
+                    <p>20-21 February, 2026</p> */}
+          <p>Coming soon | Kolkata, West Bengal</p>
+        </div>
+        <div className="contact-btns">
+          <a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx" className="btn btn-outline-success">Pre-Registration</a>
+          <a href="/exhibitor" className="btn btn-outline-success">Become Exhibitor</a>
+        </div>
+      </div>
+      <div className='contactRightBox'>
+        <form className="contactForm">
+          <div className="form-row">
+            <div className="form-group">
+              <input type="text" id="fullname" name="fullname" required placeholder="Full Name" />
             </div>
-            <div className='contactRightBox'>
-                <form className="contactForm">
-                    <div className="form-row">
-                        <div className="form-group">
-                            <input type="text" id="fullname" name="fullname" required placeholder="Full Name" />
-                        </div>
-                        <div className="form-group">
-                            <input type="email" id="email" name="email" required placeholder="Email Address" />
-                        </div>
-                    </div>
-                    <div className="form-row">
-                        <div className="form-group">
-                            <input type="text" id="phone" name="phone" required placeholder="Phone" />
-                        </div>
-                        <div className="form-group">
-                            <input type="text" id="company" name="company" placeholder="Company/Organisation" />
-                        </div>
-                    </div>
-                    <div className="form-row">
-                        <div className="form-group">
-                            <input type="text" id="designation" name="designation" placeholder="Designation" />
-                        </div>
-                        <div className="form-group">
-                            <input type="text" id="city" name="city" placeholder="City" />
-                        </div>
-                    </div>
-                    <div className="form-row">
-                        <div className="form-group full-width">
-                            <textarea id="message" name="message" rows="3" required placeholder="Your Message"></textarea>
-                        </div>
-                    </div>
-                    {/* <div className="form-row align-center">
+            <div className="form-group">
+              <input type="email" id="email" name="email" required placeholder="Email Address" />
+            </div>
+          </div>
+          <div className="form-row">
+            <div className="form-group">
+              <input type="text" id="phone" name="phone" required placeholder="Phone" />
+            </div>
+            <div className="form-group">
+              <input type="text" id="company" name="company" placeholder="Company/Organisation" />
+            </div>
+          </div>
+          <div className="form-row">
+            <div className="form-group">
+              <input type="text" id="designation" name="designation" placeholder="Designation" />
+            </div>
+            <div className="form-group">
+              <input type="text" id="city" name="city" placeholder="City" />
+            </div>
+          </div>
+          <div className="form-row">
+            <div className="form-group full-width">
+              <textarea id="message" name="message" rows="3" required placeholder="Your Message"></textarea>
+            </div>
+          </div>
+          {/* <div className="form-row align-center">
                         {/* recaptcha to add after registeration key
                     </div> */}
-                    <div className="form-row">
-                        <div className="form-group full-width">
-                            <div className="checkbox-container">
-                                <input type="checkbox" id="communication-consent" name="communication-consent" />
-                                <label htmlFor="communication-consent" className="checkbox-label">
-                                    I would like to receive communication from Pharmmaex via SMS, email, RCS, and WhatsApp for services, offers, and updates.
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="form-row">
-                        <button type="submit" className="btn submit-btn contact-btns">Send Message</button>
-                    </div>
-                </form>
+          <div className="form-row">
+            <div className="form-group full-width">
+              <div className="checkbox-container">
+                <input type="checkbox" id="communication-consent" name="communication-consent" />
+                <label htmlFor="communication-consent" className="checkbox-label">
+                  I would like to receive communication from Pharmmaex via SMS, email, RCS, and WhatsApp for services, offers, and updates.
+                </label>
+              </div>
             </div>
-            <style jsx>{`
+          </div>
+          <div className="form-row">
+            <button type="submit" className="btn submit-btn contact-btns">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <style jsx>{`
                 .contactUsFlexWrap {
                   display: flex;
                   gap: 2rem;
@@ -308,8 +309,8 @@ const ContactUs = () => {
             }
                 }
             `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ContactUs; 

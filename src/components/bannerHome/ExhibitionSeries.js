@@ -194,8 +194,9 @@ const ExhibitionSeries = () => {
               </div>
             </div>
             <div className="ms-3 exhibition-series-upcoming-details">
-              <div className="fw-bold">20-21 February, 2026</div>
-              <div>Codissia Trade Fair Complex Coimbatore, Tamil Nadu</div>
+              {/* <div className="fw-bold">20-21 February, 2026</div> */}
+              {/* <div>Codissia Trade Fair Complex Coimbatore, Tamil Nadu</div> */}
+              <div>Coming soon | Kolkata, West Bengal</div>
             </div>
             <div className="d-flex gap-2 ms-3 exhibition-series-btn-group">
               <a

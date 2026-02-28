@@ -132,18 +132,20 @@ const Upcoming = () => {
           <div className={styles.eventItem}>
             <span className={styles.eventIcon}>📅</span>
             <div className={styles.eventTextBox}>
-              <div className={styles.eventTitle}>20-21 February, 2026</div>
-              <div className={styles.eventSub}>(Friday,Saturday)</div>
+              {/* <div className={styles.eventTitle}>20-21 February, 2026</div> */}
+              {/* <div className={styles.eventSub}>(Friday,Saturday)</div> */}
+              <div className={styles.eventTitle}>Coming soon | Kolkata, West Bengal</div>
             </div>
           </div>
 
           <div className={styles.eventItem}>
             <span className={styles.eventIcon}>📍</span>
             <div className={styles.eventTextBox}>
-              <div className={styles.eventTitle}>
+              {/* <div className={styles.eventTitle}>
                 Codissia Trade Fair Complex
               </div>
-              <div className={styles.eventSub}>Coimbatore, Tamil Nadu</div>
+              <div className={styles.eventSub}>Coimbatore, Tamil Nadu</div> */}
+              <div className={styles.eventTitle}>Coming soon | Kolkata, West Bengal</div>
             </div>
           </div>
 
