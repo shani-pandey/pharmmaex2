@@ -127,7 +127,7 @@ const ExhibitorRegistrationPage = () => {
     const validationErrors = validate();
     setErrors(validationErrors);
     setSubmitError("");
-  
+
     if (Object.keys(validationErrors).length === 0) {
       const formData = new FormData();
       const payload = {
@@ -151,10 +151,10 @@ const ExhibitorRegistrationPage = () => {
         totalCharge: grandTotal,
         StallNo: other.stallNo,
       };
-  
+
       formData.append("jsonData", JSON.stringify(payload));
       formData.append("file", other.logo);
-  
+
       try {
         const res = await fetch("https://apis.pharmmaex.com/send-exbitor-mail", {
           method: "POST",
@@ -175,7 +175,7 @@ const ExhibitorRegistrationPage = () => {
       }
     }
   };
-  
+
 
   return (
     <div className={styles.pageWrapper}>
@@ -184,13 +184,15 @@ const ExhibitorRegistrationPage = () => {
         <div>
           Exhibition Date & Time:{" "}
           <span className={styles.eventHighlight}>
-            February 20th–21th, 2026, 10.00 AM to 6.00 PM
+            {/* February 20th–21th, 2026, 10.00 AM to 6.00 PM */}
+            Coming Soon
           </span>
         </div>
         <div>
           Exhibition Venue:{" "}
           <span className={styles.eventHighlight}>
-            Codissia Trade Fair Complex Coimbatore, Tamil Nadu
+            {/* Codissia Trade Fair Complex Coimbatore, Tamil Nadu */}
+            Kolkata, West Bengal
           </span>
         </div>
       </div>

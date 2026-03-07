@@ -6,6 +6,14 @@ import "./Crausel.module.css"; // optional: keep your existing styles here
 const pastEvents = [
   {
     id: 0,
+    img: "/assests/img/entryplaza.jpg",
+    title: "20-21 February, 2026",
+    venue: "Codissia Trade Fair Complex Coimbatore, Tamil Nadu",
+    link: "/gallery/coimbatore",
+    alt: "Coimbatore",
+  },
+  {
+    id: 1,
     img: "/assests/img/image58.svg",
     title: "03–04 October, 2025",
     venue: "Bombay exhibition centre, Mumbai",
@@ -13,7 +21,7 @@ const pastEvents = [
     alt: "Mumbai",
   },
   {
-    id: 1,
+    id: 2,
     img: "/assests/img/image1.webp",
     title: "02-03 May, 2025",
     venue: "HITEX Exhibition Centre, Hyderabad",
@@ -21,7 +29,7 @@ const pastEvents = [
     alt: "Hyderabad",
   },
   {
-    id: 2,
+    id: 3,
     img: "/assests/img/image2.webp",
     title: "14-15 December, 2024",
     venue: "Vigyan Bhawan, Science City, Ahmedabad",
@@ -29,7 +37,7 @@ const pastEvents = [
     alt: "Ahmedabad",
   },
   {
-    id: 3,
+    id: 4,
     img: "/assests/img/image3.webp",
     title: "21-22 June, 2024",
     venue: "Auto Cluster Exhibition Centre, Chinchwad-Pune",
@@ -37,7 +45,7 @@ const pastEvents = [
     alt: "Pune",
   },
   {
-    id: 4,
+    id: 5,
     img: "/assests/img/manpho.jpg",
     title: "02-03 February, 2024",
     venue: "Manpho Convention Centre, Bangalore",
@@ -169,8 +177,8 @@ const ExhibitionSeries = () => {
           <h5 className="mb-3 exhibition-series-subtitle">Upcoming Exhibition</h5>
           <div className="d-flex flex-wrap align-items-center gap-4">
             <img
-              src="/assests/img/entryplaza.jpg"
-              alt="Bombay Exhibition Centre"
+              src="https://indiano.travel/wp-content/uploads/2022/03/Kolkata.webp"
+              alt="Kolkata Exhibition Centre"
               className="exhibition-series-upcoming-img rounded-4"
             />
             <div className="d-flex gap-3 align-items-center exhibition-series-countdown">

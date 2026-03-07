@@ -224,6 +224,7 @@ export default function ExtraRequirment() {
                                 onClick={() => {
                                   if (!open) {
                                     handleDecrement(product.name);
+                                    setShowCartRight(true);
                                   }
                                 }}
                               >
@@ -237,21 +238,11 @@ export default function ExtraRequirment() {
                                 onClick={() => {
                                   if (!open) {
                                     handleIncrement(product.name);
-                                  }
-                                }}
-                              >
-                                +
-                              </button>
-                              <button
-                                className="btn  cartBTN"
-                                onClick={() => {
-                                  if (!open) {
-                                    handleAddToCart(product.name, 1);
                                     setShowCartRight(true);
                                   }
                                 }}
                               >
-                                Add to cart
+                                +
                               </button>
                             </div>
                           </div>

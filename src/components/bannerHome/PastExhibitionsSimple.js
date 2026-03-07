@@ -6,6 +6,7 @@ import pastExb2 from '../../../public/assests/img/pastex2.svg';
 import pastExb3 from '../../../public/assests/img/pastex1.svg';
 import pastExb4 from '../../../public/assests/img/pastex4.svg';
 import pastExb5 from '../../../public/assests/img/mumbai_resize.png';
+import pastExb6 from '../../../public/assests/img/entryplaza.jpg';
 
 const exhibitions = [
   {
@@ -42,6 +43,13 @@ const exhibitions = [
     date: '03-04 October, 2025',
     venue: 'Bombay exhibition centre, Mumbai',
     img: pastExb5,
+  },
+  {
+    edition: '6th Edition',
+    city: 'Coimbatore-2026',
+    date: '20-21 February, 2026',
+    venue: 'Codissia Trade Fair Complex Coimbatore, Tamil Nadu',
+    img: pastExb6,
   },
 
 ];
