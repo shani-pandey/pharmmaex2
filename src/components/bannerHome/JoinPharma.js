@@ -15,7 +15,7 @@ const JoinPharma = () => {
           <a href=" https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx  " className="btn btn-success px-4 py-2">Pre-Registration</a>
           <a href="/exhibitor" className="btn btn-outline-success px-4 py-2">Become Exhibitor</a>
           <a href="#" className="btn btn-outline-success px-4 py-2">Floor Plan</a>
-          <a href="#" className="btn btn-outline-success px-4 py-2">Brochure</a>
+          {/* <a href="#" className="btn btn-outline-success px-4 py-2">Brochure</a> */}
         </div>
       </div>
     </section>
