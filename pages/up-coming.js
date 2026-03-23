@@ -22,7 +22,7 @@ const Upcoming = () => {
         <title>Upcoming Pharma Exhibition In India</title>
         <meta
           name="keywords"
-          content="PharmmaEx 2026, Coimbatore, Tamil Nadu pharma exhibition, Codissia Trade Fair Complex event, pharmaceutical networking Coimbatore, pharma technology India, healthcare business expo"
+          content="PharmmaEx 2026, Kolkata, West Bengal pharma exhibition, Biswa Bangla Exhibition Centre event, pharmaceutical networking Kolkata, pharma technology India, healthcare business expo"
         />
         <meta name="author" content="PharmmaEx" />
         <meta name="publisher" content="PharmmaEx" />
@@ -56,13 +56,13 @@ const Upcoming = () => {
               url: "https://pharmmaex.com/up-coming",
               location: {
                 "@type": "Place",
-                name: "Codissia Trade Fair Complex",
+                name: "Biswa Bangla Exhibition Centre",
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: "Avinashi Road, Peelamedu",
-                  addressLocality: "Coimbatore",
-                  addressRegion: "Tamil Nadu",
-                  postalCode: "641014",
+                  streetAddress: "Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal",
+                  addressLocality: "Kolkata",
+                  addressRegion: "West Bengal",
+                  postalCode: "700156",
                   addressCountry: "India",
                 },
               },

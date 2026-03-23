@@ -9,7 +9,7 @@ import ExhibitorRegistrationPage from "@/src/components/bannerHome/ExhibitorRegi
 const Exhibitor = () => {
   const pageTitle = "Exhibitor Registration | PharmmaEx 2026";
   const pageDescription =
-    "Register as an exhibitor for PharmmaEx 2026 at Coimbatore, Tamil Nadu. Showcase your products and services to top pharmaceutical industry professionals.";
+    "Register as an exhibitor for PharmmaEx 2026 at Kolkata, West Bengal. Showcase your products and services to top pharmaceutical industry professionals.";
   const pageUrl = "https://pharmmaex.com/exhibitor-registration";
   const pageImage = "https://pharmmaex.com/assets/img/exhibitor-banner.jpg"; // Replace with actual image URL
   return (
@@ -19,7 +19,7 @@ const Exhibitor = () => {
         <meta name="description" content={pageDescription} />
         <meta
           name="keywords"
-          content="pharma exhibition exhibitor registration, Coimbatore pharma expo, exhibit pharma products, pharmaceutical trade show India"
+          content="pharma exhibition exhibitor registration, Kolkata pharma expo, exhibit pharma products, pharmaceutical trade show India"
         />
         <meta name="author" content="PharmmaEx" />
         <meta name="publisher" content="PharmmaEx" />
@@ -57,13 +57,13 @@ const Exhibitor = () => {
                 "https://schema.org/OfflineEventAttendanceMode",
               location: {
                 "@type": "Place",
-                name: "Bombay Exhibition Centre",
+                name: "Biswa Bangla Exhibition Centre",
                 address: {
                   "@type": "PostalAddress",
-                   streetAddress: "Avinashi Road, Peelamedu",
-                  addressLocality: "Coimbatore",
-                  addressRegion: "Tamil Nadu",
-                  postalCode: "641014",
+                  streetAddress: "Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal",
+                  addressLocality: "Kolkata",
+                  addressRegion: "West Bengal",
+                  postalCode: "700156",
                   addressCountry: "India",
                 },
               },

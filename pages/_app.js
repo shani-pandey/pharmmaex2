@@ -12,17 +12,17 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>{`PharmmaEx 2026 - Codissia Trade Fair Complex Coimbatore, Tamil Nadu , pharmaceutical exhibition`}</title>
+        <title>{`PharmmaEx 2026 - Kolkata, West Bengal, pharmaceutical exhibition`}</title>
         <link rel="icon" type="image/x-icon" href="/assests/img/favicon.ico" />
 
         {/* Meta Tags */}
         <meta
           name="description"
-          content="Join PharmmaEx 2026 on 20-21 February at Codissia Trade Fair Complex Coimbatore, Tamil Nadu, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders"
+          content="Join PharmmaEx 2026 on 3-4 July at Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders"
         />
         <meta
           name="keywords"
-          content="PharmmaEx 2026 Tamil Nadu event, Codissia Trade Fair Complex pharma expo, PharmmaEx conference Coimbatore, Pharmaceutical innovations Tamil Nadu 2026, Pharma networking Coimbatore, Pharma technology event 2026, Coimbatore pharma industry expo, Healthcare pharma business Tamil Nadu, Pharmaceutical exhibition Codissia Trade Fair Complex"
+          content="PharmmaEx 2026 Kolkata event, Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal, pharmaceutical exhibition, Pharma networking Kolkata, Pharma technology event 2026, Kolkata pharma industry expo, Healthcare pharma business Kolkata, Pharmaceutical exhibition"
         />
         <meta name="author" content="PharmmaEx" />
         <meta name="publisher" content="PharmmaEx" />
@@ -34,12 +34,12 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           property="og:title"
-          content="PharmmaEx 2026 - Codissia Trade Fair Complex, Coimbatore, Tamil Nadu"
+          content="PharmmaEx 2026 - Kolkata, West Bengal, pharmaceutical exhibition"
         />
         <meta property="og:url" content="https://pharmmaex.com/" />
         <meta
           property="og:description"
-          content="Join PharmmaEx 2026 at Codissia Trade Fair Complex, Coimbatore, Tamil Nadu, and experience the future of pharmaceuticals through innovation, networking, and emerging healthcare technologies."
+          content="Join PharmmaEx 2026 at Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal, and experience the future of pharmaceuticals through innovation, networking, and emerging healthcare technologies."
         />
         <meta property="og:image:height" content={300} />
         <meta property="og:image:width" content={300} />
@@ -96,18 +96,18 @@ export default function App({ Component, pageProps }) {
               endDate: "2026-02-21T18:00:00+05:30",
               location: {
                 "@type": "Place",
-                name: "Codissia Trade Fair Complex",
+                name: "Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal",
                 address: {
                   "@type": "PostalAddress",
-                  streetAddress: "Avinashi Road, Peelamedu",
-                  addressLocality: "Coimbatore",
-                  addressRegion: "Tamil Nadu",
-                  postalCode: "641014",
+                  streetAddress: "Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal",
+                  addressLocality: "Kolkata",
+                  addressRegion: "West Bengal",
+                  postalCode: "700156",
                   addressCountry: "India",
                 },
               },
               description:
-                "Join PharmmaEx 2026 at Codissia Trade Fair Complex, Coimbatore, Tamil Nadu, for two days of pharmaceutical innovation, networking, and insights into the future of the healthcare industry.",
+                "Join PharmmaEx 2026 at Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal, for two days of pharmaceutical innovation, networking, and insights into the future of the healthcare industry.",
               image:
                 "https://pharmmaex.com/assets/img/pharmmaex-event-bombay-exhibition-centre.webp",
               organizer: {

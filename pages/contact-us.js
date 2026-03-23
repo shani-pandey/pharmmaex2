@@ -20,7 +20,7 @@ export default function About() {
         <meta name="description" content={pageDescription} />
         <meta
           name="keywords"
-          content="PharmmaEx contact, exhibition queries, pharma exhibition Coimbatore, Tamil Nadu, pharma networking India, contact pharma expo"
+          content="PharmmaEx contact, exhibition queries, pharma exhibition Kolkata, West Bengal, pharma networking India, contact pharma expo"
         />
         <meta name="author" content="PharmmaEx" />
         <meta name="publisher" content="PharmmaEx" />
@@ -58,10 +58,10 @@ export default function About() {
               email: "info@pharmmaex.com", // Replace with actual contact email
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Avinashi Road, Peelamedu",
-                addressLocality: "Coimbatore",
-                addressRegion: "Tamil Nadu",
-                postalCode: "641014",
+                streetAddress: "Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal",
+                addressLocality: "Kolkata",
+                addressRegion: "West Bengal",
+                postalCode: "700156",
                 addressCountry: "India",
               },
               openingHours: "Mo-Fr 09:00-18:00",
