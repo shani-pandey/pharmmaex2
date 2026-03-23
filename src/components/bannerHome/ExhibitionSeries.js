@@ -55,7 +55,7 @@ const pastEvents = [
 ];
 
 const ExhibitionSeries = () => {
-  const eventDate = new Date("2026-02-20T09:00:00.000Z");
+  const eventDate = new Date("2026-07-03T09:00:00.000Z");
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -202,9 +202,8 @@ const ExhibitionSeries = () => {
               </div>
             </div>
             <div className="ms-3 exhibition-series-upcoming-details">
-              {/* <div className="fw-bold">20-21 February, 2026</div> */}
-              {/* <div>Codissia Trade Fair Complex Coimbatore, Tamil Nadu</div> */}
-              <div>Coming soon | Kolkata, West Bengal</div>
+              <div className="fw-bold">3-4 July, 2026</div>
+              <div>Biswa Bangla Exhibition Centre, <br /> New Town, Kolkata, West Bengal</div>
             </div>
             <div className="d-flex gap-2 ms-3 exhibition-series-btn-group">
               <a

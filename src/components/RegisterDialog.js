@@ -189,15 +189,14 @@ const RegisterDialog = () => {
                             >
                                 <img src="assests/img/greenCalendar.png" style={{ marginRight: "8px" }} />
                                 <h5 style={{ fontSize: "1.25rem", fontWeight: 600 }}>
-                                    {/* 20-21 February, 2026 | 10am–6pm */}
-                                    Coming soon
+                                    3-4 July, 2026 | 10am–6pm
+
                                 </h5>
                             </div>
                             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                                 <img src="assests/img/greenLocation.png" style={{ marginRight: "8px" }} />
                                 <h5 style={{ fontSize: "1.25rem", fontWeight: 600 }}>
-                                    {/* Codissia Trade Fair Complex Coimbatore, Tamil Nadu */}
-                                    Kolkata, West Bengal
+                                    Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal
                                 </h5>
                             </div>
                             <button

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const Footer = () => {
-  const eventDate = new Date("2026-02-20T09:00:00.000Z");
+  const eventDate = new Date("2026-07-03T09:00:00.000Z");
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -49,8 +49,7 @@ const Footer = () => {
             <div className="footer-registration-date-icon me-2">
               <img src="/assests/img/Calendar.svg" alt="Calendar" />
               <div className="footer-registration-date">
-                {/* 20-21 February, 2026 */}
-                Coming soon | Kolkata, West Bengal
+                3-4 July, 2026
               </div>
             </div>
 
@@ -60,8 +59,7 @@ const Footer = () => {
                 alt="Location"
                 className="me-1"
               />
-              {/* Codissia Trade Fair Complex Coimbatore, Tamil Nadu */}
-              Coming soon | Kolkata, West Bengal
+              Biswa Bangla Exhibition Centre, <br /> New Town, Kolkata, West Bengal
             </div>
           </div>
           <div className="footer-registration-btns d-flex gap-3">
@@ -113,11 +111,10 @@ const Footer = () => {
                         </div>
                       </div>
                       <div className="footer-event-info">
-                        {/* <div className="fw-bold">20-21 February, 2026</div> */}
-                        <div className="fw-bold">Coming soon | Kolkata, West Bengal</div>
-                        {/* <div>
-                          Codissia Trade Fair Complex Coimbatore, Tamil Nadu
-                        </div> */}
+                        <div className="fw-bold">3-4 July, 2026</div>
+                        <div>
+                          Biswa Bangla Exhibition Centre, <br /> New Town, Kolkata, West Bengal
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -184,15 +184,13 @@ const ExhibitorRegistrationPage = () => {
         <div>
           Exhibition Date & Time:{" "}
           <span className={styles.eventHighlight}>
-            {/* February 20th–21th, 2026, 10.00 AM to 6.00 PM */}
-            Coming Soon
+            July 3th–4th, 2026, 10.00 AM to 6.00 PM
           </span>
         </div>
         <div>
           Exhibition Venue:{" "}
           <span className={styles.eventHighlight}>
-            {/* Codissia Trade Fair Complex Coimbatore, Tamil Nadu */}
-            Kolkata, West Bengal
+            Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal
           </span>
         </div>
       </div>

@@ -9,12 +9,12 @@ import Image from "next/image";
 const Upcoming = () => {
   const eventName = "PharmmaEx 2026 - Coimbatore, Tamil Nadu";
   const eventDescription =
-    "Join PharmmaEx 2026 on 20–21 February at Coimbatore, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders.";
+    "Join PharmmaEx 2026 on 3-4th July at Kolkata, to explore pharmaceutical innovations, cutting-edge technologies, and key networking opportunities with industry leaders.";
   const eventImage =
     "https://pharmmaex.com/assets/img/pharmmaex-event-bombay-exhibition-centre.webp";
   const eventUrl = "https://pharmmaex.com/up-coming";
-  const startDate = "2026-02-20T09:00:00+05:30";
-  const endDate = "2026-02-21T18:00:00+05:30";
+  const startDate = "2026-07-03T09:00:00+05:30";
+  const endDate = "2026-07-04T18:00:00+05:30";
 
   return (
     <>
@@ -132,20 +132,18 @@ const Upcoming = () => {
           <div className={styles.eventItem}>
             <span className={styles.eventIcon}>📅</span>
             <div className={styles.eventTextBox}>
-              {/* <div className={styles.eventTitle}>20-21 February, 2026</div> */}
-              {/* <div className={styles.eventSub}>(Friday,Saturday)</div> */}
-              <div className={styles.eventTitle}>Coming soon | Kolkata, West Bengal</div>
+              <div className={styles.eventTitle}>3-4th July, 2026</div>
+              <div className={styles.eventSub}>(Friday,Saturday)</div>
             </div>
           </div>
 
           <div className={styles.eventItem}>
             <span className={styles.eventIcon}>📍</span>
             <div className={styles.eventTextBox}>
-              {/* <div className={styles.eventTitle}>
-                Codissia Trade Fair Complex
+              <div className={styles.eventTitle}>
+                Biswa Bangla Exhibition Centre
               </div>
-              <div className={styles.eventSub}>Coimbatore, Tamil Nadu</div> */}
-              <div className={styles.eventTitle}>Coming soon | Kolkata, West Bengal</div>
+              <div className={styles.eventSub}>New Town, Kolkata, West Bengal</div>
             </div>
           </div>
 

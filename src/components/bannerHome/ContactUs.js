@@ -16,10 +16,9 @@ const ContactUs = () => {
           <p className='contact-el'><span className="iconSpan"><Image src="/assests/img/whiteiconct.svg" alt="Phone Icon" width={20} height={20} class='img' /></span>+91-9258002828 &nbsp; +91-701 733 6797</p>
         </div>
         <div className="venue-details">
-          <h3>Exhibition Venue-Tamil Nadu</h3>
-          {/* <p>Codissia Trade Fair Complex Coimbatore, Tamil Nadu</p>
-                    <p>20-21 February, 2026</p> */}
-          <p>Coming soon | Kolkata, West Bengal</p>
+          <h3>Exhibition Venue-West Bengal</h3>
+          <p>Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal</p>
+          <p>3-4th July, 2026</p>
         </div>
         <div className="contact-btns">
           <a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx" className="btn btn-outline-success">Pre-Registration</a>
