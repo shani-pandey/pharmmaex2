@@ -90,7 +90,7 @@ const Upcoming = () => {
 
       <div className={styles.imageContainer}>
         <Image
-          src="https://indiano.travel/wp-content/uploads/2022/03/Kolkata.webp"
+          src="/Kolkata.webp"
           alt="PharmmaEx Event"
           className={styles.image}
           width={1000}
