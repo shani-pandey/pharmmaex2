@@ -8,7 +8,7 @@ const pastEvents = [
     id: 0,
     img: "/assests/img/entryplaza.jpg",
     title: "20-21 February, 2026",
-    venue: "Codissia Trade Fair Complex Coimbatore, Tamil Nadu",
+    venue: "Codissia Trade Fair Complex Coimbatore",
     link: "/gallery/coimbatore",
     alt: "Coimbatore",
   },
