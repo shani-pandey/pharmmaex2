@@ -114,13 +114,13 @@ const Upcoming = () => {
           Download Brochure
         </a> */}
         <a
-          href="/assests/pdf/Floor_Plan_11x17.pdf"
+          href="#"
           className="btn btn-success about-home-btn"
         >
           Download Floor Plan
         </a>
         <a
-          href="/assests/pdf/Brochure-coimbatore.pdf"
+          href="#"
           className="btn btn-outline-success about-home-btn"
         >
           Download Brochure
