@@ -21,7 +21,7 @@ const sponsors = [
     {
       label: "Pharma Champion",
       img: "/assests/img/Sponsor Logo/Sponsor Logo/Supported-Partner.png",
-    },
+    }
   ],
   [
     {
@@ -44,12 +44,18 @@ const sponsors = [
     {
       label: "Association-03",
       img: "/assests/img/Sponsor Logo/Sponsor Logo/Association-03.jpg",
-    },
+    }
+  ],
+  [
     {
       label: "Association-04",
       img: "/assests/img/Sponsor Logo/Sponsor Logo/Association-04.png",
     },
-  ],
+    {
+      label: "Association-05",
+      img: "/assests/img/Sponsor Logo/Sponsor Logo/AssociationLogo.png",
+    }
+  ]
 ];
 
 const KeySponsors = () => {

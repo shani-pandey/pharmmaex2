@@ -114,7 +114,8 @@ const Upcoming = () => {
           Download Brochure
         </a> */}
         <a
-          href="#"
+          href="/assests/pdf/kolkataLayout.pdf"
+          target="_blank"
           className="btn btn-success about-home-btn"
         >
           Download Floor Plan

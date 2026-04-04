@@ -5,7 +5,7 @@ export default function FloatingDownloads() {
   return (
     <div className={styles.floatingContainer}>
       <a
-        href="#"
+        href="/assests/pdf/kolkataLayout.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className={`${styles.downloadButton} ${styles.floorplan}`}

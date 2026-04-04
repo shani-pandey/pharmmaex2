@@ -72,7 +72,7 @@ const Header = () => {
                     <ul className="dropdown-menu">
                       {/* <li><a className="dropdown-item" href="/assests/pdf/PharmmaEx-Floor-Plan-mumbai.pdf" download>Floor Plan</a></li>
                       <li><a className="dropdown-item" href="/assests/pdf/pharmmaex-mumbai-Brochure-2025 (1).pdf" download>Brochure</a></li> */}
-                      <li><a className="dropdown-item" href="#" >Floor Plan</a></li>
+                      <li><a className="dropdown-item" href="/assests/pdf/kolkataLayout.pdf" target="_blank" >Floor Plan</a></li>
                       <li><a className="dropdown-item" href="#" >Brochure</a></li>
                     </ul>
                   </li>

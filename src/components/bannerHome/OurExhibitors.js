@@ -131,6 +131,7 @@ const row2 = [
   "/assests/img/newLogo/Artboard 97.jpg",
   "/assests/img/newLogo/Artboard 98.jpg",
   "/assests/img/newLogo/aelicure.jpeg",
+  "/assests/img/newLogo/TopRanker.png",
 ];
 const row3 = [
   "/assests/img/Clientslogo/Clientslogo/42.jpg",
