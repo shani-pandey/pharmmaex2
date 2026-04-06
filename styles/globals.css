@@ -75,6 +75,14 @@ ul {
   max-width: 1320px !important;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background: #fff;
+  box-shadow: 0 2px 14px rgba(15, 23, 42, 0.06);
+}
+
 .tobBarArea {
   height: 50px;
   background: #000000;

@@ -5,6 +5,8 @@ import InnerPageBanner from "@/src/components/bannerHome/InnerPageBanner";
 import React from "react";
 import styles from "@/styles/Upcoming.module.css";
 import Image from "next/image";
+import EventPageDetails from "@/src/components/phase1/EventPageDetails";
+import WhatsAppFloat from "@/src/components/phase1/WhatsAppFloat";
 
 const Upcoming = () => {
   const eventName = "PharmmaEx 2026 - Coimbatore, Tamil Nadu";
@@ -166,7 +168,16 @@ const Upcoming = () => {
           </a>
         </div>
       </div>
+
+      {/* Phase 1 — full event details */}
+      <EventPageDetails
+        city="Kolkata"
+        date="3-4 July, 2026"
+        venue="Biswa Bangla Exhibition Centre, New Town, Kolkata"
+      />
+
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 };
