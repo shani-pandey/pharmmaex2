@@ -9,6 +9,20 @@
   --background-color: #FFFFFF;
   --hover-color: #F5F5F5;
   --text-color-dull: #111111;
+
+  /* ===== Phase 1 / Phase 2 design tokens ===== */
+  --p1-primary: #00833D;
+  --p1-primary-dark: #006b32;
+  --p1-primary-light: #e6f4ec;
+  --p1-accent: #ffb703;
+  --p1-text: #0f172a;
+  --p1-muted: #64748b;
+  --p1-bg: #ffffff;
+  --p1-bg-soft: #f7f9fb;
+  --p1-border: #e6eaef;
+  --p1-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --p1-shadow-lg: 0 20px 60px rgba(15, 23, 42, 0.12);
+  --p1-radius: 14px;
 }
 
 * {
@@ -21,8 +35,17 @@ body {
   margin: 0;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
-  overflow-x: hidden;
+  /* DO NOT add overflow-x: hidden here. It silently breaks
+     `position: sticky` on every descendant (including the header).
+     If a specific component overflows horizontally, fix it locally
+     with overflow-x:hidden on that component's wrapper. */
+}
 
+/* Safety net for horizontal overflow without breaking sticky:
+   `overflow-x: clip` does not establish a scroll container, so
+   `position: sticky` keeps working on descendants. */
+body {
+  overflow-x: clip;
 }
 
 h1,
@@ -78,9 +101,127 @@ ul {
 header {
   position: sticky;
   top: 0;
-  z-index: 1020;
+  /* Must out-rank any in-page section z-index (hero, modals, floats). */
+  z-index: 10000;
   background: #fff;
   box-shadow: 0 2px 14px rgba(15, 23, 42, 0.06);
+}
+
+/* Bootstrap dropdowns inherit the parent stacking context, so make sure
+   they paint above any sibling section content. */
+header .dropdown-menu {
+  z-index: 10001;
+  border: 1px solid #eef0f3;
+  border-radius: 14px;
+  padding: 0.5rem;
+  box-shadow: 0 18px 40px -16px rgba(15, 23, 42, 0.18);
+  font-size: 0.9rem;
+}
+header .dropdown-item {
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font-weight: 500;
+  color: #0f172a;
+  transition: all 0.2s;
+}
+header .dropdown-item:hover {
+  background: rgba(0, 131, 61, 0.08);
+  color: #00833D;
+}
+header .dropdown-divider {
+  margin: 0.4rem 0.5rem;
+  border-color: #eef0f3;
+}
+
+/* ---------- Header CTAs (premium editorial pills) ---------- */
+.header-ctas {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-shrink: 0;
+}
+.header-cta-primary,
+.header-cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  padding: 0.62rem 1.25rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1;
+  transition: all 0.25s ease;
+  font-family: inherit;
+  cursor: pointer;
+}
+.header-cta-primary {
+  background: #00833D;
+  color: #ffffff;
+  border: 1px solid #00833D;
+  box-shadow: 0 8px 18px -10px rgba(0, 131, 61, 0.5);
+}
+.header-cta-primary:hover {
+  background: #006b32;
+  border-color: #006b32;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px -10px rgba(0, 131, 61, 0.6);
+}
+.header-cta-ghost {
+  background: #ffffff;
+  color: #00833D;
+  border: 1px solid rgba(0, 131, 61, 0.3);
+}
+.header-cta-ghost:hover {
+  background: #00833D;
+  color: #ffffff !important;
+  border-color: #00833D;
+  transform: translateY(-1px);
+}
+
+/* Compact navbar links so the CTAs always have room */
+header .navbar-nav .nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #0f172a;
+  padding: 0.55rem 0.85rem;
+  letter-spacing: -0.005em;
+  transition: color 0.2s;
+}
+header .navbar-nav .nav-link:hover {
+  color: #00833D;
+}
+header .navbar-nav .nav-link.active {
+  color: #00833D !important;
+}
+
+@media (max-width: 1280px) {
+  .header-cta-primary,
+  .header-cta-ghost {
+    font-size: 0.82rem;
+    padding: 0.55rem 1.05rem;
+  }
+  header .navbar-nav .nav-link {
+    font-size: 0.88rem;
+    padding: 0.5rem 0.65rem;
+  }
+}
+@media (max-width: 991px) {
+  .header-ctas {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 0.8rem;
+  }
+  .header-cta-primary,
+  .header-cta-ghost {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.2rem;
+  }
 }
 
 .tobBarArea {
@@ -1262,18 +1403,6 @@ header {
   }
 }
 
-
-.footer-floating-icons {
-  position: fixed;
-  bottom: 13%;
-  right: 4%;
-  display: block !important;
-}
-
-.footer-floating-icons a {
-  display: block;
-  margin: 0 0 10px;
-}
 
 .innerpage-banner-section {
   position: relative;

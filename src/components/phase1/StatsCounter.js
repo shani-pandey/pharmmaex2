@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "./Phase1.module.css";
+import styles from "./StatsCounter.module.css";
 
 const STATS = [
   { value: 500, suffix: "+", label: "Exhibitors" },
   { value: 50000, suffix: "+", label: "Visitors" },
   { value: 12, suffix: "+", label: "Cities" },
-  { value: 5, suffix: "+", label: "Years Experience" },
+  { value: 5, suffix: "+", label: "Years" },
 ];
 
 const useCountUp = (end, duration = 1800, start = false) => {
@@ -29,7 +29,7 @@ const useCountUp = (end, duration = 1800, start = false) => {
 const StatItem = ({ value, suffix, label, visible }) => {
   const count = useCountUp(value, 1800, visible);
   return (
-    <div className={styles.statItem}>
+    <div className={styles.statBlock}>
       <div className={styles.statValue}>
         {count.toLocaleString()}
         <span>{suffix}</span>
@@ -59,16 +59,24 @@ const StatsCounter = () => {
   }, []);
 
   return (
-    <section ref={ref} className={styles.statsSection}>
-      <div className="container">
-        <div className={styles.statsHeader}>
-          <span className={styles.eyebrow}>Our Track Record</span>
-          <h2 className={styles.sectionTitle}>Trusted by India&apos;s Pharma Leaders</h2>
-          <p className={styles.sectionSub}>
-            5+ years of delivering high-impact pharma franchise & manufacturing expos across India.
+    <section ref={ref} className={styles.section}>
+      <div className={`container ${styles.container}`}>
+        <div className={styles.header}>
+          <span className={styles.eyebrow}>
+            <span className={styles.eyebrowDot} />
+            Our Track Record
+          </span>
+          <h2 className={styles.title}>
+            Trusted by India&apos;s{" "}
+            <span className={styles.titleAccent}>pharma leaders</span>
+          </h2>
+          <p className={styles.subtitle}>
+            5+ years of delivering high-impact pharma franchise &amp; manufacturing
+            expos across India. The numbers speak for themselves.
           </p>
         </div>
-        <div className={styles.statsGrid}>
+
+        <div className={styles.statsRow}>
           {STATS.map((s) => (
             <StatItem key={s.label} {...s} visible={visible} />
           ))}

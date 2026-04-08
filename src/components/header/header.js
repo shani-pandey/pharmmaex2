@@ -58,6 +58,16 @@ const Header = () => {
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/events" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events</a>
                 <ul className="dropdown-menu" aria-labelledby="eventsDropdown">
+                  <li><a className="dropdown-item" href="/events">All Editions</a></li>
+                  <li><a className="dropdown-item" href="/events/kolkata">Kolkata 2026 (Flagship)</a></li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li><a className="dropdown-item" href="/events/coimbatore">Coimbatore 2026</a></li>
+                  <li><a className="dropdown-item" href="/events/mumbai">Mumbai 2025</a></li>
+                  <li><a className="dropdown-item" href="/events/hyderabad">Hyderabad 2025</a></li>
+                  <li><a className="dropdown-item" href="/events/ahmedabad">Ahmedabad 2024</a></li>
+                  <li><a className="dropdown-item" href="/events/pune">Pune 2024</a></li>
+                  <li><a className="dropdown-item" href="/events/bangalore">Bangalore 2024</a></li>
+                  <li><hr className="dropdown-divider" /></li>
                   <li><a className="dropdown-item" href="/up-coming">Upcoming Events</a></li>
                   <li><a className="dropdown-item" href="/past-exhibitions">Past Exhibitors</a></li>
                   <li><a className="dropdown-item" href="/sponsors-association">Sponsors & Associations</a></li>
@@ -65,13 +75,28 @@ const Header = () => {
               </li>
 
               <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="/exhibitor-categories" id="exhibitorsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exhibitors</a>
+                <ul className="dropdown-menu" aria-labelledby="exhibitorsDropdown">
+                  <li><a className="dropdown-item" href="/exhibitor-categories">All Categories</a></li>
+                  <li><a className="dropdown-item" href="/exhibitor-categories/pcd-pharma-franchise">PCD Pharma Franchise</a></li>
+                  <li><a className="dropdown-item" href="/exhibitor-categories/third-party-manufacturing">Third-Party Manufacturing</a></li>
+                  <li><a className="dropdown-item" href="/exhibitor-categories/ayurvedic-herbal">Ayurvedic & Herbal</a></li>
+                  <li><a className="dropdown-item" href="/exhibitor-categories/nutraceuticals-wellness">Nutraceuticals & Wellness</a></li>
+                  <li><a className="dropdown-item" href="/exhibitor-categories/cosmetics-cosmeceuticals">Cosmetics & Cosmeceuticals</a></li>
+                  <li><a className="dropdown-item" href="/exhibitor-categories/surgical-medical-devices">Surgical & Medical Devices</a></li>
+                  <li><a className="dropdown-item" href="/exhibitor-categories/veterinary-pharma">Veterinary Pharma</a></li>
+                  <li><a className="dropdown-item" href="/exhibitor-categories/packaging-machinery">Packaging & Machinery</a></li>
+                </ul>
+              </li>
+
+              <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
                 <ul className="dropdown-menu" aria-labelledby="resourcesDropdown">
+                  <li><a className="dropdown-item" href="/blog">Blog</a></li>
+                  <li><a className="dropdown-item" href="/guides">Pharma Franchise Guides</a></li>
                   <li className="dropdown-submenu position-relative">
                     <a className="dropdown-item dropdown-toggle" href="#">Download</a>
                     <ul className="dropdown-menu">
-                      {/* <li><a className="dropdown-item" href="/assests/pdf/PharmmaEx-Floor-Plan-mumbai.pdf" download>Floor Plan</a></li>
-                      <li><a className="dropdown-item" href="/assests/pdf/pharmmaex-mumbai-Brochure-2025 (1).pdf" download>Brochure</a></li> */}
                       <li><a className="dropdown-item" href="/assests/pdf/kolkataLayout.pdf" target="_blank" >Floor Plan</a></li>
                       <li><a className="dropdown-item" href="#" >Brochure</a></li>
                     </ul>
@@ -87,9 +112,16 @@ const Header = () => {
               </li>
             </ul>
 
-            <div className="d-flex gap-2">
-              <a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx" className="btn btn-success">Pre-Registration</a>
-              <a href="/exhibitor" className="btn btn-outline-success">Become Exhibitor</a>
+            <div className="header-ctas">
+              <a
+                href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx"
+                className="header-cta-primary"
+              >
+                Pre-Register
+              </a>
+              <a href="/exhibitor" className="header-cta-ghost">
+                Book a Stall
+              </a>
             </div>
           </div>
         </div>

@@ -1,18 +1,5 @@
 /* ========== Phase 1 Design System ========== */
-:root {
-  --p1-primary: #00833D;
-  --p1-primary-dark: #006b32;
-  --p1-primary-light: #e6f4ec;
-  --p1-accent: #ffb703;
-  --p1-text: #0f172a;
-  --p1-muted: #64748b;
-  --p1-bg: #ffffff;
-  --p1-bg-soft: #f7f9fb;
-  --p1-border: #e6eaef;
-  --p1-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-  --p1-shadow-lg: 0 20px 60px rgba(15, 23, 42, 0.12);
-  --p1-radius: 14px;
-}
+/* Design tokens (--p1-*) live in styles/globals.css so CSS Modules stay pure. */
 
 /* ---------- Section base ---------- */
 .eyebrow {
@@ -473,7 +460,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  /* Must out-rank the sticky header (z-index: 10000 in globals.css). */
+  z-index: 10100;
   padding: 1rem;
   animation: fadeIn 0.2s;
 }

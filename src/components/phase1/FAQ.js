@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import styles from "./Phase1.module.css";
+import Link from "next/link";
+import styles from "./FAQ.module.css";
 
 const FAQS = [
   {
@@ -28,34 +29,104 @@ const FAQS = [
   },
 ];
 
+const ChevronDown = () => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <polyline points="6 9 12 15 18 9" />
+  </svg>
+);
+
+const ArrowRight = ({ size = 13 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
+  </svg>
+);
+
 const FAQ = () => {
   const [open, setOpen] = useState(0);
+
   return (
-    <section className={styles.faqSection}>
+    <section className={styles.section}>
       <div className="container">
-        <div className={styles.headerCenter}>
-          <span className={styles.eyebrow}>FAQs</span>
-          <h2 className={styles.sectionTitle}>Frequently Asked Questions</h2>
-          <p className={styles.sectionSub}>Everything you need to know before booking your stall or visit.</p>
-        </div>
-        <div className={styles.faqWrap}>
-          {FAQS.map((f, i) => {
-            const isOpen = open === i;
-            return (
-              <div key={f.q} className={`${styles.faqItem} ${isOpen ? styles.faqOpen : ""}`}>
-                <button
-                  type="button"
-                  className={styles.faqQuestion}
-                  onClick={() => setOpen(isOpen ? -1 : i)}
-                  aria-expanded={isOpen}
+        <div className={styles.layout}>
+          {/* ============ LEFT — sticky editorial header ============ */}
+          <div className={styles.left}>
+            <span className={styles.eyebrow}>
+              <span className={styles.eyebrowDot} />
+              FAQs
+            </span>
+            <h2 className={styles.title}>
+              Everything you need to{" "}
+              <span className={styles.titleAccent}>know</span>
+            </h2>
+            <p className={styles.subtitle}>
+              The questions exhibitors and visitors ask us most often — answered in
+              one place. Still curious? Our team is one call away.
+            </p>
+
+            <div className={styles.helperBox}>
+              <div className={styles.helperLabel}>Still have a question?</div>
+              <h3 className={styles.helperTitle}>Talk to a real human</h3>
+              <p className={styles.helperText}>
+                Our team responds within one business hour on weekdays. Email or
+                WhatsApp us — no chatbots.
+              </p>
+              <Link href="/contact-us" className={styles.helperCta}>
+                Contact our team <ArrowRight />
+              </Link>
+            </div>
+          </div>
+
+          {/* ============ RIGHT — accordion list ============ */}
+          <div className={styles.list}>
+            {FAQS.map((f, i) => {
+              const isOpen = open === i;
+              return (
+                <article
+                  key={f.q}
+                  className={`${styles.item} ${isOpen ? styles.itemOpen : ""}`}
                 >
-                  <span>{f.q}</span>
-                  <span className={styles.faqIcon}>{isOpen ? "−" : "+"}</span>
-                </button>
-                {isOpen && <div className={styles.faqAnswer}>{f.a}</div>}
-              </div>
-            );
-          })}
+                  <button
+                    type="button"
+                    className={styles.question}
+                    onClick={() => setOpen(isOpen ? -1 : i)}
+                    aria-expanded={isOpen}
+                  >
+                    <span className={styles.questionLeft}>
+                      <span className={styles.questionNumber}>
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <span className={styles.questionText}>{f.q}</span>
+                    </span>
+                    <span className={styles.toggleBtn}>
+                      <ChevronDown />
+                    </span>
+                  </button>
+                  {isOpen && <div className={styles.answer}>{f.a}</div>}
+                </article>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

@@ -10,6 +10,7 @@ import FinalCTA from "./FinalCTA";
 import PastEventHighlights from "./PastEventHighlights";
 import StickyCTA from "./StickyCTA";
 import WhatsAppFloat from "./WhatsAppFloat";
+import OurExhibitors from "@/src/components/bannerHome/OurExhibitors";
 
 const LeadFormModal = dynamic(() => import("./LeadFormModal"), { ssr: false });
 
@@ -59,6 +60,9 @@ const HomeSections = ({ exhibitorCategories, sponsors }) => {
 
       {/* 9. Sponsors & Partners */}
       {sponsors}
+
+      {/* 9b. Our Exhibitors logo strip */}
+      <OurExhibitors />
 
       {/* 10. FAQ */}
       <FAQ />

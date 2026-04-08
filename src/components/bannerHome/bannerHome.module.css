@@ -2,7 +2,8 @@
   position: relative;
   min-height: 80vh;
   overflow: hidden;
-  z-index: 9999;
+  /* No z-index here — it would create a stacking context that paints
+     on top of the sticky <header> and clips its dropdown menus. */
 }
 
 .bannerVideo {
@@ -47,23 +48,109 @@
  
 }
 
+/* ===== Editorial typography (matches Phase 1 + Phase 2 sections) ===== */
+.bannerEyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #4ade80;
+  margin-bottom: 1.4rem;
+}
+.bannerEyebrowDot {
+  width: 6px;
+  height: 6px;
+  background: #4ade80;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.6);
+}
+
 .bannerTitle {
-  font-size: 2.3rem;
-  line-height: 1.2;
-  font-weight: bold;
+  font-size: clamp(2.2rem, 4.6vw, 3.6rem);
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: -0.028em;
   color: #fff;
+  margin: 0 0 1.2rem;
+}
+.bannerTitleAccent {
+  font-style: italic;
+  font-weight: 400;
+  color: #4ade80;
 }
 
 .bannerSubtitle {
-  font-size: 1.2rem;
-  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 540px;
 }
+.bannerEventLine {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 0.4rem;
+}
+.bannerEventLine svg { opacity: 0.7; }
 
 .bannerBtnGroup {
   display: flex;
   justify-content: start;
-  gap: 1rem;
+  gap: 0.8rem;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
+}
+.bannerBtnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: #00833D;
+  color: #ffffff;
+  border: none;
+  padding: 0.95rem 1.8rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  box-shadow: 0 14px 30px -12px rgba(0, 131, 61, 0.55);
+}
+.bannerBtnPrimary:hover {
+  background: #00a04d;
+  transform: translateY(-1.5px);
+  color: #ffffff;
+}
+.bannerBtnPrimary svg { transition: transform 0.3s; }
+.bannerBtnPrimary:hover svg { transform: translateX(3px); }
+
+.bannerBtnGhost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  padding: 0.92rem 1.8rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+.bannerBtnGhost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #ffffff;
 }
 
 .qrBox {
@@ -102,12 +189,18 @@
   }
 
   .bannerTitle {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
   }
 
   .bannerSubtitle {
-    font-size: 1rem;
+    font-size: 0.96rem;
+  }
+  .bannerEventLine {
+    font-size: 0.85rem;
+  }
+  .bannerBtnGroup {
+    margin-top: 1.4rem;
   }
 
   .countdownBox {
