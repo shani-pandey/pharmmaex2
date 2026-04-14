@@ -84,16 +84,38 @@ const BannerHome = () => {
 
           {/* Main Banner Content */}
           <div className="col-lg-6 col-md-8 text-start text-white mx-auto">
-            <div className="mb-2" style={{ letterSpacing: '0.2em', fontSize: '1.1rem' }}>PHARMMAEX PRESENTING</div>
-            <h1 className={`${styles.bannerTitle} fw-bold mb-3`}>
-              India&apos;s Largest Platform for Third Party Pharma Manufacturing and PCD Franchise Opportunities.
+            <span className={styles.bannerEyebrow}>
+              <span className={styles.bannerEyebrowDot} />
+              PharmmaEx Presenting
+            </span>
+            <h1 className={styles.bannerTitle}>
+              India&apos;s leading pharma franchise &amp;{" "}
+              <span className={styles.bannerTitleAccent}>business expo</span>
             </h1>
-            <div className={`${styles.bannerSubtitle} mb-3`}>
-              3–4 July 2026 | Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal
+            <p className={styles.bannerSubtitle}>
+              Connect with 500+ verified pharma companies, distributors and franchise
+              buyers under one roof.
+            </p>
+            <div className={styles.bannerEventLine}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="3" y="4" width="18" height="18" rx="2.5" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              3–4 July 2026 · Biswa Bangla Exhibition Centre, New Town, Kolkata
             </div>
             <div className={styles.bannerBtnGroup}>
-              <a href=" https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx  " className="btn btn-success px-4 py-2">Pre-Registration</a>
-              <a href="/exhibitor" className="btn btn-outline-light px-4 py-2 border border-2">Become Exhibitor</a>
+              <a href="/exhibitor" className={styles.bannerBtnPrimary}>
+                Book a Stall
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+              <a href="/events" className={styles.bannerBtnGhost}>
+                Explore Events
+              </a>
             </div>
           </div>
 

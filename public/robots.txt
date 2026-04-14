@@ -1,0 +1,14 @@
+# PharmmaEx — robots.txt
+# Allow all search engines to crawl public content.
+
+User-agent: *
+Allow: /
+
+# Block sensitive / non-SEO paths
+Disallow: /api/
+Disallow: /order
+Disallow: /thank-you
+Disallow: /extraRequirment
+
+# Sitemap
+Sitemap: https://pharmmaex.com/sitemap.xml

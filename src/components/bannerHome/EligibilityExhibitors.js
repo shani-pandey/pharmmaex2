@@ -1,79 +1,115 @@
-import React from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./EligibilityExhibitors.module.css";
 
-const eligibilityData = [
+const CATEGORIES = [
   {
-    img: '/assests/img/p1.webp',
-    title: 'Allopathic',
-    desc: 'Allopathic professionals can attend to stay updated on pharmaceutical advancements and treatments.'
+    img: "/assests/img/p1.webp",
+    title: "Allopathic",
+    desc:
+      "Modern pharma brands showcasing prescription medicines, OTC, generics and chronic-therapy ranges to franchise buyers.",
+    href: "/exhibitor-categories/pcd-pharma-franchise",
   },
   {
-    img: '/assests/img/itemimg3.webp',
-    title: 'Ayurvedic',
-    desc: 'Ayurvedic practitioners can showcase traditional remedies and holistic healing at our exhibitions.'
+    img: "/assests/img/itemimg3.webp",
+    title: "Ayurvedic",
+    desc:
+      "AYUSH-licensed brands presenting classical and proprietary ayurvedic medicines for clinics, pharmacies and PCD partners.",
+    href: "/exhibitor-categories/ayurvedic-herbal",
   },
   {
-    img: '/assests/img/itemimg5.webp',
-    title: 'Cosmetic',
-    desc: 'Cosmetic professionals can explore the latest trends in skincare and beauty.'
+    img: "/assests/img/itemimg5.webp",
+    title: "Cosmetic",
+    desc:
+      "Derma cosmetics, cosmeceuticals and clinical skincare brands sourcing private-label and franchise opportunities.",
+    href: "/exhibitor-categories/cosmetics-cosmeceuticals",
   },
   {
-    img: '/assests/img/itemimg4.webp',
-    title: 'Herbal',
-    desc: 'Herbal experts can present natural remedies and products to a wide audience.'
-  }
+    img: "/assests/img/itemimg4.webp",
+    title: "Herbal",
+    desc:
+      "Standardised herbal extracts, wellness formulations and natural product brands for the Indian and export markets.",
+    href: "/exhibitor-categories/ayurvedic-herbal",
+  },
 ];
 
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 1200 },
-    items: 4
-  },
-  desktop: {
-    breakpoint: { max: 1200, min: 900 },
-    items: 3
-  },
-  tablet: {
-    breakpoint: { max: 900, min: 600 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 600, min: 0 },
-    items: 1
-  }
-};
+const ArrowRight = ({ size = 14 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.8"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
+  </svg>
+);
 
 const EligibilityExhibitors = () => {
   return (
-    <section className="eligibility-exhibitors-section">
-      <div className="container innerContainer">
-        <h2 className="eligibility-exhibitors-heading text-center">Eligibility for Exhibitors</h2>
-        <div className="eligibility-exhibitors-carousel mt-4">
-          <Carousel
-            responsive={responsive}
-            infinite={true}
-            arrows={false}
-            showDots={false}
-            autoPlay={false}
-            keyBoardControl={true}
-            containerClass="eligibility-carousel-container"
-            itemClass="eligibility-carousel-item"
-          >
-            {eligibilityData.map((item, idx) => (
-              <div className="eligibility-exhibitors-card w-100 d-flex flex-column h-100" key={idx}>
-                <img src={item.img} alt={item.title} className="eligibility-exhibitors-img" />
-                <div className="eligibility-exhibitors-card-body flex-fill">
-                  <div className="eligibility-exhibitors-title">{item.title}</div>
-                  <div className="eligibility-exhibitors-desc">{item.desc}</div>
-                </div>
+    <section className={styles.section}>
+      <div className="container">
+        {/* ============ Header row ============ */}
+        <div className={styles.headerRow}>
+          <div className={styles.headerLeft}>
+            <span className={styles.eyebrow}>
+              <span className={styles.eyebrowDot} />
+              Who Can Exhibit
+            </span>
+            <h2 className={styles.title}>
+              Built for every pharma{" "}
+              <span className={styles.titleAccent}>vertical</span>
+            </h2>
+            <p className={styles.subtitle}>
+              From allopathic prescription brands to ayurvedic, cosmetic and herbal
+              specialists — PharmmaEx is the meeting point for every kind of
+              pharma exhibitor in India.
+            </p>
+          </div>
+
+          <Link href="/exhibitor-categories" className={styles.viewAll}>
+            View all 8 categories <ArrowRight size={13} />
+          </Link>
+        </div>
+
+        {/* ============ Card grid ============ */}
+        <div className={styles.grid}>
+          {CATEGORIES.map((c, idx) => (
+            <Link key={c.title} href={c.href} className={styles.card}>
+              <div className={styles.imageWrap}>
+                <Image
+                  src={c.img}
+                  alt={c.title}
+                  width={640}
+                  height={480}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 25vw"
+                />
+                <div className={styles.imageOverlay} />
               </div>
-            ))}
-          </Carousel>
+              <div className={styles.body}>
+                <div className={styles.cardHeader}>
+                  <span className={styles.cardNumber}>
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <span className={styles.cardArrow}>
+                    <ArrowRight size={15} />
+                  </span>
+                </div>
+                <h3 className={styles.cardTitle}>{c.title}</h3>
+                <p className={styles.cardDesc}>{c.desc}</p>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
   );
 };
 
-export default EligibilityExhibitors; 
+export default EligibilityExhibitors;

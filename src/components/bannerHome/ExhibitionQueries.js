@@ -10,6 +10,7 @@ const boxs = [
         email : "E. shivam.sharma@pharmmaex.com",
         image : "/assests/img/exhPerson.png"
     },
+    
      {
         name : "Vivek Agarwal",
         pos : "Operation Manager-PharmmaEx",

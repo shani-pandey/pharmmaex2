@@ -34,7 +34,7 @@ const Footer = () => {
     <footer className="footer-section">
       <div className="footer-bg">
         <img
-          src="/assests/img/bg-registration.webp"
+          src="/assests/img/bg-registration.png"
           alt="Footer Background"
           className="footer-bg-img"
         />
@@ -149,41 +149,51 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="col-md-2 mb-4 mb-md-0">
-                  <h5 className="footer-title">Quick Links</h5>
+                  <h5 className="footer-title">Editions</h5>
                   <ul className="footer-links">
                     <li>
-                      <a href="/exhibitor">Exhibitor Form</a>
+                      <a href="/events">All Editions</a>
                     </li>
                     <li>
-                      <a href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx">
-                        Visitor Registration
-                      </a>
+                      <a href="/events/kolkata">Kolkata 2026</a>
+                    </li>
+                    <li>
+                      <a href="/events/coimbatore">Coimbatore 2026</a>
+                    </li>
+                    <li>
+                      <a href="/events/mumbai">Mumbai 2025</a>
+                    </li>
+                    <li>
+                      <a href="/events/hyderabad">Hyderabad 2025</a>
+                    </li>
+                    <li>
+                      <a href="/exhibitor">Become Exhibitor</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-md-2 mb-4 mb-md-0">
+                  <h5 className="footer-title">Resources</h5>
+                  <ul className="footer-links">
+                    <li>
+                      <a href="/blog">Blog</a>
+                    </li>
+                    <li>
+                      <a href="/guides">Pharma Guides</a>
+                    </li>
+                    <li>
+                      <a href="/exhibitor-categories">Exhibitor Categories</a>
                     </li>
                     <li>
                       <a href="/gallery/hyderabad">Photo Gallery</a>
                     </li>
                     <li>
-                      <a href="/about">About Us</a>
-                    </li>
-                    <li>
-                      <a href="/past-exhibitions">Past Events</a>
-                    </li>
-                    <li>
-                      <a href="/contact-us">Contact Us</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-md-2 mb-4 mb-md-0">
-                  <h5 className="footer-title">Helpful Links</h5>
-                  <ul className="footer-links">
-                    <li>
-                      <a href="#">Sitemap</a>
+                      <a href="/sitemap.xml">Sitemap</a>
                     </li>
                     <li>
                       <a href="/term-condition">Terms & Condition</a>
                     </li>
                     <li>
-                      <a href="privacyPolicy">Privacy Policy</a>
+                      <a href="/privacyPolicy">Privacy Policy</a>
                     </li>
                   </ul>
                 </div>
@@ -205,15 +215,31 @@ const Footer = () => {
                         alt="Mail"
                         className="me-2"
                       />
-                      shivam.sharma@pharmmaex.com
+                      <a href="mailto:info@pharmmaex.com" style={{ color: "inherit", textDecoration: "none" }}>
+                        info@pharmmaex.com
+                      </a>
                     </li>
+              
+                    <li>
+                      <img
+                        src="/assests/img/Message1.svg"
+                        alt="Mail"
+                        className="me-2"
+                      />
+                      <a href="mailto:shivam.sharma@pharmmaex.com" style={{ color: "inherit", textDecoration: "none" }}>
+                        shivam.sharma@pharmmaex.com
+                      </a>
+                    </li>
+                   
                     <li>
                       <img
                         src="/assests/img/phone1.svg"
                         alt="Phone"
                         className="me-2"
                       />
-                      +91-92580 02828, +91-70173 36797
+                      <a href="tel:+91-9258002828" style={{ color: "inherit", textDecoration: "none" }}>
+                        +91-92580 02828, +91-70173 36797
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -228,17 +254,6 @@ const Footer = () => {
             />
             <div className="footer-copyright">
               Copyright © 2025 PharmmaEx. All rights reserved.
-            </div>
-            <div
-              className="footer-floating-icons d-flex"
-              style={{ "flex-direction": "column" }}
-            >
-              <a href="https://wa.me/">
-                <img src="/assests/img/watsapp.svg" alt="WhatsApp" />
-              </a>
-              <a href="tel:+919258002828">
-                <img src="/assests/img/phoneblue.svg" alt="Call" />
-              </a>
             </div>
           </div>
         </div>

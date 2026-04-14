@@ -1,8 +1,8 @@
 import React from "react";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
+import styles from "./OurExhibitors.module.css";
 
+// ===== Logo rows =====
 const row1 = [
   "/assests/img/Clientslogo/Clientslogo/02.jpg",
   "/assests/img/Clientslogo/Clientslogo/03.jpg",
@@ -19,6 +19,7 @@ const row1 = [
   "/assests/img/Clientslogo/Clientslogo/14.jpg",
   "/assests/img/Clientslogo/Clientslogo/15.jpg",
 ];
+
 const row2 = [
   "/assests/img/Clientslogo/Clientslogo/16.jpg",
   "/assests/img/Clientslogo/Clientslogo/17.jpg",
@@ -46,93 +47,8 @@ const row2 = [
   "/assests/img/Clientslogo/Clientslogo/39.jpg",
   "/assests/img/Clientslogo/Clientslogo/40.jpg",
   "/assests/img/Clientslogo/Clientslogo/41.jpg",
-
-  "/assests/img/newLogo/56.jpg",
-  "/assests/img/newLogo/57.jpg",
-  "/assests/img/newLogo/Artboard 6.jpg",
-  "/assests/img/newLogo/Artboard 8.jpg",
-  "/assests/img/newLogo/Artboard 9.jpg",
-  "/assests/img/newLogo/Artboard 10.jpg",
-  "/assests/img/newLogo/Artboard 11.jpg",
-  "/assests/img/newLogo/Artboard 13.jpg",
-  "/assests/img/newLogo/Artboard 14.jpg",
-  "/assests/img/newLogo/Artboard 15.jpg",
-  "/assests/img/newLogo/Artboard 17.jpg",
-  "/assests/img/newLogo/Artboard 18.jpg",
-  "/assests/img/newLogo/Artboard 19.jpg",
-  "/assests/img/newLogo/Artboard 20.jpg",
-  "/assests/img/newLogo/Artboard 21.jpg",
-  "/assests/img/newLogo/Artboard 22.jpg",
-  "/assests/img/newLogo/Artboard 23.jpg",
-  "/assests/img/newLogo/Artboard 24.jpg",
-  "/assests/img/newLogo/Artboard 26.jpg",
-  "/assests/img/newLogo/Artboard 27.jpg",
-  "/assests/img/newLogo/Artboard 28.jpg",
-  "/assests/img/newLogo/Artboard 29.jpg",
-  "/assests/img/newLogo/Artboard 30.jpg",
-  "/assests/img/newLogo/Artboard 33.jpg",
-  "/assests/img/newLogo/Artboard 34.jpg",
-  "/assests/img/newLogo/Artboard 36.jpg",
-  "/assests/img/newLogo/Artboard 38.jpg",
-  "/assests/img/newLogo/Artboard 39.jpg",
-  "/assests/img/newLogo/Artboard 40.jpg",
-  "/assests/img/newLogo/Artboard 41.jpg",
-  "/assests/img/newLogo/Artboard 42.jpg",
-  "/assests/img/newLogo/Artboard 43.jpg",
-  "/assests/img/newLogo/Artboard 44.jpg",
-  "/assests/img/newLogo/Artboard 45.jpg",
-  "/assests/img/newLogo/Artboard 46.jpg",
-  "/assests/img/newLogo/Artboard 47.jpg",
-  "/assests/img/newLogo/Artboard 48.jpg",
-  "/assests/img/newLogo/Artboard 49.jpg",
-  "/assests/img/newLogo/Artboard 51.jpg",
-  "/assests/img/newLogo/Artboard 53.jpg",
-  "/assests/img/newLogo/Artboard 54.jpg",
-  "/assests/img/newLogo/Artboard 55.jpg",
-  "/assests/img/newLogo/Artboard 57.jpg",
-  "/assests/img/newLogo/Artboard 58.jpg",
-  "/assests/img/newLogo/Artboard 59.jpg",
-  "/assests/img/newLogo/Artboard 60.jpg",
-  "/assests/img/newLogo/Artboard 62.jpg",
-  "/assests/img/newLogo/Artboard 63.jpg",
-  "/assests/img/newLogo/Artboard 64.jpg",
-  "/assests/img/newLogo/Artboard 65.jpg",
-  "/assests/img/newLogo/Artboard 66.jpg",
-  "/assests/img/newLogo/Artboard 67.jpg",
-  "/assests/img/newLogo/Artboard 68.jpg",
-  "/assests/img/newLogo/Artboard 69.jpg",
-  "/assests/img/newLogo/Artboard 70.jpg",
-  "/assests/img/newLogo/Artboard 71.jpg",
-  "/assests/img/newLogo/Artboard 72.jpg",
-  "/assests/img/newLogo/Artboard 73.jpg",
-  "/assests/img/newLogo/Artboard 74.jpg",
-  "/assests/img/newLogo/Artboard 75.jpg",
-  "/assests/img/newLogo/Artboard 76.jpg",
-  "/assests/img/newLogo/Artboard 77.jpg",
-  "/assests/img/newLogo/Artboard 78.jpg",
-  "/assests/img/newLogo/Artboard 79.jpg",
-  "/assests/img/newLogo/Artboard 80.jpg",
-  "/assests/img/newLogo/Artboard 81.jpg",
-  "/assests/img/newLogo/Artboard 82.jpg",
-  "/assests/img/newLogo/Artboard 83.jpg",
-  "/assests/img/newLogo/Artboard 84.jpg",
-  "/assests/img/newLogo/Artboard 85.jpg",
-  "/assests/img/newLogo/Artboard 86.jpg",
-  "/assests/img/newLogo/Artboard 87.jpg",
-  "/assests/img/newLogo/Artboard 88.jpg",
-  "/assests/img/newLogo/Artboard 89.jpg",
-  "/assests/img/newLogo/Artboard 90.jpg",
-  "/assests/img/newLogo/Artboard 91.jpg",
-  "/assests/img/newLogo/Artboard 92.jpg",
-  "/assests/img/newLogo/Artboard 93.jpg",
-  "/assests/img/newLogo/Artboard 94.jpg",
-  "/assests/img/newLogo/Artboard 95.jpg",
-  "/assests/img/newLogo/Artboard 96.jpg",
-  "/assests/img/newLogo/Artboard 97.jpg",
-  "/assests/img/newLogo/Artboard 98.jpg",
-  "/assests/img/newLogo/aelicure.jpeg",
-  "/assests/img/newLogo/TopRanker.png",
 ];
+
 const row3 = [
   "/assests/img/Clientslogo/Clientslogo/42.jpg",
   "/assests/img/Clientslogo/Clientslogo/43.jpg",
@@ -150,86 +66,66 @@ const row3 = [
   "/assests/img/Clientslogo/Clientslogo/55.png",
 ];
 
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 1200 },
-    items: 9,
-  },
-  desktop: {
-    breakpoint: { max: 1200, min: 900 },
-    items: 5,
-  },
-  tablet: {
-    breakpoint: { max: 900, min: 600 },
-    items: 3,
-  },
-  mobile: {
-    breakpoint: { max: 600, min: 0 },
-    items: 2,
-  },
+const TOTAL_LOGOS = row1.length + row2.length + row3.length;
+
+// CSS marquee row — render images twice for seamless loop.
+const MarqueeRow = ({ images, direction = "left", speed }) => {
+  const trackClass = [
+    styles.marqueeTrack,
+    direction === "right" ? styles.marqueeTrackRight : "",
+    speed === "slow" ? styles.marqueeTrackSlow : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  return (
+    <div className={styles.marqueeRow}>
+      <div className={trackClass}>
+        {[...images, ...images].map((src, idx) => (
+          <div key={idx} className={styles.logoCard}>
+            <Image
+              src={src}
+              alt="PharmmaEx exhibitor brand"
+              width={120}
+              height={60}
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 const OurExhibitors = () => {
   return (
-    <section className="our-exhibitors-section">
-      <div className="  container-fluid">
-        <h2 className="our-exhibitors-heading text-center">Our Exhibitors</h2>
-        {/* Row 1 */}
-        <div className="our-exhibitors-row d-flex justify-content-center flex-wrap mb-3">
-          {row1.map((img, idx) => (
-            <div className="our-exhibitors-card" key={idx}>
-              <Image
-                src={img}
-                alt="Exhibitor"
-                className="our-exhibitors-img"
-                width={100}
-                height={100}
-              />
-            </div>
-          ))}
-        </div>
-        {/* Row 2 - Carousel */}
-        <div className="our-exhibitors-row our-exhibitors-carousel mb-3 ">
-          <Carousel
-            responsive={responsive}
-            infinite={true}
-            arrows={false}
-            showDots={false}
-            autoPlay={true}
-            autoPlaySpeed={1} // 👈 set lower value
-            customTransition="transform 2000ms linear" // 👈 smooth long transition
-            transitionDuration={2000} // 👈 very long duration
-            keyBoardControl={true}
-            containerClass="our-exhibitors-carousel-container"
-            itemClass="our-exhibitors-carousel-item"
-          >
-            {row2.map((img, idx) => (
-              <div className="our-exhibitors-card" key={idx}>
-                <Image
-                  src={img}
-                  alt="Exhibitor"
-                  className="our-exhibitors-img"
-                  width={100}
-                  height={100}
-                />
-              </div>
-            ))}
-          </Carousel>
-        </div>
-        {/* Row 3 */}
-        <div className="our-exhibitors-row d-flex justify-content-center flex-wrap">
-          {row3.map((img, idx) => (
-            <div className="our-exhibitors-card" key={idx}>
-              <Image
-                src={img}
-                alt="Exhibitor"
-                className="our-exhibitors-img"
-                width={100}
-                height={100}
-              />
-            </div>
-          ))}
-        </div>
+    <section className={styles.section}>
+      <div className={styles.header}>
+        <span className={styles.eyebrow}>
+          <span className={styles.eyebrowDot} />
+          Our Exhibitors
+        </span>
+        <h2 className={styles.title}>
+          Trusted by{" "}
+          <span className={styles.titleAccent}>India&apos;s pharma brands</span>
+        </h2>
+        <p className={styles.subtitle}>
+          A glimpse of the {TOTAL_LOGOS}+ verified pharma companies — across PCD,
+          third-party manufacturing, ayurvedic, cosmetic and herbal segments — that
+          have exhibited at PharmmaEx editions.
+        </p>
+      </div>
+
+      <MarqueeRow images={row1} direction="left" />
+      <MarqueeRow images={row2} direction="right" speed="slow" />
+      <MarqueeRow images={row3} direction="left" />
+
+      <div className={styles.footerStat}>
+        {/* <span><strong>{TOTAL_LOGOS}+</strong> verified brands shown</span>
+        <span className={styles.footerStatDivider} />
+        <span><strong>500+</strong> total exhibitors all-time</span> */}
+        <span className={styles.footerStatDivider} />
+        <span>Hover any logo to pause</span>
       </div>
     </section>
   );

@@ -1,0 +1,303 @@
+/* ============================================================
+   Why Exhibit — premium editorial redesign
+   Sticky left header column + numbered 2x3 benefit grid
+============================================================ */
+
+.section {
+  padding: 6.5rem 0 6rem;
+  background: #ffffff;
+  position: relative;
+}
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 90%);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(15, 23, 42, 0.08), transparent);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.4fr;
+  gap: 4.5rem;
+  align-items: start;
+}
+
+/* ============================================================
+   LEFT COLUMN — sticky editorial header
+============================================================ */
+.left {
+  position: sticky;
+  top: 120px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #00833D;
+  margin-bottom: 1.2rem;
+}
+.eyebrowDot {
+  width: 6px;
+  height: 6px;
+  background: #00833D;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  color: #0f172a;
+  line-height: 1.12;
+  margin: 0 0 1.1rem;
+}
+.titleAccent {
+  font-style: italic;
+  font-weight: 500;
+  color: #00833D;
+}
+
+.subtitle {
+  font-size: 1.04rem;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.7;
+  margin: 0 0 2.4rem;
+  max-width: 420px;
+}
+
+/* ---------- Stat highlight card ---------- */
+.statCard {
+  background: linear-gradient(180deg, #f8faf9 0%, #f1f5f4 100%);
+  border: 1px solid #e6eaee;
+  border-radius: 22px;
+  padding: 1.7rem 1.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.statCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, #00833D, #4ade80);
+}
+.statValue {
+  font-size: 2.6rem;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.45rem;
+  font-feature-settings: "tnum";
+}
+.statValue strong {
+  font-weight: 500;
+  color: #00833D;
+}
+.statLabel {
+  font-size: 0.86rem;
+  color: #64748b;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* ---------- CTAs ---------- */
+.ctaRow {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: #00833D;
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.92rem 1.7rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  box-shadow: 0 10px 22px -12px rgba(0, 131, 61, 0.4);
+}
+.btnPrimary:hover {
+  background: #006b32;
+  transform: translateY(-1.5px);
+  box-shadow: 0 14px 26px -12px rgba(0, 131, 61, 0.5);
+  color: #ffffff;
+}
+.btnPrimary svg { transition: transform 0.3s; }
+.btnPrimary:hover svg { transform: translateX(3px); }
+
+/* Ghost: inverse — soft white→mint background, dark green text. */
+.btnGhost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+  color: #00833D;
+  border: 1px solid rgba(0, 131, 61, 0.28);
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.95rem 1.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+.btnGhost:hover {
+  background: linear-gradient(135deg, #00833D 0%, #00a04d 100%);
+  color: #ffffff;
+  border-color: #00833D;
+  transform: translateY(-1.5px);
+  box-shadow: 0 10px 22px -10px rgba(0, 131, 61, 0.45);
+}
+
+/* ============================================================
+   RIGHT COLUMN — numbered benefit grid
+============================================================ */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #eef0f3;
+  border-radius: 22px;
+  padding: 2rem 1.8rem 1.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  min-height: 220px;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00833D, transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 131, 61, 0.18);
+  box-shadow: 0 22px 44px -22px rgba(15, 23, 42, 0.12);
+}
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+.cardNumber {
+  font-size: 2.2rem;
+  font-weight: 200;
+  letter-spacing: -0.04em;
+  color: #cbd5e1;
+  line-height: 1;
+  font-feature-settings: "tnum";
+  transition: color 0.3s;
+}
+.card:hover .cardNumber {
+  color: #00833D;
+}
+.cardIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+.card:hover .cardIcon {
+  background: #00833D;
+  color: #ffffff;
+}
+
+.cardTitle {
+  font-size: 1.18rem;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.cardText {
+  font-size: 0.93rem;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ============================================================
+   Responsive
+============================================================ */
+@media (max-width: 992px) {
+  .section { padding: 5rem 0; }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .left { position: static; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .card { min-height: auto; padding: 1.7rem 1.5rem; }
+}
+@media (max-width: 640px) {
+  .section { padding: 4rem 0; }
+  .layout { gap: 2.4rem; }
+  .grid { grid-template-columns: 1fr; }
+  .title { font-size: 2rem; }
+  .statCard { padding: 1.5rem 1.4rem; }
+  .statValue { font-size: 2.2rem; }
+  .ctaRow { flex-direction: column; }
+  .btnPrimary, .btnGhost {
+    width: 100%;
+    justify-content: center;
+  }
+  .card {
+    padding: 1.6rem 1.5rem;
+    border-radius: 18px;
+  }
+  .cardNumber { font-size: 1.9rem; }
+  .cardTitle { font-size: 1.1rem; }
+}
