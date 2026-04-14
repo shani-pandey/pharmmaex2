@@ -107,7 +107,7 @@ const RegisterDialog = () => {
                     style={{
                         width: "90%",
                         maxWidth: "800px",
-                        background: "url('assests/img/registerDialogbg.png') no-repeat center/cover",
+                        background: "url('assests/img/registerDialogbg.webp') no-repeat center/cover",
                         borderRadius: "30px",
                         padding: "3% 5%",
                         position: "relative",

@@ -34,7 +34,7 @@ const Footer = () => {
     <footer className="footer-section">
       <div className="footer-bg">
         <img
-          src="/assests/img/bg-registration.webp"
+          src="/assests/img/bg-registration.png"
           alt="Footer Background"
           className="footer-bg-img"
         />
@@ -215,15 +215,31 @@ const Footer = () => {
                         alt="Mail"
                         className="me-2"
                       />
-                      shivam.sharma@pharmmaex.com
+                      <a href="mailto:info@pharmmaex.com" style={{ color: "inherit", textDecoration: "none" }}>
+                        info@pharmmaex.com
+                      </a>
                     </li>
+              
+                    <li>
+                      <img
+                        src="/assests/img/Message1.svg"
+                        alt="Mail"
+                        className="me-2"
+                      />
+                      <a href="mailto:shivam.sharma@pharmmaex.com" style={{ color: "inherit", textDecoration: "none" }}>
+                        shivam.sharma@pharmmaex.com
+                      </a>
+                    </li>
+                   
                     <li>
                       <img
                         src="/assests/img/phone1.svg"
                         alt="Phone"
                         className="me-2"
                       />
-                      +91-92580 02828, +91-70173 36797
+                      <a href="tel:+91-9258002828" style={{ color: "inherit", textDecoration: "none" }}>
+                        +91-92580 02828, +91-70173 36797
+                      </a>
                     </li>
                   </ul>
                 </div>

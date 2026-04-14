@@ -68,17 +68,17 @@ const BENEFITS = [
   {
     icon: <GlobeIcon />,
     title: "Pan-India Reach",
-    text: "Showcase your brand across 12+ cities in a single year with one trusted exhibition partner.",
+    text: "Showcase your brand across 25+ states in a single year with one trusted exhibition partner.",
   },
   {
     icon: <TrendIcon />,
     title: "Proven ROI",
-    text: "Past exhibitors report an average of 100+ qualified leads and 20+ closed deals per event.",
+    text: "Past exhibitors report an average of 25k+ qualified leads and 20+ closed deals per event.",
   },
   {
     icon: <ShieldIcon />,
     title: "Trusted Brand",
-    text: "5+ years organizing India\u2019s most credible pharma franchise expos with premium brand association.",
+    text: "3+ years organizing India\u2019s most credible pharma franchise expos with premium brand association.",
   },
   {
     icon: <SpeakerIcon />,
@@ -109,7 +109,7 @@ const WhyExhibit = ({ onCTA }) => {
 
             <div className={styles.statCard}>
               <span className={styles.statValue}>
-                <strong>100+</strong> qualified leads
+                <strong>25k+</strong> qualified leads
               </span>
               <div className={styles.statLabel}>
                 Average per exhibitor, per edition. Top performers cross 250+.

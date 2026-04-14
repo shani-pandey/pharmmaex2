@@ -21,8 +21,8 @@ const ArrowRight = ({ size = 16 }) => (
 const TRUST_STATS = [
   { value: "500+", label: "Verified Exhibitors" },
   { value: "50,000+", label: "Pre-Screened Visitors" },
-  { value: "12+", label: "Cities Across India" },
-  { value: "5+", label: "Years of Experience" },
+  { value: "25+", label: "States Covered" },
+  { value: "3+", label: "Years of Experience" },
 ];
 
 const FinalCTA = ({ onBookStall, onBrochure }) => {

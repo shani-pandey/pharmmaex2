@@ -19,16 +19,16 @@ const SMALL_PHOTOS = [
 const STATS = [
   {
     value: "12K+",
-    label: "Footfall in Mumbai",
-    detail: "Doctors, distributors and franchise buyers in two days.",
+    label: "Our Exhibition Footfall",
+    detail: "Our exhibition welcomed over 12,000 doctors, distributors and franchise buyers in just two days.",
   },
   {
-    value: "350+",
+    value: "100k+",
     label: "Brands Showcased",
     detail: "Across allopathic, ayurvedic, cosmetic and herbal segments.",
   },
   {
-    value: "₹85Cr",
+    value: "₹100+Cr",
     label: "Business Generated",
     detail: "On-spot orders, franchise contracts and manufacturing tie-ups.",
   },

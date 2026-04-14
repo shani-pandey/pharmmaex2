@@ -1126,9 +1126,9 @@ header .navbar-nav .nav-link.active {
 
 .footer-bg-img {
   width: 100vw;
-  height: 380px;
-  object-fit: cover;
-  object-position: center;
+  height: 320px;
+  object-fit: fill;
+  object-position:bottom;
   display: block;
 }
 

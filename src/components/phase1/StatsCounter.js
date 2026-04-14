@@ -4,8 +4,8 @@ import styles from "./StatsCounter.module.css";
 const STATS = [
   { value: 500, suffix: "+", label: "Exhibitors" },
   { value: 50000, suffix: "+", label: "Visitors" },
-  { value: 12, suffix: "+", label: "Cities" },
-  { value: 5, suffix: "+", label: "Years" },
+  { value: 25, suffix: "+", label: "States Covered" },
+  { value: 3, suffix: "+", label: "Years" },
 ];
 
 const useCountUp = (end, duration = 1800, start = false) => {
@@ -71,7 +71,7 @@ const StatsCounter = () => {
             <span className={styles.titleAccent}>pharma leaders</span>
           </h2>
           <p className={styles.subtitle}>
-            5+ years of delivering high-impact pharma franchise &amp; manufacturing
+            3+ years of delivering high-impact pharma franchise &amp; manufacturing
             expos across India. The numbers speak for themselves.
           </p>
         </div>

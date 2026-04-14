@@ -121,9 +121,9 @@ const OurExhibitors = () => {
       <MarqueeRow images={row3} direction="left" />
 
       <div className={styles.footerStat}>
-        <span><strong>{TOTAL_LOGOS}+</strong> verified brands shown</span>
+        {/* <span><strong>{TOTAL_LOGOS}+</strong> verified brands shown</span>
         <span className={styles.footerStatDivider} />
-        <span><strong>500+</strong> total exhibitors all-time</span>
+        <span><strong>500+</strong> total exhibitors all-time</span> */}
         <span className={styles.footerStatDivider} />
         <span>Hover any logo to pause</span>
       </div>

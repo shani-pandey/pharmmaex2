@@ -23,7 +23,7 @@ export const BLOG_POSTS = {
     body: `
       <p>Choosing the right PCD (Propaganda Cum Distribution) pharma franchise company is the single biggest decision in your franchise journey. The wrong partner means delayed dispatches, expired stock, weak marketing support and broken monopoly promises. The right partner pays you back for the next decade.</p>
 
-      <p>This guide gives you a 10-point checklist that we have refined across 5+ years of organising pharma expos and reviewing 500+ franchise companies.</p>
+      <p>This guide gives you a 10-point checklist that we have refined across 3+ years of organising pharma expos and reviewing 500+ franchise companies.</p>
 
       <h2>1. Verify Legal Documents First</h2>
       <p>Before you discuss anything else, ask for and verify these documents:</p>
@@ -127,7 +127,7 @@ export const BLOG_POSTS = {
     ],
     tags: ["Pharma Expo", "Networking", "Business"],
     body: `
-      <p>Pharma exhibitions look expensive on paper — flights, hotel, two days off work, plus a stall fee if you exhibit. So is it worth it? After organising 30+ editions of PharmmaEx across 12 Indian cities, here is a candid list of the 12 things you actually get out of a pharma expo.</p>
+      <p>Pharma exhibitions look expensive on paper — flights, hotel, two days off work, plus a stall fee if you exhibit. So is it worth it? After organising 30+ editions of PharmmaEx across 25+ Indian states, here is a candid list of the 12 things you actually get out of a pharma expo.</p>
 
       <h2>For Visitors (Doctors, Distributors, Franchise Buyers)</h2>
 
@@ -151,8 +151,8 @@ export const BLOG_POSTS = {
 
       <h2>For Exhibitors</h2>
 
-      <h3>7. 100+ Qualified Leads in 2 Days</h3>
-      <p>The average PharmmaEx exhibitor walks away with 100+ verified franchise enquiries — most of them ready to buy within 30 days.</p>
+      <h3>7. 25k+ Qualified Leads in 2 Days</h3>
+      <p>The average PharmmaEx exhibitor walks away with 25k+ verified franchise enquiries — most of them ready to buy within 30 days.</p>
 
       <h3>8. Direct Access to Decision-Makers</h3>
       <p>Hospital purchase managers, chemist association office bearers and distributor presidents all walk the floor.</p>

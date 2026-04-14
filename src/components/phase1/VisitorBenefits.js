@@ -57,7 +57,7 @@ const ArrowRight = ({ size = 14 }) => (
 const BENEFITS = [
   {
     icon: <FactoryIcon />,
-    title: "500+ Manufacturers",
+    title: "150+ Manufacturers",
     text: "Meet pre-screened pharma manufacturers and franchise companies under one roof.",
   },
   {

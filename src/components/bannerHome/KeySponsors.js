@@ -24,10 +24,10 @@ const sponsors = [
     }
   ],
   [
-    {
-      label: "Supported Partners",
-      img: "/assests/img/Supported-Partner-Bionexy-Logo.webp",
-    },
+    // {
+    //   label: "Supported Partners",
+    //   img: "/assests/img/Supported-Partner-Bionexy-Logo.webp",
+    // },
     //
     {
       label: "Affilated Partner",

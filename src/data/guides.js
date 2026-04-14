@@ -148,7 +148,7 @@ export const GUIDES = {
     slug: "pharma-expo-participation-guide",
     title: "Pharma Expo Participation Guide — How Exhibitors Get the Most ROI",
     excerpt:
-      "A pre-show, on-show and post-show playbook for pharma exhibitors. Built from our experience running PharmmaEx editions across 12 cities.",
+      "A pre-show, on-show and post-show playbook for pharma exhibitors. Built from our experience running PharmmaEx editions across 25+ states.",
     coverImage: "/assests/img/image1.webp",
     readMinutes: 10,
     category: "Exhibitor Playbook",

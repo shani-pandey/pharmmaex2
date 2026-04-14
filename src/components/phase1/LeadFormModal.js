@@ -12,9 +12,11 @@ const FORM_META = {
   brochure: {
     title: "Download Brochure",
     sub: "Get the full PharmmaEx 2026 brochure — pricing, floor plans, exhibitor list and more.",
-    cta: "Send Me the Brochure",
+    cta: "Download Brochure",
     fields: ["name", "company", "phone", "email"],
     storageKey: "pharmmaex_brochure",
+    optional: true,
+    downloadUrl: "https://agiledigitaledge.dev/pharmmaex/Brochure-kolkata.pdf",
   },
   callback: {
     title: "Request a Callback",
@@ -45,12 +47,15 @@ const PLACEHOLDERS = {
   preferredTime: "e.g. Today 4 PM",
 };
 
-const validate = (fields, data) => {
+const validate = (fields, data, optional = false) => {
   const errors = {};
   fields.forEach((f) => {
     const v = (data[f] || "").trim();
-    if (!v) errors[f] = "Required";
-    else if (f === "phone" && !/^[+\d][\d\s-]{8,}$/.test(v)) errors[f] = "Enter a valid phone";
+    if (!v) {
+      if (!optional) errors[f] = "Required";
+      return;
+    }
+    if (f === "phone" && !/^[+\d][\d\s-]{8,}$/.test(v)) errors[f] = "Enter a valid phone";
     else if (f === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) errors[f] = "Enter a valid email";
   });
   return errors;
@@ -85,7 +90,7 @@ const LeadFormModal = ({ type, prefill, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const errs = validate(meta.fields, data);
+    const errs = validate(meta.fields, data, meta.optional);
     if (Object.keys(errs).length) {
       setErrors(errs);
       return;
@@ -95,6 +100,24 @@ const LeadFormModal = ({ type, prefill, onClose }) => {
       list.push({ ...data, type, ts: new Date().toISOString() });
       localStorage.setItem(meta.storageKey, JSON.stringify(list));
     } catch {}
+    if (meta.downloadUrl) {
+      const fileName = meta.downloadUrl.split("/").pop() || "brochure.pdf";
+      fetch(meta.downloadUrl)
+        .then((r) => r.blob())
+        .then((blob) => {
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = fileName;
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          URL.revokeObjectURL(url);
+        })
+        .catch(() => {
+          window.open(meta.downloadUrl, "_blank", "noopener,noreferrer");
+        });
+    }
     setSubmitted(true);
   };
 
