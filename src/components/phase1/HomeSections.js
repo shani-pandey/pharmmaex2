@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import UpcomingEvents from "./UpcomingEvents";
 import WhyExhibit from "./WhyExhibit";
@@ -28,6 +28,13 @@ const HomeSections = ({ exhibitorCategories, sponsors }) => {
   );
   const openBrochure = useCallback(() => setModal({ type: "brochure" }), []);
   const openCallback = useCallback(() => setModal({ type: "callback" }), []);
+
+  // Listen for brochure open events from components outside this tree (Header, FloatingDownloads)
+  useEffect(() => {
+    const handler = () => openBrochure();
+    window.addEventListener("openBrochureModal", handler);
+    return () => window.removeEventListener("openBrochureModal", handler);
+  }, [openBrochure]);
   const closeModal = useCallback(() => setModal(null), []);
 
   const handleWhyCta = useCallback(

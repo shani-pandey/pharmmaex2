@@ -98,7 +98,7 @@ const Header = () => {
                     <a className="dropdown-item dropdown-toggle" href="#">Download</a>
                     <ul className="dropdown-menu">
                       <li><a className="dropdown-item" href="/assests/pdf/kolkataLayout.pdf" target="_blank" >Floor Plan</a></li>
-                      <li><a className="dropdown-item" href="#" >Brochure</a></li>
+                      <li><a className="dropdown-item" href="#" onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event("openBrochureModal")); }}>Brochure</a></li>
                     </ul>
                   </li>
                   <li><a className="dropdown-item" href="/review-form">Review</a></li>

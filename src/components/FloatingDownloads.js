@@ -12,14 +12,14 @@ export default function FloatingDownloads() {
       >
         Floor Plan
       </a>
-      <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
+      <button
+        type="button"
+        style={{border:'none'}}
         className={`${styles.downloadButton} ${styles.brochure}`}
+        onClick={() => window.dispatchEvent(new Event("openBrochureModal"))}
       >
         Brochure
-      </a>
+      </button>
     </div>
   );
 }
