@@ -9,7 +9,7 @@ export const EXHIBITOR_CATEGORIES = {
     headline: "PCD Pharma Franchise Companies at PharmmaEx 2026",
     intro:
       "Meet 200+ verified PCD pharma franchise companies offering monopoly rights, marketing support and ready-stock dispatches. Compare brands, negotiate terms and lock in your district at PharmmaEx 2026.",
-    image: "/assests/img/ex1.svg",
+    image: "/assests/img/pcd-franchise.jpg",
     keywords: [
       "PCD pharma franchise companies",
       "monopoly pharma franchise",
@@ -67,7 +67,7 @@ export const EXHIBITOR_CATEGORIES = {
     headline: "Third-Party Pharma Manufacturers at PharmmaEx 2026",
     intro:
       "Meet WHO-GMP certified third-party pharma manufacturers offering contract manufacturing for tablets, capsules, syrups, ointments, injectables and nutraceuticals. Audit facilities, request samples and lock in MOQs at PharmmaEx 2026.",
-    image: "/assests/img/ex2.svg",
+    image: "/assests/img/third-party.jpg",
     keywords: [
       "third party pharma manufacturing",
       "contract manufacturing pharma India",
@@ -125,7 +125,7 @@ export const EXHIBITOR_CATEGORIES = {
     headline: "Ayurvedic & Herbal Brands at PharmmaEx 2026",
     intro:
       "Discover 80+ AYUSH-licensed ayurvedic and herbal product brands at PharmmaEx 2026. From classical formulations to modern proprietary medicines and herbal cosmetics — compare, sample and franchise.",
-    image: "/assests/img/ex3.svg",
+    image: "/assests/img/ayurvadic.jpg",
     keywords: [
       "ayurvedic franchise companies",
       "herbal pharma exhibition",
@@ -183,7 +183,7 @@ export const EXHIBITOR_CATEGORIES = {
     headline: "Nutraceuticals & Wellness Brands at PharmmaEx 2026",
     intro:
       "FSSAI-licensed nutraceuticals, food supplements, sports nutrition and protein brands gather at PharmmaEx 2026. Source private-label, contract manufacturing and franchise opportunities in one place.",
-    image: "/assests/img/ex4.svg",
+    image: "/assests/img/nutraceutical.jpg",
     keywords: [
       "nutraceutical manufacturers India",
       "food supplement franchise",
@@ -242,7 +242,7 @@ export const EXHIBITOR_CATEGORIES = {
     headline: "Cosmetics & Cosmeceuticals at PharmmaEx 2026",
     intro:
       "Derma cosmetics, cosmeceuticals and clinical skincare brands at PharmmaEx 2026. Source ready brands, private-label opportunities and franchise contracts for the booming Indian skincare market.",
-    image: "/assests/img/itemimg3.webp",
+    image: "/assests/img/cosmetic.jpg",
     keywords: [
       "cosmeceuticals manufacturers India",
       "derma cosmetics franchise",
@@ -360,7 +360,7 @@ export const EXHIBITOR_CATEGORIES = {
     headline: "Veterinary Pharma Brands at PharmmaEx 2026",
     intro:
       "Veterinary medicines, feed supplements, poultry health and dairy nutrition brands gather at PharmmaEx 2026. Connect with India's leading vet pharma manufacturers and franchise opportunities.",
-    image: "/assests/img/manpho.jpg",
+    image: "/assests/img/vetrinary.jpg",
     keywords: [
       "veterinary pharma franchise",
       "vet medicines India",
@@ -414,7 +414,7 @@ export const EXHIBITOR_CATEGORIES = {
     headline: "Pharma Packaging & Machinery Suppliers at PharmmaEx 2026",
     intro:
       "Pharma packaging materials, blister machines, tablet presses, capsule fillers, sterilisers and labelling machines — meet 50+ verified suppliers at PharmmaEx 2026.",
-    image: "/assests/img/about2 (1).webp",
+    image: "/assests/img/Pakaging.jpg",
     keywords: [
       "pharma packaging suppliers",
       "blister packing machine",

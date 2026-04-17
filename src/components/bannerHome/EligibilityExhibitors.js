@@ -5,60 +5,60 @@ import styles from "./EligibilityExhibitors.module.css";
 
 const CATEGORIES = [
   {
-    img: "/assests/img/p1.webp",
-    title: "Allopathic",
+    img: "/assests/img/pcd-franchise.jpg",
+    title: "PCD Pharma Franchise",
     desc:
       "Modern pharma brands showcasing prescription medicines, OTC, generics and chronic-therapy ranges to franchise buyers.",
     href: "/exhibitor-categories/pcd-pharma-franchise",
   },
   {
-    img: "/assests/img/itemimg3.webp",
-    title: "Ayurvedic",
-    desc:
-      "AYUSH-licensed brands presenting classical and proprietary ayurvedic medicines for clinics, pharmacies and PCD partners.",
-    href: "/exhibitor-categories/ayurvedic-herbal",
-  },
-  {
-    img: "/assests/img/itemimg5.webp",
-    title: "Cosmetic",
-    desc:
-      "Derma cosmetics, cosmeceuticals and clinical skincare brands sourcing private-label and franchise opportunities.",
-    href: "/exhibitor-categories/cosmetics-cosmeceuticals",
-  },
-  {
-    img: "/assests/img/itemimg4.webp",
-    title: "Herbal",
-    desc:
-      "Standardised herbal extracts, wellness formulations and natural product brands for the Indian and export markets.",
-    href: "/exhibitor-categories/ayurvedic-herbal",
-  },
-  {
-    img: "/assests/img/ex2.svg",
+    img: "/assests/img/third-party.jpg",
     title: "Third-Party Manufacturing",
     desc:
       "WHO-GMP contract manufacturers for tablets, capsules, syrups, ointments, injectables and nutraceuticals.",
     href: "/exhibitor-categories/third-party-manufacturing",
   },
   {
-    img: "/assests/img/ex4.svg",
-    title: "Nutraceuticals",
+    img: "/assests/img/ayurvadic.jpg",
+    title: "Ayurvedic & Herbal",
+    desc:
+      "AYUSH-licensed brands presenting classical, proprietary ayurvedic and standardised herbal formulations for clinics, pharmacies and PCD partners.",
+    href: "/exhibitor-categories/ayurvedic-herbal",
+  },
+  {
+    img: "/assests/img/nutraceutical.jpg",
+    title: "Nutraceuticals & Wellness",
     desc:
       "FSSAI-licensed nutraceuticals, sports nutrition, protein and wellness brands offering private-label and franchise deals.",
     href: "/exhibitor-categories/nutraceuticals-wellness",
   },
   {
+    img: "/assests/img/cosmetic.jpg",
+    title: "Cosmetics & Cosmeceuticals",
+    desc:
+      "Derma cosmetics, cosmeceuticals and clinical skincare brands sourcing private-label and franchise opportunities.",
+    href: "/exhibitor-categories/cosmetics-cosmeceuticals",
+  },
+  {
     img: "/assests/img/about2.webp",
-    title: "Surgical & Devices",
+    title: "Surgical & Medical Devices",
     desc:
       "Surgical disposables, medical devices, diagnostic kits and hospital consumables from CDSCO-approved suppliers.",
     href: "/exhibitor-categories/surgical-medical-devices",
   },
   {
-    img: "/assests/img/manpho.jpg",
+    img: "/assests/img/vetrinary.jpg",
     title: "Veterinary Pharma",
     desc:
       "Veterinary medicines, feed supplements, poultry health and dairy nutrition brands with PCD and franchise opportunities.",
     href: "/exhibitor-categories/veterinary-pharma",
+  },
+  {
+    img: "/assests/img/Pakaging.jpg",
+    title: "Packaging & Machinery",
+    desc:
+      "Pharma packaging materials, blister and strip machines, tablet presses, capsule fillers and labelling lines from verified suppliers.",
+    href: "/exhibitor-categories/packaging-machinery",
   },
 ];
 
