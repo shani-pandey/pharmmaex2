@@ -124,6 +124,14 @@ const WhyExhibit = ({ onCTA }) => {
               >
                 Book Your Stall <ArrowRight />
               </button>
+              <a
+                href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.btnGhost}
+              >
+                Free Visitor Registration
+              </a>
               <button
                 type="button"
                 className={styles.btnGhost}

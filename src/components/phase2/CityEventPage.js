@@ -258,13 +258,28 @@ const CityEventPage = ({ event }) => {
                 </div>
               </div>
               {isUpcoming ? (
-                <Link
-                  href="/exhibitor"
-                  className={styles.btnPrimary}
-                  style={{ width: "100%", justifyContent: "center" }}
-                >
-                  Reserve Your Stall <ArrowRight />
-                </Link>
+                <>
+                  <Link
+                    href="/exhibitor"
+                    className={styles.btnPrimary}
+                    style={{ width: "100%", justifyContent: "center" }}
+                  >
+                    Reserve Your Stall <ArrowRight />
+                  </Link>
+                  <a
+                    href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.btnGhost}
+                    style={{
+                      width: "100%",
+                      justifyContent: "center",
+                      marginTop: "0.7rem",
+                    }}
+                  >
+                    Free Visitor Registration
+                  </a>
+                </>
               ) : (
                 <Link
                   href={event.galleryHref}

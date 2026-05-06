@@ -156,6 +156,19 @@ const ExhibitorCategoryPage = ({ category }) => {
               >
                 Reserve Your Stall <ArrowRight />
               </Link>
+              <a
+                href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.btnGhost}
+                style={{
+                  width: "100%",
+                  justifyContent: "center",
+                  marginTop: "0.7rem",
+                }}
+              >
+                Free Visitor Registration
+              </a>
             </aside>
           </div>
         </div>
