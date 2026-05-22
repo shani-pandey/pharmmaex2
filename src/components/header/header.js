@@ -121,7 +121,7 @@ const Header = () => {
                 href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx"
                 className="header-cta-primary"
               >
-                Pre-Register
+                Visitor Registration
               </a>
               <a href="/exhibitor" className="header-cta-ghost">
                 Book a Stall

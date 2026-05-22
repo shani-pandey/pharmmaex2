@@ -139,8 +139,11 @@ const BannerHome = () => {
               3–4 July 2026 · Biswa Bangla Exhibition Centre, New Town, Kolkata
             </div>
             <div className={styles.bannerBtnGroup}>
-              <a href="/exhibitor" className={styles.bannerBtnPrimary}>
-                Book a Stall
+              <a
+                href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx"
+                className={styles.bannerBtnPrimary}
+              >
+                Visitor Registration
                 <svg
                   width="14"
                   height="14"

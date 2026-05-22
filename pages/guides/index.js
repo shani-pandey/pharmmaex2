@@ -108,7 +108,7 @@ export default function GuidesIndex() {
             <SeoCtaBanner
               title="Apply what you read at PharmmaEx 2026"
               subtitle="Reading is half the work. Meet 300+ pharma brands face-to-face in two days at PharmmaEx 2026."
-              primaryLabel="Pre-Register Free"
+              primaryLabel="Visitor Registration"
               primaryHref="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx"
             />
           </div>

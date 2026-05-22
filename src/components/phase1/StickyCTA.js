@@ -16,8 +16,11 @@ const StickyCTA = ({ onBookStall, onCallback }) => {
     <div className={styles.stickyBar}>
       <div className={styles.stickyInner}>
         <div className={styles.stickyText}>
-          <strong>3-4 July 2026</strong>
-          <span> • Kolkata • Stalls Filling Fast</span>
+          <strong className={styles.stickyVenue}>
+            Biswa Bangla Exhibition Centre, New Town, Kolkata West Bengal
+          </strong>
+          <span className={styles.stickyDot}> • </span>
+          <span className={styles.stickyEntry}>Visitor Entry Free</span>
         </div>
         <div className={styles.stickyActions}>
           <button type="button" className={styles.btnGhostSm} onClick={onCallback}>
@@ -26,6 +29,12 @@ const StickyCTA = ({ onBookStall, onCallback }) => {
           <button type="button" className={styles.btnPrimarySm} onClick={onBookStall}>
             Book Stall
           </button>
+          <a
+            href="https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx"
+            className={styles.btnPrimarySm}
+          >
+            Visitor Registration
+          </a>
         </div>
       </div>
     </div>

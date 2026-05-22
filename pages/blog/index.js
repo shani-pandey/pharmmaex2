@@ -108,7 +108,7 @@ export default function BlogIndex() {
               subtitle="The fastest way to apply everything you read here is to compare brands face-to-face at PharmmaEx 2026."
               primaryLabel="Book a Stall"
               primaryHref="/exhibitor"
-              secondaryLabel="Pre-Register Free"
+              secondaryLabel="Visitor Registration"
             />
           </div>
         </div>

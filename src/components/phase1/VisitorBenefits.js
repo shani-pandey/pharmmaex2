@@ -124,7 +124,7 @@ const VisitorBenefits = ({ onRegister }) => {
                 className={styles.btnPrimary}
                 onClick={onRegister}
               >
-                Pre-Register Free <ArrowRight />
+                Visitor Registration <ArrowRight />
               </button>
             </div>
           </div>

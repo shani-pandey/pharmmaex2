@@ -107,6 +107,7 @@
   gap: 0.8rem;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 .bannerBtnPrimary {
   display: inline-flex;

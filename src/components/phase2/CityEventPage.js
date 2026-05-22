@@ -79,7 +79,7 @@ const CityEventPage = ({ event }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Pre-Register Free
+                      Visitor Registration
                     </a>
                   </>
                 ) : (

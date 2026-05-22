@@ -50,7 +50,7 @@ const ExhibitorCategoryPage = ({ category }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Pre-Register as Visitor
+                  Visitor Registration
                 </a>
               </div>
             </div>

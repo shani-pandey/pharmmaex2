@@ -8,7 +8,7 @@ const SeoCtaBanner = ({
   subtitle = "Two days. One venue. Hundreds of franchise, manufacturing and distribution opportunities under one roof.",
   primaryLabel = "Book Your Stall",
   primaryHref = "/exhibitor",
-  secondaryLabel = "Pre-Register Free",
+  secondaryLabel = "Visitor Registration",
   secondaryHref = "https://www.pharmmaexregistration.in/Pharmaex/visitor.aspx",
 }) => {
   return (
