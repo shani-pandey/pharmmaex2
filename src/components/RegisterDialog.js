@@ -116,7 +116,12 @@ const RegisterDialog = () => {
             aria-label="Close"
           />
 
-          <a href={REGISTRATION_URL} onClick={() => setShowDialog(false)}>
+          <a
+            href={REGISTRATION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setShowDialog(false)}
+          >
             <img
               src="/assests/img/popup-image-desktop.png"
               alt="Free Visitor Registration"
