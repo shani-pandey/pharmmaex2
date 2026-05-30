@@ -6,7 +6,7 @@
      on top of the sticky <header> and clips its dropdown menus. */
 }
 
-.bannerVideo {
+.bannerImage {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,6 +14,11 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+/* Show desktop image by default, hide mobile */
+.bannerImageMobile {
+  display: none;
 }
 
 .overlay {
@@ -187,6 +192,14 @@
 @media (max-width: 768px) {
   .bannerHomeSection {
     min-height: 60vh;
+  }
+
+  /* Swap to mobile banner image */
+  .bannerImageDesktop {
+    display: none;
+  }
+  .bannerImageMobile {
+    display: block;
   }
 
   .bannerTitle {
