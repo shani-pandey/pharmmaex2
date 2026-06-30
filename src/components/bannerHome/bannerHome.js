@@ -138,7 +138,7 @@ const BannerHome = () => {
                 <line x1="8" y1="2" x2="8" y2="6" />
                 <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
-              3–4 July 2026 · Biswa Bangla Exhibition Centre, New Town, Kolkata
+              3–4 July 2026 · Biswa Bangla Mela Prangan (Milan Mela), Opp. Science City, Kolkata
             </div>
             <div className={styles.bannerBtnGroup}>
               <a

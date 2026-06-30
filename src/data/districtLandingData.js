@@ -383,7 +383,7 @@ const KOLKATA_CUSTOM = {
     {
       question: "Which venue hosts major business exhibitions in Kolkata?",
       answer:
-        "One of the key venues for large business events is the Biswa Bangla Exhibition Centre in New Town, Kolkata. It regularly hosts large-format trade exhibitions and industry events.",
+        "One of the key venues for large business events is the Biswa Bangla Mela Prangan (Milan Mela), Opp. Science City, Kolkata. It regularly hosts large-format trade exhibitions and industry events.",
     },
   ],
   relatedEventSlugs: ["kolkata", "coimbatore", "mumbai"],

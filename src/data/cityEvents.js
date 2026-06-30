@@ -13,10 +13,10 @@ export const CITY_EVENTS = {
     date: "3 - 4 July, 2026",
     startDate: "2026-07-03T09:00:00+05:30",
     endDate: "2026-07-04T18:00:00+05:30",
-    venue: "Biswa Bangla Exhibition Centre",
-    address: "Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal 700156",
-    locality: "New Town",
-    postalCode: "700156",
+    venue: "Biswa Bangla Mela Prangan (Milan Mela)",
+    address: "Biswa Bangla Mela Prangan (Milan Mela), Opp. Science City, Kolkata, West Bengal 700046",
+    locality: "Opp. Science City",
+    postalCode: "700046",
     heroImage: "/Kolkata.webp",
     bannerImage: "/assests/img/sponserbanner.png",
     floorPlanPdf: "/assests/pdf/kolkataLayout.pdf",
@@ -26,7 +26,7 @@ export const CITY_EVENTS = {
     headline:
       "PharmmaEx Kolkata 2026 — East India's Largest Pharma Franchise & Manufacturing Expo",
     intro:
-      "PharmmaEx returns to East India with its 2026 flagship edition at the Biswa Bangla Exhibition Centre, Kolkata. Two days of direct franchise deals, third-party manufacturing tie-ups and on-spot order booking with 300+ verified pharma brands.",
+      "PharmmaEx returns to East India with its 2026 flagship edition at the Biswa Bangla Mela Prangan (Milan Mela), Opp. Science City, Kolkata. Two days of direct franchise deals, third-party manufacturing tie-ups and on-spot order booking with 300+ verified pharma brands.",
     keywords: [
       "pharma expo Kolkata",
       "PCD pharma franchise Kolkata",

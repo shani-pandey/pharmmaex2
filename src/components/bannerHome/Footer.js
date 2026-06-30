@@ -59,7 +59,7 @@ const Footer = () => {
                 alt="Location"
                 className="me-1"
               />
-              Biswa Bangla Exhibition Centre, <br /> New Town, Kolkata, West Bengal
+              Biswa Bangla Mela Prangan (Milan Mela), <br /> Opp. Science City, Kolkata
             </div>
           </div>
           <div className="footer-registration-btns d-flex gap-3">
@@ -113,7 +113,7 @@ const Footer = () => {
                       <div className="footer-event-info">
                         <div className="fw-bold">3-4 July, 2026</div>
                         <div>
-                          Biswa Bangla Exhibition Centre, <br /> New Town, Kolkata, West Bengal
+                          Biswa Bangla Mela Prangan (Milan Mela), <br /> Opp. Science City, Kolkata
                         </div>
                       </div>
                     </div>

@@ -195,7 +195,7 @@ const ExhibitorRegistrationPage = () => {
         <div>
           Exhibition Venue:{" "}
           <span className={styles.eventHighlight}>
-            Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal
+            Biswa Bangla Mela Prangan (Milan Mela), Opp. Science City, Kolkata
           </span>
         </div>
       </div>

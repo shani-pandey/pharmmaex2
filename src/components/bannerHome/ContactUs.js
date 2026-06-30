@@ -17,7 +17,7 @@ const ContactUs = () => {
         </div>
         <div className="venue-details">
           <h3>Exhibition Venue-West Bengal</h3>
-          <p>Biswa Bangla Exhibition Centre, New Town, Kolkata, West Bengal</p>
+          <p>Biswa Bangla Mela Prangan (Milan Mela), Opp. Science City, Kolkata</p>
           <p>3-4th July, 2026</p>
         </div>
         <div className="contact-btns">

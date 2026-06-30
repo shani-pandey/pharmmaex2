@@ -123,12 +123,12 @@ const RegisterDialog = () => {
             onClick={() => setShowDialog(false)}
           >
             <img
-              src="/assests/img/popup-image-desktop.png"
+              src="/assests/img/popup-image-desktop.jpg"
               alt="Free Visitor Registration"
               className="popup-img popup-img-desktop"
             />
             <img
-              src="/assests/img/popup-image-mobile.png"
+              src="/assests/img/popup-image-mobile.jpg"
               alt="Free Visitor Registration"
               className="popup-img popup-img-mobile"
             />

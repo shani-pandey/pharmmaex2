@@ -178,7 +178,7 @@ const ExhibitionSeries = () => {
           <div className="d-flex flex-wrap align-items-center gap-4">
             <img
               src="https://indiano.travel/wp-content/uploads/2022/03/Kolkata.webp"
-              alt="Kolkata Exhibition Centre"
+              alt="Biswa Bangla Mela Prangan (Milan Mela), Kolkata"
               className="exhibition-series-upcoming-img rounded-4"
             />
             <div className="d-flex gap-3 align-items-center exhibition-series-countdown">
@@ -203,7 +203,7 @@ const ExhibitionSeries = () => {
             </div>
             <div className="ms-3 exhibition-series-upcoming-details">
               <div className="fw-bold">3-4 July, 2026</div>
-              <div>Biswa Bangla Exhibition Centre, <br /> New Town, Kolkata, West Bengal</div>
+              <div>Biswa Bangla Mela Prangan (Milan Mela), <br /> Opp. Science City, Kolkata</div>
             </div>
             <div className="d-flex gap-2 ms-3 exhibition-series-btn-group">
               <a

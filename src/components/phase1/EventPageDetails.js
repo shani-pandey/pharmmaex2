@@ -164,7 +164,7 @@ const ContactForm = ({ onSubmit }) => {
   );
 };
 
-const EventPageDetails = ({ city = "Kolkata", date = "3-4 July, 2026", venue = "Biswa Bangla Exhibition Centre, New Town, Kolkata" }) => {
+const EventPageDetails = ({ city = "Kolkata", date = "3-4 July, 2026", venue = "Biswa Bangla Mela Prangan (Milan Mela), Opp. Science City, Kolkata" }) => {
   const [modal, setModal] = useState(null);
   const open = (type) => setModal({ type });
   const close = () => setModal(null);

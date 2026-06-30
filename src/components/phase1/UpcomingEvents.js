@@ -10,7 +10,7 @@ const FEATURED = {
   badge: "Now Open · Stalls Filling",
   dayRange: "03 — 04",
   monthYear: "July 2026",
-  venue: "Biswa Bangla Exhibition Centre, New Town",
+  venue: "Biswa Bangla Mela Prangan (Milan Mela), Opp. Science City",
   href: "/events/kolkata",
   image: "/Kolkata.webp",
 };
